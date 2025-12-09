@@ -1,0 +1,60 @@
+[workspace]
+name = "microscopy-ai-envs"
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64"]
+
+# ---- Tasks ----
+[tasks]
+# Display available envs
+list = "python -c "print('envs: cellpose3, cellpose4, microsam')""
+
+# Build docker images (examples; adjust registry)
+"docker:build:cp3" = "docker build -f docker/Dockerfile.cellpose3 -t ghcr.io/uh-lmu/cellpose3:latest ."
+"docker:build:cp4" = "docker build -f docker/Dockerfile.cellpose4 -t ghcr.io/uh-lmu/cellpose4:latest ."
+"docker:build:microsam" = "docker build -f docker/Dockerfile.microsam -t ghcr.io/uh-lmu/microsam:latest ."
+
+# ---- CUDA feature ----
+[feature.cuda.dependencies]
+cuda = ">=12"
+cudnn = "*"
+pytorch-gpu = "*"
+cuda-version = "12.8.*"
+
+[feature.cuda.system-requirements]
+cuda = "12"
+
+[feature.cuda.tasks]
+warmup = "python warmup.py"
+
+[feature.cuda]
+channels = ["nvidia"]
+platforms = ["linux-64", "win-64"]
+
+
+[feature.cellpose3.dependencies]
+cellpose = "<4"
+
+[feature.cellpose4.dependencies]
+cellpose = ">=4.0"
+
+[feature.micro-sam.dependencies]
+micro_sam = "*"
+
+# ---------------- Base shared dependencies ----------------
+[dependencies]
+dvc = "*"
+python = "3.11.*"
+pandas = "*"
+napari = "*"
+numpy = "*"
+scipy = "*"
+scikit-image = "*"
+pyyaml = "*"
+rich = "*"
+
+[environments]
+cellpose3 = {features = ["cuda", "cellpose3"], solve-group = "cellpose3"}
+cellpose4 = {features = ["cuda", "cellpose4"], solve-group = "cellpose4"}
+micro-sam = {features = ["cuda", "micro-sam"], solve-group = "micro-sam"}
+
+
