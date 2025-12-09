@@ -2,15 +2,16 @@ FROM ghcr.io/prefix-dev/pixi:0.57.0 AS build
 
 WORKDIR /app
 COPY . .
+ENV CONDA_OVERRIDE_CUDA=13.0
 RUN pixi install --locked -e cellpose3
 RUN pixi shell-hook -e cellpose3 -s bash > /shell-hook
 RUN echo "#!/bin/bash" > /app/entrypoint.sh
 RUN cat /shell-hook >> /app/entrypoint.sh
 RUN echo 'exec "$@"' >> /app/entrypoint.sh
 
-FROM ubuntu:24.04 AS production
+FROM nvidia/cuda:13.0.2-cudnn-runtime-ubuntu24.04 AS production
 WORKDIR /app
-COPY --from=build /app/.pixi/envs/prod /app/.pixi/envs/cellpose3
+COPY --from=build /app/.pixi/envs/cellpose3 /app/.pixi/envs/cellpose3
 COPY --from=build --chmod=0755 /app/entrypoint.sh /app/entrypoint.sh
 
 ENTRYPOINT [ "/app/entrypoint.sh" ]
