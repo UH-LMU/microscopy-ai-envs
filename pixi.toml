@@ -6,7 +6,7 @@ platforms = ["win-64", "linux-64"]
 # ---- Tasks ----
 [tasks]
 # Display available envs
-list = "python -c "print('envs: cellpose3, cellpose4, microsam')""
+list = "python -c \"print('envs: cellpose3, cellpose4, microsam')\""
 
 # Build docker images (examples; adjust registry)
 "docker:build:cp3" = "docker build -f docker/Dockerfile.cellpose3 -t ghcr.io/uh-lmu/cellpose3:latest ."

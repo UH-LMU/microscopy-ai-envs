@@ -12,7 +12,6 @@ FROM ubuntu:24.04 AS production
 WORKDIR /app
 COPY --from=build /app/.pixi/envs/prod /app/.pixi/envs/micro-sam
 COPY --from=build --chmod=0755 /app/entrypoint.sh /app/entrypoint.sh
-COPY ./bin /app/bin
 
 ENTRYPOINT [ "/app/entrypoint.sh" ]
 
