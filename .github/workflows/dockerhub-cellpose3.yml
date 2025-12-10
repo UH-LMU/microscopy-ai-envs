@@ -6,6 +6,7 @@ on:
 jobs:
   docker:
     runs-on: ubuntu-latest
+    environment: docker_image_build
     steps:
       -
         name: Docker meta
