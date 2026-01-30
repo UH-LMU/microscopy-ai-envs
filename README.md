@@ -32,5 +32,31 @@ Dockerfiles under `docker/` show how to build images that embed these envs. Publ
 - `ghcr.io/uh-lmu/cellpose4:<date>`
 - `ghcr.io/uh-lmu/microsam:<date>`
 
+## Manually building Apptainer .sif images
+The images produced by the Dockerfiles in this repository are quite large, and it is not possible to build them with Github Actions. Here's the manual process.
+
+``` bash
+# add git tag
+git tag v0.1
+
+# build Docker image to local index
+sudo docker build -f docker/Dockerfile-cellpose4 .
+sudo docker images
+
+# export image as a .tar archive
+sudo docker save 5a7333709fb1 -o /DISKS/2TB/hajaalin/tmp/uh-lmu_cellpose4_lmuv1.0.tar
+
+# build apptainer image from .tar
+TMPDIR=/DISKS/2TB/hajaalin/tmp/apptainer apptainer build /DISKS/2TB/hajaalin/apptainer/uh-lmu_cellpose4_lmuv1.0.sif docker-archive:///DISKS/2TB/hajaalin/tmp/uh-lmu_cellpose4_lmuv1.0.tar
+
+# test .sif (with --nv flag to enable CUDA)
+apptainer run --nv /DISKS/2TB/hajaalin/apptainer/uh-lmu_cellpose4_lmuv1.0.sif cellpose
+
+```
+
+`
+add git tag, e.g. v0.1
+- 
+
 ## Helper scripts
 - `scripts/run_in_env.ps1` / `scripts/run_in_env.sh` run a command in a selected env for a **project path**.
