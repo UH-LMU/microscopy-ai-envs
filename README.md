@@ -40,7 +40,7 @@ The images produced by the Dockerfiles in this repository are quite large, and i
 git tag v0.1
 
 # build Docker image to local index
-sudo docker build -f docker/Dockerfile-cellpose4 .
+sudo docker build -f docker/Dockerfile-cellpose4 -t uh-lmu/cellpose4:lmuv1.0 .
 sudo docker images
 
 # export image as a .tar archive
