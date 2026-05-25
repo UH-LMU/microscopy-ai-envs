@@ -15,6 +15,7 @@ jobs:
           pixi-to-conda-lock --environment cellpose3 pixi.lock
           pixi-to-conda-lock --environment cellpose4 pixi.lock
           pixi-to-conda-lock --environment micro-sam pixi.lock
+          pixi-to-conda-lock --environment stardist pixi.lock
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "ci: update conda-lock files"
