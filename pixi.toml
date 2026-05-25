@@ -43,8 +43,37 @@ cellpose = ">=4.0"
 python = "3.12.*"
 micro_sam = "*"
 
+[feature.cuda11]
+channels = ["conda-forge"]
+platforms = ["linux-64", "win-64"]
+
+[feature.cuda11.dependencies]
+cudatoolkit = "11.2.*"
+cudnn = "8.1.0.*"
+
+[feature.cuda11.activation.env]
+LD_LIBRARY_PATH = "$CONDA_PREFIX/lib:$LD_LIBRARY_PATH"
+XLA_FLAGS = "--xla_gpu_cuda_data_dir=$CONDA_PREFIX"
+
+[feature.tensorflow]
+platforms = ["linux-64", "win-64"]
+
+[feature.tensorflow.dependencies]
+python = "3.10.*"
+numpy = "<2"
+scipy = "<1.14"
+
+[feature.tensorflow.pypi-dependencies]
+tensorflow = "< 2.11"
+
+[feature.stardist]
+platforms = ["linux-64", "win-64"]
+
+[feature.stardist.pypi-dependencies]
+stardist = "*"
+
 [environments]
 cellpose3 = {features = ["cuda", "cellpose3"], solve-group = "cellpose3"}
 cellpose4 = {features = ["cuda", "cellpose4"], solve-group = "cellpose4"}
 micro-sam = {features = ["cuda", "micro-sam"], solve-group = "micro-sam"}
-
+stardist = {features = ["cuda11", "tensorflow", "stardist"], solve-group = "stardist"}
