@@ -60,6 +60,7 @@ platforms = ["linux-64", "win-64"]
 
 [feature.tensorflow.dependencies]
 python = "3.10.*"
+pip = "*"
 numpy = "<2"
 scipy = "<1.14"
 
