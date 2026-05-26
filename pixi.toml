@@ -73,8 +73,22 @@ platforms = ["linux-64", "win-64"]
 [feature.stardist.pypi-dependencies]
 stardist = "*"
 
+# Interactive/workstation extras: kernel + common analysis packages on top of any base env.
+[feature.jupyter.dependencies]
+ipykernel = "*"
+jupyterlab = "*"
+ipywidgets = "*"
+matplotlib = "*"
+pandas = "*"
+scikit-image = "*"
+scikit-learn = "*"
+
 [environments]
 cellpose3 = {features = ["cuda", "cellpose3"], solve-group = "cellpose3"}
 cellpose4 = {features = ["cuda", "cellpose4"], solve-group = "cellpose4"}
 micro-sam = {features = ["cuda", "micro-sam"], solve-group = "micro-sam"}
 stardist = {features = ["cuda11", "tensorflow", "stardist"], solve-group = "stardist"}
+cellpose3-full = {features = ["cuda", "cellpose3", "jupyter"], solve-group = "cellpose3"}
+cellpose4-full = {features = ["cuda", "cellpose4", "jupyter"], solve-group = "cellpose4"}
+micro-sam-full = {features = ["cuda", "micro-sam", "jupyter"], solve-group = "micro-sam"}
+stardist-full = {features = ["cuda11", "tensorflow", "stardist", "jupyter"], solve-group = "stardist"}
