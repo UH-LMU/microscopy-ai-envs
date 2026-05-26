@@ -12,11 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - run: pip install pixi-to-conda-lock
       - run: |
-          pixi-to-conda-lock --environment cellpose3 pixi.lock
-          pixi-to-conda-lock --environment cellpose4 pixi.lock
-          pixi-to-conda-lock --environment micro-sam pixi.lock
-          pixi-to-conda-lock --environment stardist pixi.lock
+          mkdir -p conda-locks
+          pixi-to-conda-lock --output conda-locks pixi.lock
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "ci: update conda-lock files"
-          file_pattern: "*.conda-lock.yml"
+          file_pattern: "conda-locks/*.conda-lock.yml"
