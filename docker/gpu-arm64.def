@@ -1,0 +1,46 @@
+Bootstrap: docker
+From: nvcr.io/nvidia/pytorch:25.10-py3
+
+# Combined GPU image (cellpose 4 + micro_sam) for aarch64 / NVIDIA GH200.
+#
+# Apptainer definition mirroring docker/Dockerfile.gpu-arm64 -- use THIS to build
+# directly on Roihu (a login node has apptainer + --fakeroot, no docker/root).
+# See README.gpu-arm64.md for build + validation commands and the rationale.
+#
+# Validated on Roihu rg2102, 2026-07-01: numpy 2.1.0, cuda True, cellpose masks,
+# micro_sam on cuda:0, no NumPy-bridge warning. Use a NUMPY-2 NGC base (25.10):
+# it keeps torch's numpy bridge healthy so cellpose + micro_sam resolve with NO
+# numpy pin (their 2026 deps require numpy>=2). phenix_zproj stays x86.
+
+%post
+    # napari (micro_sam dep) needs PyQt5; no aarch64 wheel exists, so install Qt
+    # as a system BINARY -> pip sees it satisfied and skips the source build.
+    # libgl1/libglib2.0-0 are the GL/glib runtime libs Qt + napari load.
+    apt-get update
+    apt-get install -y --no-install-recommends python3-pyqt5 libgl1 libglib2.0-0
+    rm -rf /var/lib/apt/lists/*
+
+    # No numpy pin (see header). cellpose pinned to the validated version;
+    # micro_sam pinned to the validated release for reproducible rebuilds.
+    # torch/torchvision come from the base and are left untouched.
+    pip install --no-cache-dir cellpose==4.0.7
+    pip install --no-cache-dir micro_sam==1.8.4
+
+%environment
+    # Run Qt headless: napari/PyQt import must not need an X display on GPU nodes.
+    export QT_QPA_PLATFORM=offscreen
+
+%test
+    # Build-time smoke test: imports only (no GPU, no weight download) so it
+    # passes even when the build runs on a CPU-only login node.
+    python -c "import cellpose, micro_sam; print('cellpose', cellpose.version, '| micro_sam', getattr(micro_sam, '__version__', 'installed'))"
+
+%labels
+    Maintainer uh-lmu
+    Contents cellpose==4.0.7 + micro_sam==1.8.4 on nvcr.io/nvidia/pytorch:25.10-py3
+    Arch aarch64 (GH200 / Grace-Hopper)
+
+%help
+    Combined cellpose 4 + micro_sam GPU image for aarch64 (Roihu GH200 nodes).
+    Build:    apptainer build --fakeroot gpu-arm64.sif gpu-arm64.def
+    Validate: see README.gpu-arm64.md (needs a GPU node + --nv).

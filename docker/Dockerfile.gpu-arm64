@@ -1,0 +1,52 @@
+# Combined GPU image (cellpose 4 + micro_sam) for aarch64 / NVIDIA GH200.
+#
+# WHY THIS EXISTS (separate from the pixi Dockerfiles):
+# CSC's Roihu cluster has ARM (aarch64, Grace) GPU nodes. The conda-forge pixi
+# route can't solve a GPU PyTorch on linux-aarch64, so the x86 pixi images
+# (Dockerfile.cellpose4 / Dockerfile.microsam) do NOT run there. This image
+# instead layers cellpose + micro_sam on top of NVIDIA's NGC PyTorch base, which
+# ships a native arm64/SBSA, GH200-tuned CUDA+cuDNN+PyTorch stack.
+#
+# KEY LESSON (validated on Roihu rg2102, 2026-07-01): use a NUMPY-2 NGC base.
+# On 25.01 (numpy-1-built torch) we had to force numpy<2, which made micro_sam's
+# 2026 dependency closure (scikit-image 0.26, xarray 2026, pandas 3 -> all need
+# numpy>=2) unsatisfiable and sent pip into an endless backtrack. On a numpy-2
+# base the torch<->numpy bridge matches numpy 2 and everything resolves with NO
+# pins. cellpose + micro_sam coexist in one image.
+#
+# BUILD (needs an arm64 builder -- buildx --platform linux/arm64, a GH-Actions
+# arm64 runner, or a native aarch64 host such as a Roihu login node):
+#   apptainer build --fakeroot gpu-arm64.sif Dockerfile.gpu-arm64   # def-style, or
+#   docker buildx build --platform linux/arm64 -f docker/Dockerfile.gpu-arm64 \
+#       -t ghcr.io/uh-lmu/gpu-arm64:latest --push .
+#
+# phenix_zproj stays x86 on the Roihu CPU nodes -- only THIS GPU image is arm64.
+
+# Pin the base tag: 25.10 was validated (numpy 2.1.0, torch bridge OK on GH200).
+FROM nvcr.io/nvidia/pytorch:25.10-py3
+
+# napari (a micro_sam dependency) pulls PyQt5, which has no aarch64 wheel and
+# would try a source build needing qmake/Qt-dev. Install Qt as a system BINARY
+# so pip sees PyQt5 satisfied and skips the build. libgl1/libglib2.0-0 are the
+# runtime GL/glib libs Qt + napari load. We never open the napari GUI on a
+# headless node (see QT_QPA_PLATFORM below); these just satisfy import.
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        python3-pyqt5 \
+        libgl1 \
+        libglib2.0-0 \
+    && rm -rf /var/lib/apt/lists/*
+
+# No numpy pin: the numpy-2 base keeps torch's numpy bridge healthy and lets
+# both packages resolve their modern (numpy>=2) deps. cellpose pinned to the
+# validated version; micro_sam pinned to the validated release for reproducible
+# rebuilds (bump deliberately). torch/torchvision are already present from the
+# base and are left untouched (both only require numpy, already satisfied).
+RUN pip install --no-cache-dir cellpose==4.0.7 \
+    && pip install --no-cache-dir micro_sam==1.8.4
+
+# Run Qt headless: napari/PyQt import must not need an X display on GPU nodes.
+ENV QT_QPA_PLATFORM=offscreen
+
+# Sanity default: print the two versions so `apptainer run <sif>` self-reports.
+CMD ["python", "-c", "import cellpose, micro_sam; print('cellpose', cellpose.version, '| micro_sam', getattr(micro_sam, '__version__', 'installed'))"]
