@@ -2,9 +2,11 @@
 # Microscopy AI Environments (Pixi)
 
 This repo hosts **reusable, pre-solved environments** for heavy tools:
-- **cellpose3** (Cellpose < 4.0; Python 3.10)
-- **cellpose4** (Cellpose ≥ 4.0 with SAM; Python 3.11)
-- **microsam** (micro-SAM + napari; Python 3.11)
+- **cellpose3** (Cellpose v3.1.1.3; Python 3.10)
+- **cellpose4** (Cellpose ≥ 4.0 with SAM; Python 3.12)
+- **microsam** (micro-SAM + napari; Python 3.12)
+- **stardist** (stardist 0.9.2; Python 3.12)
+- **napari viewer** (napari ≥ v0.9.2, Python 3.12)
 
 ## Usage (local workstation)
 
@@ -15,6 +17,8 @@ This repo hosts **reusable, pre-solved environments** for heavy tools:
 pixi install -e cellpose3    # solve once
 pixi install -e cellpose4
 pixi install -e microsam
+pixi install -e stardist
+pixi install -e napari
 
 # optional: create/update a consolidated lock file after solving
 # (pixi writes/updates pixi.lock automatically during install)
