@@ -52,7 +52,7 @@ python = "3.12.*"
 pip = ">=19.0"
 
 [feature.tensorflow.pypi-dependencies]
-tensorflow = ">=2.16"
+tensorflow = { version = ">=2.16"}
 
 # ---- Cellpose3 feature ----
 
@@ -80,11 +80,14 @@ python = "3.12.*"
 stardist = "*"
 
 # ---- Napari feature ----
+[feature.napari]
+platforms = ["linux-64", "win-64"]
+
 [feature.napari.dependencies]
 python = "3.12.*"
 
 [feature.napari.pypi-dependencies]
-napari = { version = ">=0.9.2, <0.10", extras = ["all"] }
+napari = { version = ">=0.9", extras = ["all"] }
 
 # ---- Jupyter feature ----
 
@@ -109,4 +112,4 @@ cellpose3-full = {features = ["cuda", "cellpose3", "jupyter"], solve-group = "ce
 cellpose4-full = {features = ["cuda", "cellpose4", "jupyter"], solve-group = "cellpose4"}
 micro-sam-full = {features = ["cuda", "micro-sam", "jupyter"], solve-group = "micro-sam"}
 stardist-full = {features = ["tensorflow", "stardist", "jupyter"], solve-group = "stardist"}
-napari = {features = ["napari", "jupyter"], solve-group = "napari"}
+napari = {features = ["napari"], solve-group = "napari"}
