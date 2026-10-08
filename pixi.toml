@@ -41,7 +41,7 @@ cellpose = ">=4.0"
 
 [feature.micro-sam.dependencies]
 python = "3.12.*"
-micro_sam = "*"
+micro_sam = ">=1.8.14,<1.9"
 
 [feature.cuda11]
 channels = ["conda-forge"]
