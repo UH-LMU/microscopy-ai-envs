@@ -14,8 +14,9 @@ jobs:
       - run: |
           mkdir -p conda-locks
           pixi-to-conda-lock --output conda-locks pixi.lock
-      # pixi.lock v7 aliases CUDA platforms as p1/p2; map them back to linux-64/win-64
-      - run: python scripts/fix-conda-lock-platforms.py pixi.lock conda-locks/*.conda-lock.yml
+      # map pixi.lock v7 platform aliases (p1/p2) back to linux-64/win-64, and sort
+      # entries so regenerating without pin changes gives no diff
+      - run: python scripts/normalize-conda-locks.py pixi.lock conda-locks/*.conda-lock.yml
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "ci: update conda-lock files"

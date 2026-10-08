@@ -76,8 +76,15 @@ Three failure modes recur when working with TF-based envs in this repo:
 `.github/workflows/update-conda-locks.yml` regenerates per-env
 `conda-locks/<env>.conda-lock.yml` files whenever `pixi.lock` changes. The
 workflow runs `pixi-to-conda-lock --output conda-locks pixi.lock` (omitting
-`--environment` converts all envs in one call) and auto-commits the result
-via `stefanzweifel/git-auto-commit-action@v5`.
+`--environment` converts all envs in one call), then
+`scripts/normalize-conda-locks.py`, and auto-commits the result via
+`stefanzweifel/git-auto-commit-action@v5`.
+
+The normalize step is needed because `pixi-to-conda-lock` (<= 0.4.5) copies
+pixi.lock v7 platform aliases (`p1`, `p2` for the CUDA-12 envs) into the
+output instead of `linux-64`/`win-64`, and writes packages in no fixed order.
+Without it, conda-lock consumers find no packages for the CUDA envs, and every
+run churns thousands of lines.
 
 **Required:** any env with `pypi-dependencies` MUST also list `pip` in its
 conda dependencies, or `pixi-to-conda-lock` errors with "PyPI packages are
