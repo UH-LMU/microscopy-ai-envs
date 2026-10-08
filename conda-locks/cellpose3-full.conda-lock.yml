@@ -1,23 +1,23 @@
 version: 1
 metadata:
   content_hash:
-    p2: generated-from-pixi-lock
-    p1: generated-from-pixi-lock
+    win-64: generated-from-pixi-lock
+    linux-64: generated-from-pixi-lock
   channels:
   - url: nvidia/
     used_env_vars: []
   - url: conda-forge/
     used_env_vars: []
   platforms:
-  - p2
-  - p1
+  - win-64
+  - linux-64
   sources:
   - pixi.lock
 package:
 - name: anyio
   version: 4.13.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     exceptiongroup: '>=1.0.2'
     idna: '>=2.8'
@@ -32,7 +32,7 @@ package:
 - name: argon2-cffi
   version: 25.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     argon2-cffi-bindings: '*'
     python: '>=3.9'
@@ -46,7 +46,7 @@ package:
 - name: arrow
   version: 1.4.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     python-dateutil: '>=2.7.0'
@@ -60,7 +60,7 @@ package:
 - name: asttokens
   version: 3.0.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
@@ -72,7 +72,7 @@ package:
 - name: async-lru
   version: 2.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     typing_extensions: '>=4.0.0'
@@ -85,7 +85,7 @@ package:
 - name: attrs
   version: 26.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/attrs-26.1.0-pyhcf101f3_0.conda
@@ -97,7 +97,7 @@ package:
 - name: babel
   version: 2.18.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/babel-2.18.0-pyhcf101f3_1.conda
@@ -109,7 +109,7 @@ package:
 - name: beautifulsoup4
   version: 4.14.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
     soupsieve: '>=1.2'
@@ -123,7 +123,7 @@ package:
 - name: bleach
   version: 6.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     webencodings: '*'
@@ -136,7 +136,7 @@ package:
 - name: bleach-with-css
   version: 6.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     bleach: ==6.3.0 pyhcf101f3_1
     tinycss2: '*'
@@ -149,7 +149,7 @@ package:
 - name: bokeh
   version: 3.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     contourpy: '>=1.2'
     jinja2: '>=2.9'
@@ -171,7 +171,7 @@ package:
 - name: ca-certificates
   version: 2025.11.12
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.11.12-h4c7d964_0.conda
@@ -183,7 +183,7 @@ package:
 - name: cached-property
   version: 1.5.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cached_property: '>=1.5.2,<1.5.3.0a0'
   url: https://conda.anaconda.org/conda-forge/noarch/cached-property-1.5.2-hd8ed1ab_1.tar.bz2
@@ -195,7 +195,7 @@ package:
 - name: cached_property
   version: 1.5.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.6'
   url: https://conda.anaconda.org/conda-forge/noarch/cached_property-1.5.2-pyha770c72_1.tar.bz2
@@ -207,7 +207,7 @@ package:
 - name: cellpose
   version: 3.1.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     dask-core: '*'
     dask-image: '*'
@@ -241,7 +241,7 @@ package:
 - name: certifi
   version: 2025.11.12
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/certifi-2025.11.12-pyhd8ed1ab_0.conda
@@ -253,7 +253,7 @@ package:
 - name: charset-normalizer
   version: 3.4.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.4-pyhd8ed1ab_0.conda
@@ -265,7 +265,7 @@ package:
 - name: click
   version: 8.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     colorama: '*'
@@ -279,7 +279,7 @@ package:
 - name: cloudpickle
   version: 3.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/cloudpickle-3.1.2-pyhd8ed1ab_0.conda
@@ -291,7 +291,7 @@ package:
 - name: colorama
   version: 0.4.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/colorama-0.4.6-pyhd8ed1ab_1.conda
@@ -303,7 +303,7 @@ package:
 - name: comm
   version: 0.2.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/comm-0.2.3-pyhe01879c_0.conda
@@ -315,7 +315,7 @@ package:
 - name: cycler
   version: 0.12.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/cycler-0.12.1-pyhcf101f3_2.conda
@@ -327,7 +327,7 @@ package:
 - name: dask
   version: 2025.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     dask-core: '>=2025.11.0,<2025.11.1.0a0'
@@ -348,7 +348,7 @@ package:
 - name: dask-core
   version: 2025.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     click: '>=8.1'
@@ -368,7 +368,7 @@ package:
 - name: dask-image
   version: 2025.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     dask: '>=2024.4.1'
     dask-core: '>=2024.4.1'
@@ -387,7 +387,7 @@ package:
 - name: decorator
   version: 5.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/decorator-5.3.1-pyhd8ed1ab_0.conda
@@ -399,7 +399,7 @@ package:
 - name: defusedxml
   version: 0.7.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.6'
   url: https://conda.anaconda.org/conda-forge/noarch/defusedxml-0.7.1-pyhd8ed1ab_0.tar.bz2
@@ -411,7 +411,7 @@ package:
 - name: distributed
   version: 2025.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     click: '>=8.0'
@@ -439,7 +439,7 @@ package:
 - name: exceptiongroup
   version: 1.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
     typing_extensions: '>=4.6.0'
@@ -452,7 +452,7 @@ package:
 - name: executing
   version: 2.2.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/executing-2.2.1-pyhd8ed1ab_0.conda
@@ -464,7 +464,7 @@ package:
 - name: filelock
   version: 3.20.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/filelock-3.20.0-pyhd8ed1ab_0.conda
@@ -476,7 +476,7 @@ package:
 - name: font-ttf-dejavu-sans-mono
   version: '2.37'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
   hash:
@@ -487,7 +487,7 @@ package:
 - name: font-ttf-inconsolata
   version: '3.000'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2
   hash:
@@ -498,7 +498,7 @@ package:
 - name: font-ttf-source-code-pro
   version: '2.038'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2
   hash:
@@ -509,7 +509,7 @@ package:
 - name: font-ttf-ubuntu
   version: '0.83'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda
   hash:
@@ -520,7 +520,7 @@ package:
 - name: fonts-conda-ecosystem
   version: '1'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     fonts-conda-forge: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2
@@ -532,7 +532,7 @@ package:
 - name: fonts-conda-forge
   version: '1'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     font-ttf-ubuntu: '*'
     font-ttf-inconsolata: '*'
@@ -547,7 +547,7 @@ package:
 - name: fqdn
   version: 1.5.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cached-property: '>=1.3.0'
     python: '>=3.9,<4'
@@ -560,7 +560,7 @@ package:
 - name: fsspec
   version: 2025.12.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/fsspec-2025.12.0-pyhd8ed1ab_0.conda
@@ -572,7 +572,7 @@ package:
 - name: h11
   version: 0.16.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     typing_extensions: '*'
@@ -585,7 +585,7 @@ package:
 - name: h2
   version: 4.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     hyperframe: '>=6.1,<7'
@@ -599,7 +599,7 @@ package:
 - name: hpack
   version: 4.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/hpack-4.1.0-pyhd8ed1ab_0.conda
@@ -611,7 +611,7 @@ package:
 - name: httpcore
   version: 1.0.9
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     h11: '>=0.16'
@@ -628,7 +628,7 @@ package:
 - name: httpx
   version: 0.28.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     anyio: '*'
     certifi: '*'
@@ -644,7 +644,7 @@ package:
 - name: hyperframe
   version: 6.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda
@@ -656,7 +656,7 @@ package:
 - name: idna
   version: '3.11'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/idna-3.11-pyhd8ed1ab_0.conda
@@ -668,7 +668,7 @@ package:
 - name: imageio
   version: 2.37.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     numpy: '*'
     pillow: '>=8.3.2'
@@ -682,7 +682,7 @@ package:
 - name: importlib-metadata
   version: 8.7.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     zipp: '>=3.20'
@@ -695,7 +695,7 @@ package:
 - name: ipykernel
   version: 7.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     comm: '>=0.1.1'
@@ -720,7 +720,7 @@ package:
 - name: ipython
   version: 8.37.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     colorama: '*'
@@ -744,7 +744,7 @@ package:
 - name: ipywidgets
   version: 8.1.8
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     comm: '>=0.1.3'
     ipython: '>=6.1.0'
@@ -761,7 +761,7 @@ package:
 - name: isoduration
   version: 20.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     arrow: '>=0.15.0'
     python: '>=3.9'
@@ -774,7 +774,7 @@ package:
 - name: jedi
   version: 0.19.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     parso: '>=0.8.3,<0.9.0'
     python: '>=3.9'
@@ -787,7 +787,7 @@ package:
 - name: jinja2
   version: 3.1.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     markupsafe: '>=2.0'
     python: '*'
@@ -800,7 +800,7 @@ package:
 - name: joblib
   version: 1.5.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
     setuptools: '*'
@@ -813,7 +813,7 @@ package:
 - name: json5
   version: 0.14.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/json5-0.14.0-pyhd8ed1ab_0.conda
@@ -825,7 +825,7 @@ package:
 - name: jsonpointer
   version: 3.1.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/jsonpointer-3.1.1-pyhcf101f3_0.conda
@@ -837,7 +837,7 @@ package:
 - name: jsonschema
   version: 4.26.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     attrs: '>=22.2.0'
     jsonschema-specifications: '>=2023.3.6'
@@ -853,7 +853,7 @@ package:
 - name: jsonschema-specifications
   version: 2025.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     referencing: '>=0.31.0'
@@ -866,7 +866,7 @@ package:
 - name: jsonschema-with-format-nongpl
   version: 4.26.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     jsonschema: '>=4.26.0,<4.26.1.0a0'
     fqdn: '*'
@@ -887,7 +887,7 @@ package:
 - name: jupyter-lsp
   version: 2.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     importlib-metadata: '>=4.8.3'
     jupyter_server: '>=1.1.2'
@@ -901,7 +901,7 @@ package:
 - name: jupyter_client
   version: 8.8.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     jupyter_core: '>=5.1'
     python: '*'
@@ -918,7 +918,7 @@ package:
 - name: jupyter_core
   version: 5.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     pywin32: '*'
@@ -934,7 +934,7 @@ package:
 - name: jupyter_events
   version: 0.12.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     jsonschema-with-format-nongpl: '>=4.18.0'
     packaging: '*'
@@ -954,7 +954,7 @@ package:
 - name: jupyter_server
   version: 2.18.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     anyio: '>=3.1.0'
     argon2-cffi: '>=21.1'
@@ -984,7 +984,7 @@ package:
 - name: jupyter_server_terminals
   version: 0.5.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     terminado: '>=0.8.3'
@@ -997,7 +997,7 @@ package:
 - name: jupyterlab
   version: 4.5.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     async-lru: '>=1.0.0'
     httpx: '>=0.25.0,<1'
@@ -1023,7 +1023,7 @@ package:
 - name: jupyterlab_pygments
   version: 0.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     pygments: '>=2.4.1,<3'
     python: '>=3.9'
@@ -1036,7 +1036,7 @@ package:
 - name: jupyterlab_server
   version: 2.28.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     babel: '>=2.10'
     jinja2: '>=3.0.3'
@@ -1055,7 +1055,7 @@ package:
 - name: jupyterlab_widgets
   version: 3.0.16
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_widgets-3.0.16-pyhcf101f3_1.conda
@@ -1067,7 +1067,7 @@ package:
 - name: lark
   version: 1.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/lark-1.3.1-pyhd8ed1ab_0.conda
@@ -1079,7 +1079,7 @@ package:
 - name: lazy-loader
   version: '0.4'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     importlib-metadata: '*'
     packaging: '*'
@@ -1093,7 +1093,7 @@ package:
 - name: locket
   version: 1.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*'
   url: https://conda.anaconda.org/conda-forge/noarch/locket-1.0.0-pyhd8ed1ab_0.tar.bz2
@@ -1105,7 +1105,7 @@ package:
 - name: matplotlib-inline
   version: 0.2.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
     traitlets: '*'
@@ -1118,7 +1118,7 @@ package:
 - name: mistune
   version: 3.2.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     typing_extensions: '*'
@@ -1131,7 +1131,7 @@ package:
 - name: mpmath
   version: 1.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/mpmath-1.3.0-pyhd8ed1ab_1.conda
@@ -1143,7 +1143,7 @@ package:
 - name: munkres
   version: 1.1.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/munkres-1.1.4-pyhd8ed1ab_1.conda
@@ -1155,7 +1155,7 @@ package:
 - name: narwhals
   version: 2.13.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/narwhals-2.13.0-pyhcf101f3_0.conda
@@ -1167,7 +1167,7 @@ package:
 - name: natsort
   version: 8.4.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/natsort-8.4.0-pyh29332c3_1.conda
@@ -1179,7 +1179,7 @@ package:
 - name: nbclient
   version: 0.10.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     jupyter_client: '>=6.1.12'
     jupyter_core: '>=4.12,!=5.0.*'
@@ -1195,7 +1195,7 @@ package:
 - name: nbconvert-core
   version: 7.17.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     beautifulsoup4: '*'
     bleach-with-css: '!=5.0.0'
@@ -1222,7 +1222,7 @@ package:
 - name: nbformat
   version: 5.10.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     jsonschema: '>=2.6'
     jupyter_core: '>=4.12,!=5.0.*'
@@ -1238,7 +1238,7 @@ package:
 - name: nest-asyncio
   version: 1.6.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda
@@ -1250,7 +1250,7 @@ package:
 - name: networkx
   version: 3.4.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/networkx-3.4.2-pyh267e887_2.conda
@@ -1262,7 +1262,7 @@ package:
 - name: notebook-shim
   version: 0.2.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     jupyter_server: '>=1.8,<3'
     python: '>=3.9'
@@ -1275,7 +1275,7 @@ package:
 - name: overrides
   version: 7.7.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
     typing_utils: '*'
@@ -1288,7 +1288,7 @@ package:
 - name: packaging
   version: '25.0'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/packaging-25.0-pyh29332c3_1.conda
@@ -1300,7 +1300,7 @@ package:
 - name: pandocfilters
   version: 1.5.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '!=3.0,!=3.1,!=3.2,!=3.3'
   url: https://conda.anaconda.org/conda-forge/noarch/pandocfilters-1.5.0-pyhd8ed1ab_0.tar.bz2
@@ -1312,7 +1312,7 @@ package:
 - name: parso
   version: 0.8.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/parso-0.8.7-pyhcf101f3_0.conda
@@ -1324,7 +1324,7 @@ package:
 - name: partd
   version: 1.4.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     locket: '*'
     python: '>=3.9'
@@ -1338,7 +1338,7 @@ package:
 - name: pickleshare
   version: 0.7.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pickleshare-0.7.5-pyhd8ed1ab_1004.conda
@@ -1350,7 +1350,7 @@ package:
 - name: pims
   version: '0.7'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     imageio: '*'
     jinja2: '*'
@@ -1369,7 +1369,7 @@ package:
 - name: platformdirs
   version: 4.9.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.9.6-pyhcf101f3_0.conda
@@ -1381,7 +1381,7 @@ package:
 - name: prometheus_client
   version: 0.25.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/prometheus_client-0.25.0-pyhd8ed1ab_0.conda
@@ -1393,7 +1393,7 @@ package:
 - name: prompt-toolkit
   version: 3.0.52
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
     wcwidth: '*'
@@ -1406,7 +1406,7 @@ package:
 - name: pure_eval
   version: 0.2.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pure_eval-0.2.3-pyhd8ed1ab_1.conda
@@ -1418,7 +1418,7 @@ package:
 - name: pybind11
   version: 3.0.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     pybind11-global: ==3.0.1 *_0
@@ -1431,7 +1431,7 @@ package:
 - name: pybind11-abi
   version: '11'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/pybind11-abi-11-hc364b38_1.conda
   hash:
@@ -1442,7 +1442,7 @@ package:
 - name: pybind11-global
   version: 3.0.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     __win: '*'
@@ -1455,7 +1455,7 @@ package:
 - name: pyconify
   version: 0.2.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
     requests: '*'
@@ -1468,7 +1468,7 @@ package:
 - name: pycparser
   version: '2.22'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
@@ -1480,7 +1480,7 @@ package:
 - name: pygments
   version: 2.19.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.2-pyhd8ed1ab_0.conda
@@ -1492,7 +1492,7 @@ package:
 - name: pyparsing
   version: 3.2.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.2.5-pyhcf101f3_0.conda
@@ -1504,7 +1504,7 @@ package:
 - name: pyqtgraph
   version: 0.14.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     colorama: '*'
     numpy: '>=1.25'
@@ -1518,7 +1518,7 @@ package:
 - name: pysocks
   version: 1.7.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     python: '>=3.9'
@@ -1532,7 +1532,7 @@ package:
 - name: python-dateutil
   version: 2.9.0.post0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     six: '>=1.5'
@@ -1545,7 +1545,7 @@ package:
 - name: python-fastjsonschema
   version: 2.21.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/python-fastjsonschema-2.21.2-pyhe01879c_0.conda
@@ -1557,7 +1557,7 @@ package:
 - name: python-json-logger
   version: 3.2.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
     typing_extensions: '*'
@@ -1570,7 +1570,7 @@ package:
 - name: python-tzdata
   version: '2025.2'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/python-tzdata-2025.2-pyhd8ed1ab_0.conda
@@ -1582,7 +1582,7 @@ package:
 - name: python_abi
   version: '3.10'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/python_abi-3.10-8_cp310.conda
   hash:
@@ -1593,7 +1593,7 @@ package:
 - name: pytz
   version: '2025.2'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pytz-2025.2-pyhd8ed1ab_0.conda
@@ -1605,7 +1605,7 @@ package:
 - name: qtpy
   version: 2.4.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     packaging: '*'
     python: '>=3.9'
@@ -1618,7 +1618,7 @@ package:
 - name: referencing
   version: 0.37.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     attrs: '>=22.2.0'
     python: '*'
@@ -1633,7 +1633,7 @@ package:
 - name: requests
   version: 2.32.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     certifi: '>=2017.4.17'
     charset-normalizer: '>=2,<4'
@@ -1649,7 +1649,7 @@ package:
 - name: rfc3339-validator
   version: 0.1.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
     six: '*'
@@ -1662,7 +1662,7 @@ package:
 - name: rfc3986-validator
   version: 0.1.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/rfc3986-validator-0.1.1-pyh9f0ad1d_0.tar.bz2
@@ -1674,7 +1674,7 @@ package:
 - name: rfc3987-syntax
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     lark: '>=1.2.2'
@@ -1687,7 +1687,7 @@ package:
 - name: roifile
   version: 2025.5.10
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     numpy: '*'
     python: '>=3.10'
@@ -1700,7 +1700,7 @@ package:
 - name: send2trash
   version: 2.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     pywin32: '*'
@@ -1714,7 +1714,7 @@ package:
 - name: setuptools
   version: 80.9.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/setuptools-80.9.0-pyhff2d567_0.conda
@@ -1726,7 +1726,7 @@ package:
 - name: six
   version: 1.17.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/six-1.17.0-pyhe01879c_1.conda
@@ -1738,7 +1738,7 @@ package:
 - name: slicerator
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/slicerator-1.1.0-pyhd8ed1ab_1.conda
@@ -1750,7 +1750,7 @@ package:
 - name: sniffio
   version: 1.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/sniffio-1.3.1-pyhd8ed1ab_2.conda
@@ -1762,7 +1762,7 @@ package:
 - name: sortedcontainers
   version: 2.4.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/sortedcontainers-2.4.0-pyhd8ed1ab_1.conda
@@ -1774,7 +1774,7 @@ package:
 - name: soupsieve
   version: 2.8.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/soupsieve-2.8.4-pyhd8ed1ab_0.conda
@@ -1786,7 +1786,7 @@ package:
 - name: stack_data
   version: 0.6.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     asttokens: '*'
     executing: '*'
@@ -1801,7 +1801,7 @@ package:
 - name: superqt
   version: 0.7.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     pyconify: '>=0.1.4'
     pygments: '>=2.4.0'
@@ -1817,7 +1817,7 @@ package:
 - name: sympy
   version: 1.14.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     mpmath: '>=0.19'
     python: '>=3.9'
@@ -1830,7 +1830,7 @@ package:
 - name: tblib
   version: 3.2.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/tblib-3.2.2-pyhcf101f3_0.conda
@@ -1842,7 +1842,7 @@ package:
 - name: terminado
   version: 0.18.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     pywinpty: '>=1.1.0'
@@ -1857,7 +1857,7 @@ package:
 - name: threadpoolctl
   version: 3.6.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/threadpoolctl-3.6.0-pyhecae5ae_0.conda
@@ -1869,7 +1869,7 @@ package:
 - name: tifffile
   version: 2025.5.10
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     imagecodecs: '>=2024.12.30'
     numpy: '>=1.19.2'
@@ -1883,7 +1883,7 @@ package:
 - name: tinycss2
   version: 1.4.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.5'
     webencodings: '>=0.4'
@@ -1896,7 +1896,7 @@ package:
 - name: tomli
   version: 2.4.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/tomli-2.4.1-pyhcf101f3_0.conda
@@ -1908,7 +1908,7 @@ package:
 - name: toolz
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/toolz-1.1.0-pyhd8ed1ab_1.conda
@@ -1920,7 +1920,7 @@ package:
 - name: tqdm
   version: 4.67.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     colorama: '*'
     python: '>=3.9'
@@ -1933,7 +1933,7 @@ package:
 - name: traitlets
   version: 5.15.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/traitlets-5.15.0-pyhcf101f3_0.conda
@@ -1945,7 +1945,7 @@ package:
 - name: typing-extensions
   version: 4.15.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     typing_extensions: ==4.15.0 pyhcf101f3_0
   url: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.15.0-h396c80c_0.conda
@@ -1957,7 +1957,7 @@ package:
 - name: typing_extensions
   version: 4.15.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.15.0-pyhcf101f3_0.conda
@@ -1969,7 +1969,7 @@ package:
 - name: typing_utils
   version: 0.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/typing_utils-0.1.0-pyhd8ed1ab_1.conda
@@ -1981,7 +1981,7 @@ package:
 - name: tzdata
   version: 2025b
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
   hash:
@@ -1992,7 +1992,7 @@ package:
 - name: uri-template
   version: 1.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/uri-template-1.3.0-pyhd8ed1ab_1.conda
@@ -2004,7 +2004,7 @@ package:
 - name: urllib3
   version: 2.5.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     brotli-python: '>=1.0.9'
     h2: '>=4,<5'
@@ -2020,7 +2020,7 @@ package:
 - name: vswhere
   version: 3.1.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/vswhere-3.1.7-h40126e0_1.conda
@@ -2032,7 +2032,7 @@ package:
 - name: wcwidth
   version: 0.7.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/wcwidth-0.7.0-pyhd8ed1ab_0.conda
@@ -2044,7 +2044,7 @@ package:
 - name: webcolors
   version: 25.10.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/webcolors-25.10.0-pyhd8ed1ab_0.conda
@@ -2056,7 +2056,7 @@ package:
 - name: webencodings
   version: 0.5.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/webencodings-0.5.1-pyhd8ed1ab_3.conda
@@ -2068,7 +2068,7 @@ package:
 - name: websocket-client
   version: 1.9.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/websocket-client-1.9.0-pyhd8ed1ab_0.conda
@@ -2080,7 +2080,7 @@ package:
 - name: widgetsnbextension
   version: 4.0.15
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/widgetsnbextension-4.0.15-pyhd8ed1ab_0.conda
@@ -2092,7 +2092,7 @@ package:
 - name: win_inet_pton
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     python: '>=3.9'
@@ -2105,7 +2105,7 @@ package:
 - name: xyzservices
   version: 2025.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.8'
   url: https://conda.anaconda.org/conda-forge/noarch/xyzservices-2025.11.0-pyhd8ed1ab_0.conda
@@ -2117,7 +2117,7 @@ package:
 - name: zict
   version: 3.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/zict-3.0.0-pyhd8ed1ab_1.conda
@@ -2129,7 +2129,7 @@ package:
 - name: zipp
   version: 3.23.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/zipp-3.23.0-pyhcf101f3_1.conda
@@ -2141,7 +2141,7 @@ package:
 - name: _libavif_api
   version: 1.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/win-64/_libavif_api-1.3.0-h57928b3_2.conda
   hash:
@@ -2152,7 +2152,7 @@ package:
 - name: _openmp_mutex
   version: '4.5'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libgomp: '>=7.5.0'
     libwinpthread: '>=12.0.0.r2.ggc561118da'
@@ -2165,7 +2165,7 @@ package:
 - name: aom
   version: 3.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2179,7 +2179,7 @@ package:
 - name: argon2-cffi-bindings
   version: 25.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cffi: '>=1.0.1'
     python: '>=3.10,<3.11.0a0'
@@ -2196,7 +2196,7 @@ package:
 - name: aws-c-auth
   version: 0.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2215,7 +2215,7 @@ package:
 - name: aws-c-cal
   version: 0.9.8
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     aws-c-common: '>=0.12.5,<0.12.6.0a0'
     ucrt: '>=10.0.20348.0'
@@ -2230,7 +2230,7 @@ package:
 - name: aws-c-common
   version: 0.12.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -2244,7 +2244,7 @@ package:
 - name: aws-c-compression
   version: 0.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2259,7 +2259,7 @@ package:
 - name: aws-c-event-stream
   version: 0.5.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2276,7 +2276,7 @@ package:
 - name: aws-c-http
   version: 0.10.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2294,7 +2294,7 @@ package:
 - name: aws-c-io
   version: 0.23.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2310,7 +2310,7 @@ package:
 - name: aws-c-mqtt
   version: 0.13.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2327,7 +2327,7 @@ package:
 - name: aws-c-s3
   version: 0.8.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2347,7 +2347,7 @@ package:
 - name: aws-c-sdkutils
   version: 0.2.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2362,7 +2362,7 @@ package:
 - name: aws-checksums
   version: 0.2.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2377,7 +2377,7 @@ package:
 - name: aws-crt-cpp
   version: 0.35.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2400,7 +2400,7 @@ package:
 - name: aws-sdk-cpp
   version: 1.11.606
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -2418,7 +2418,7 @@ package:
 - name: blosc
   version: 1.21.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libzlib: '>=1.3.1,<2.0a0'
     lz4-c: '>=1.10.0,<1.11.0a0'
@@ -2436,7 +2436,7 @@ package:
 - name: brotli
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     brotli-bin 1.1.0 hfd05255_4: '*'
     libbrotlidec 1.1.0 hfd05255_4: '*'
@@ -2453,7 +2453,7 @@ package:
 - name: brotli-bin
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libbrotlidec 1.1.0 hfd05255_4: '*'
     libbrotlienc 1.1.0 hfd05255_4: '*'
@@ -2469,7 +2469,7 @@ package:
 - name: brotli-python
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -2485,7 +2485,7 @@ package:
 - name: bzip2
   version: 1.0.8
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -2499,7 +2499,7 @@ package:
 - name: c-ares
   version: 1.34.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -2513,7 +2513,7 @@ package:
 - name: c-blosc2
   version: 2.19.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     lz4-c: '>=1.10.0,<1.11.0a0'
     ucrt: '>=10.0.20348.0'
@@ -2530,7 +2530,7 @@ package:
 - name: cairo
   version: 1.18.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     fontconfig: '>=2.15.0,<3.0a0'
     fonts-conda-ecosystem: '*'
@@ -2553,7 +2553,7 @@ package:
 - name: cffi
   version: 2.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     pycparser: '*'
     python: '>=3.10,<3.11.0a0'
@@ -2570,7 +2570,7 @@ package:
 - name: charls
   version: 2.4.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2584,7 +2584,7 @@ package:
 - name: contourpy
   version: 1.3.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     numpy: '>=1.23'
     python: '>=3.10,<3.11.0a0'
@@ -2601,7 +2601,7 @@ package:
 - name: cytoolz
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -2618,7 +2618,7 @@ package:
 - name: dav1d
   version: 1.2.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2632,7 +2632,7 @@ package:
 - name: debugpy
   version: 1.8.20
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -2648,7 +2648,7 @@ package:
 - name: double-conversion
   version: 3.3.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2662,7 +2662,7 @@ package:
 - name: expat
   version: 2.7.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libexpat 2.7.3 hac47afa_0: '*'
     ucrt: '>=10.0.20348.0'
@@ -2677,7 +2677,7 @@ package:
 - name: fastremap
   version: 1.17.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     numpy: '>=1.21,<3'
     python: '>=3.10,<3.11.0a0'
@@ -2694,7 +2694,7 @@ package:
 - name: ffmpeg
   version: 8.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     aom: '>=3.9.1,<3.10.0a0'
     bzip2: '>=1.0.8,<2.0a0'
@@ -2734,7 +2734,7 @@ package:
 - name: fill-voids
   version: 2.1.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     fastremap: '*'
     numpy: '>=1.21,<3'
@@ -2752,7 +2752,7 @@ package:
 - name: fmt
   version: 12.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -2766,7 +2766,7 @@ package:
 - name: fontconfig
   version: 2.15.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     freetype: '>=2.12.1,<3.0a0'
     libexpat: '>=2.6.3,<3.0a0'
@@ -2784,7 +2784,7 @@ package:
 - name: fonttools
   version: 4.61.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     brotli: '*'
     munkres: '*'
@@ -2803,7 +2803,7 @@ package:
 - name: freeglut
   version: 3.2.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2817,7 +2817,7 @@ package:
 - name: freetype
   version: 2.14.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libfreetype 2.14.3 h57928b3_0: '*'
     libfreetype6 2.14.3 hdbac1cb_0: '*'
@@ -2830,7 +2830,7 @@ package:
 - name: fribidi
   version: 1.0.16
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -2844,7 +2844,7 @@ package:
 - name: gdk-pixbuf
   version: 2.44.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libglib: '>=2.86.0,<3.0a0'
     libintl: '>=0.22.5,<1.0a0'
@@ -2864,7 +2864,7 @@ package:
 - name: giflib
   version: 5.2.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2878,7 +2878,7 @@ package:
 - name: glslang
   version: 16.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     spirv-tools: '>=2025,<2026.0a0'
     ucrt: '>=10.0.20348.0'
@@ -2893,7 +2893,7 @@ package:
 - name: graphite2
   version: 1.3.14
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -2907,7 +2907,7 @@ package:
 - name: harfbuzz
   version: 12.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cairo: '>=1.18.4,<2.0a0'
     graphite2: '>=1.3.14,<2.0a0'
@@ -2929,7 +2929,7 @@ package:
 - name: hdf5
   version: 1.14.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libaec: '>=1.1.4,<2.0a0'
     libcurl: '>=8.17.0,<9.0a0'
@@ -2947,7 +2947,7 @@ package:
 - name: icu
   version: '75.1'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -2961,7 +2961,7 @@ package:
 - name: imagecodecs
   version: 2025.3.30
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     blosc: '>=1.21.6,<2.0a0'
     bzip2: '>=1.0.8,<2.0a0'
@@ -3006,7 +3006,7 @@ package:
 - name: imath
   version: 3.2.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libzlib: '>=1.3.1,<2.0a0'
     ucrt: '>=10.0.20348.0'
@@ -3021,7 +3021,7 @@ package:
 - name: jasper
   version: 4.2.8
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     freeglut: '>=3.2.2,<4.0a0'
     libjpeg-turbo: '>=3.1.0,<4.0a0'
@@ -3037,7 +3037,7 @@ package:
 - name: jxrlib
   version: '1.1'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -3051,7 +3051,7 @@ package:
 - name: khronos-opencl-icd-loader
   version: 2024.10.24
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     opencl-headers: '>=2024.10.24'
     ucrt: '>=10.0.20348.0'
@@ -3066,7 +3066,7 @@ package:
 - name: kiwisolver
   version: 1.4.9
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -3082,7 +3082,7 @@ package:
 - name: krb5
   version: 1.21.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     openssl: '>=3.3.1,<4.0a0'
     ucrt: '>=10.0.20348.0'
@@ -3097,7 +3097,7 @@ package:
 - name: lame
   version: '3.100'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -3111,7 +3111,7 @@ package:
 - name: lcms2
   version: '2.17'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libjpeg-turbo: '>=3.0.0,<4.0a0'
     libtiff: '>=4.7.0,<4.8.0a0'
@@ -3127,7 +3127,7 @@ package:
 - name: lerc
   version: 4.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -3141,7 +3141,7 @@ package:
 - name: libabseil
   version: '20250512.1'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3155,7 +3155,7 @@ package:
 - name: libaec
   version: 1.1.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -3169,7 +3169,7 @@ package:
 - name: libarrow
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     aws-crt-cpp: '>=0.35.0,<0.35.1.0a0'
     aws-sdk-cpp: '>=1.11.606,<1.11.607.0a0'
@@ -3200,7 +3200,7 @@ package:
 - name: libarrow-acero
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libarrow 22.0.0 hd61581b_1_cpu: '*'
     libarrow-compute 22.0.0 h2db994a_1_cpu: '*'
@@ -3216,7 +3216,7 @@ package:
 - name: libarrow-compute
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libarrow 22.0.0 hd61581b_1_cpu: '*'
     libre2-11: '>=2025.8.12'
@@ -3234,7 +3234,7 @@ package:
 - name: libarrow-dataset
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libarrow 22.0.0 hd61581b_1_cpu: '*'
     libarrow-acero 22.0.0 h7d8d6a5_1_cpu: '*'
@@ -3252,7 +3252,7 @@ package:
 - name: libarrow-substrait
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -3272,7 +3272,7 @@ package:
 - name: libasprintf
   version: 0.22.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/win-64/libasprintf-0.22.5-h5728263_3.conda
   hash:
@@ -3283,7 +3283,7 @@ package:
 - name: libavif16
   version: 1.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     _libavif_api: '>=1.3.0,<1.3.1.0a0'
     aom: '>=3.9.1,<3.10.0a0'
@@ -3302,7 +3302,7 @@ package:
 - name: libblas
   version: 3.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     mkl: '>=2025.3.0,<2026.0a0'
   url: https://conda.anaconda.org/conda-forge/win-64/libblas-3.11.0-4_hf2e6a31_mkl.conda
@@ -3314,7 +3314,7 @@ package:
 - name: libbrotlicommon
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3328,7 +3328,7 @@ package:
 - name: libbrotlidec
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libbrotlicommon 1.1.0 hfd05255_4: '*'
     ucrt: '>=10.0.20348.0'
@@ -3343,7 +3343,7 @@ package:
 - name: libbrotlienc
   version: 1.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libbrotlicommon 1.1.0 hfd05255_4: '*'
     ucrt: '>=10.0.20348.0'
@@ -3358,7 +3358,7 @@ package:
 - name: libcblas
   version: 3.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libblas 3.11.0 4_hf2e6a31_mkl: '*'
   url: https://conda.anaconda.org/conda-forge/win-64/libcblas-3.11.0-4_h2a3cdd5_mkl.conda
@@ -3370,7 +3370,7 @@ package:
 - name: libclang13
   version: 21.1.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libzlib: '>=1.3.1,<2.0a0'
     ucrt: '>=10.0.20348.0'
@@ -3386,7 +3386,7 @@ package:
 - name: libcrc32c
   version: 1.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.1,<15.0a0'
     vs2015_runtime: '>=14.16.27012'
@@ -3399,7 +3399,7 @@ package:
 - name: libcurl
   version: 8.17.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     krb5: '>=1.21.3,<1.22.0a0'
     libssh2: '>=1.11.1,<2.0a0'
@@ -3416,7 +3416,7 @@ package:
 - name: libdeflate
   version: '1.24'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -3430,7 +3430,7 @@ package:
 - name: libevent
   version: 2.1.12
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     openssl: '>=3.1.1,<4.0a0'
     ucrt: '>=10.0.20348.0'
@@ -3445,7 +3445,7 @@ package:
 - name: libexpat
   version: 2.7.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3459,7 +3459,7 @@ package:
 - name: libffi
   version: 3.5.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3473,7 +3473,7 @@ package:
 - name: libfreetype
   version: 2.14.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libfreetype6: '>=2.14.3'
   url: https://conda.anaconda.org/conda-forge/win-64/libfreetype-2.14.3-h57928b3_0.conda
@@ -3485,7 +3485,7 @@ package:
 - name: libfreetype6
   version: 2.14.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libpng: '>=1.6.55,<1.7.0a0'
     libzlib: '>=1.3.2,<2.0a0'
@@ -3501,7 +3501,7 @@ package:
 - name: libgcc
   version: 15.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     _openmp_mutex: '>=4.5'
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
@@ -3514,7 +3514,7 @@ package:
 - name: libgettextpo
   version: 0.22.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libiconv: '>=1.17,<2.0a0'
     libintl 0.22.5 h5728263_3: '*'
@@ -3527,7 +3527,7 @@ package:
 - name: libglib
   version: 2.86.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libffi: '>=3.5.2,<3.6.0a0'
     libiconv: '>=1.18,<2.0a0'
@@ -3546,7 +3546,7 @@ package:
 - name: libgomp
   version: 15.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
   url: https://conda.anaconda.org/conda-forge/win-64/libgomp-15.2.0-h8ee18e1_16.conda
@@ -3558,7 +3558,7 @@ package:
 - name: libgoogle-cloud
   version: 2.39.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -3577,7 +3577,7 @@ package:
 - name: libgoogle-cloud-storage
   version: 2.39.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil: '*'
     libcrc32c: '>=1.1.2,<1.2.0a0'
@@ -3596,7 +3596,7 @@ package:
 - name: libgrpc
   version: 1.73.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     c-ares: '>=1.34.5,<2.0a0'
     libabseil * cxx17*: '*'
@@ -3618,7 +3618,7 @@ package:
 - name: libhwloc
   version: 2.12.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
     libxml2: '*'
@@ -3635,7 +3635,7 @@ package:
 - name: libhwy
   version: 1.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3649,7 +3649,7 @@ package:
 - name: libiconv
   version: '1.18'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3663,7 +3663,7 @@ package:
 - name: libintl
   version: 0.22.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libiconv: '>=1.17,<2.0a0'
   url: https://conda.anaconda.org/conda-forge/win-64/libintl-0.22.5-h5728263_3.conda
@@ -3675,7 +3675,7 @@ package:
 - name: libjpeg-turbo
   version: 3.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -3689,7 +3689,7 @@ package:
 - name: libjxl
   version: 0.11.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libbrotlidec: '>=1.1.0,<1.2.0a0'
     libbrotlienc: '>=1.1.0,<1.2.0a0'
@@ -3706,7 +3706,7 @@ package:
 - name: liblapack
   version: 3.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libblas 3.11.0 4_hf2e6a31_mkl: '*'
   url: https://conda.anaconda.org/conda-forge/win-64/liblapack-3.11.0-4_hf9ab0e9_mkl.conda
@@ -3718,7 +3718,7 @@ package:
 - name: liblapacke
   version: 3.11.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libblas 3.11.0 4_hf2e6a31_mkl: '*'
     libcblas 3.11.0 4_h2a3cdd5_mkl: '*'
@@ -3732,7 +3732,7 @@ package:
 - name: liblzma
   version: 5.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -3746,7 +3746,7 @@ package:
 - name: libmagma
   version: 2.9.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart: '>=12.6.77,<13.0a0'
     cuda-version: '>=12.6,<13'
@@ -3766,7 +3766,7 @@ package:
 - name: libogg
   version: 1.3.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.2,<15'
     vc14_runtime: '>=14.29.30139'
@@ -3780,7 +3780,7 @@ package:
 - name: libopencv
   version: 4.12.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ffmpeg: '>=8.0.0,<9.0a0'
     harfbuzz: '>=12.1.0'
@@ -3832,7 +3832,7 @@ package:
 - name: libopenvino
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     pugixml: '>=1.15,<1.16.0a0'
     tbb: '>=2021.13.0'
@@ -3848,7 +3848,7 @@ package:
 - name: libopenvino-auto-batch-plugin
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     tbb: '>=2021.13.0'
@@ -3864,7 +3864,7 @@ package:
 - name: libopenvino-auto-plugin
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     tbb: '>=2021.13.0'
@@ -3880,7 +3880,7 @@ package:
 - name: libopenvino-hetero-plugin
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     pugixml: '>=1.15,<1.16.0a0'
@@ -3896,7 +3896,7 @@ package:
 - name: libopenvino-intel-cpu-plugin
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     pugixml: '>=1.15,<1.16.0a0'
@@ -3913,7 +3913,7 @@ package:
 - name: libopenvino-intel-gpu-plugin
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     khronos-opencl-icd-loader: '>=2024.10.24'
     libopenvino 2025.2.0 hbf28c98_1: '*'
@@ -3931,7 +3931,7 @@ package:
 - name: libopenvino-ir-frontend
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     pugixml: '>=1.15,<1.16.0a0'
@@ -3947,7 +3947,7 @@ package:
 - name: libopenvino-onnx-frontend
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -3965,7 +3965,7 @@ package:
 - name: libopenvino-paddle-frontend
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -3983,7 +3983,7 @@ package:
 - name: libopenvino-pytorch-frontend
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     ucrt: '>=10.0.20348.0'
@@ -3998,7 +3998,7 @@ package:
 - name: libopenvino-tensorflow-frontend
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -4017,7 +4017,7 @@ package:
 - name: libopenvino-tensorflow-lite-frontend
   version: 2025.2.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopenvino 2025.2.0 hbf28c98_1: '*'
     ucrt: '>=10.0.20348.0'
@@ -4032,7 +4032,7 @@ package:
 - name: libopus
   version: 1.5.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.2,<15'
     vc14_runtime: '>=14.29.30139'
@@ -4046,7 +4046,7 @@ package:
 - name: libparquet
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libarrow 22.0.0 hd61581b_1_cpu: '*'
     libthrift: '>=0.22.0,<0.22.1.0a0'
@@ -4063,7 +4063,7 @@ package:
 - name: libpng
   version: 1.6.58
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -4078,7 +4078,7 @@ package:
 - name: libprotobuf
   version: 6.31.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -4095,7 +4095,7 @@ package:
 - name: libre2-11
   version: 2025.11.05
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libabseil * cxx17*: '*'
     libabseil: '>=20250512.1,<20250513.0a0'
@@ -4111,7 +4111,7 @@ package:
 - name: librsvg
   version: 2.60.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cairo: '>=1.18.4,<2.0a0'
     gdk-pixbuf: '>=2.44.3,<3.0a0'
@@ -4130,7 +4130,7 @@ package:
 - name: libsodium
   version: 1.0.20
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -4144,7 +4144,7 @@ package:
 - name: libsqlite
   version: 3.51.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -4158,7 +4158,7 @@ package:
 - name: libssh2
   version: 1.11.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libzlib: '>=1.3.1,<2.0a0'
     openssl: '>=3.5.0,<4.0a0'
@@ -4174,7 +4174,7 @@ package:
 - name: libthrift
   version: 0.22.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libevent: '>=2.1.12,<2.1.13.0a0'
     libzlib: '>=1.3.1,<2.0a0'
@@ -4191,7 +4191,7 @@ package:
 - name: libtiff
   version: 4.7.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     lerc: '>=4.0.0,<5.0a0'
     libdeflate: '>=1.24,<1.25.0a0'
@@ -4211,7 +4211,7 @@ package:
 - name: libtorch
   version: 2.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart: '>=12.8.90,<13.0a0'
     cuda-cupti: '>=12.8.90,<13.0a0'
@@ -4249,7 +4249,7 @@ package:
 - name: libusb
   version: 1.0.29
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.2,<15'
     vc14_runtime: '>=14.29.30139'
@@ -4263,7 +4263,7 @@ package:
 - name: libutf8proc
   version: 2.11.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -4277,7 +4277,7 @@ package:
 - name: libuv
   version: 1.51.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -4291,7 +4291,7 @@ package:
 - name: libvorbis
   version: 1.3.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libogg: '>=1.3.5,<1.4.0a0'
     vc: '>=14.3,<15'
@@ -4306,7 +4306,7 @@ package:
 - name: libvulkan-loader
   version: 1.4.328.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -4320,7 +4320,7 @@ package:
 - name: libwebp-base
   version: 1.6.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -4334,7 +4334,7 @@ package:
 - name: libwinpthread
   version: 12.0.0.r4.gg4f2fc60ca
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '*'
   url: https://conda.anaconda.org/conda-forge/win-64/libwinpthread-12.0.0.r4.gg4f2fc60ca-h57928b3_10.conda
@@ -4346,7 +4346,7 @@ package:
 - name: libxcb
   version: 1.17.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libgcc: '>=13'
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
@@ -4363,7 +4363,7 @@ package:
 - name: libxml2-16
   version: 2.15.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     icu: '>=75.1,<76.0a0'
     libiconv: '>=1.18,<2.0a0'
@@ -4381,7 +4381,7 @@ package:
 - name: libxml2
   version: 2.15.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     icu: '>=75.1,<76.0a0'
     libiconv: '>=1.18,<2.0a0'
@@ -4400,7 +4400,7 @@ package:
 - name: libxslt
   version: 1.1.43
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libxml2: '*'
     libxml2-16: '>=2.14.6'
@@ -4416,7 +4416,7 @@ package:
 - name: libzlib
   version: 1.3.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -4430,7 +4430,7 @@ package:
 - name: libzopfli
   version: 1.0.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.1,<15.0a0'
     vs2015_runtime: '>=14.16.27012'
@@ -4443,7 +4443,7 @@ package:
 - name: llvm-openmp
   version: 21.1.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -4457,7 +4457,7 @@ package:
 - name: llvmlite
   version: 0.45.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libzlib: '>=1.3.1,<2.0a0'
     python: '>=3.10,<3.11.0a0'
@@ -4475,7 +4475,7 @@ package:
 - name: lz4
   version: 4.4.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     lz4-c: '>=1.10.0,<1.11.0a0'
@@ -4492,7 +4492,7 @@ package:
 - name: lz4-c
   version: 1.10.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -4506,7 +4506,7 @@ package:
 - name: markupsafe
   version: 3.0.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -4522,7 +4522,7 @@ package:
 - name: matplotlib
   version: 3.10.9
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     matplotlib-base: '>=3.10.9,<3.10.10.0a0'
     pyside6: '>=6.7.2'
@@ -4538,7 +4538,7 @@ package:
 - name: matplotlib-base
   version: 3.10.9
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     contourpy: '>=1.0.1'
     cycler: '>=0.10'
@@ -4567,7 +4567,7 @@ package:
 - name: mkl
   version: 2025.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     llvm-openmp: '>=21.1.4'
     tbb: '>=2022.2.0'
@@ -4583,7 +4583,7 @@ package:
 - name: msgpack-python
   version: 1.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -4599,7 +4599,7 @@ package:
 - name: numba
   version: 0.62.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     llvmlite: '>=0.45.1,<0.46.0a0'
     numpy: '>=1.24,<2.4'
@@ -4617,7 +4617,7 @@ package:
 - name: numpy
   version: 2.2.6
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libblas: '>=3.9.0,<4.0a0'
     libcblas: '>=3.9.0,<4.0a0'
@@ -4636,7 +4636,7 @@ package:
 - name: opencl-headers
   version: 2025.06.13
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -4650,7 +4650,7 @@ package:
 - name: opencv
   version: 4.12.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopencv 4.12.0 qt6_py310h3c58159_607: '*'
     libprotobuf: '>=6.31.1,<6.31.2.0a0'
@@ -4665,7 +4665,7 @@ package:
 - name: openexr
   version: 3.4.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -4683,7 +4683,7 @@ package:
 - name: openh264
   version: 2.6.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -4697,7 +4697,7 @@ package:
 - name: openjpeg
   version: 2.5.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libpng: '>=1.6.50,<1.7.0a0'
     libtiff: '>=4.7.1,<4.8.0a0'
@@ -4714,7 +4714,7 @@ package:
 - name: openjph
   version: 0.25.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -4729,7 +4729,7 @@ package:
 - name: openssl
   version: 3.6.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ca-certificates: '*'
     ucrt: '>=10.0.20348.0'
@@ -4744,7 +4744,7 @@ package:
 - name: optree
   version: 0.18.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -4761,7 +4761,7 @@ package:
 - name: orc
   version: 2.2.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libprotobuf: '>=6.31.1,<6.31.2.0a0'
     libzlib: '>=1.3.1,<2.0a0'
@@ -4781,7 +4781,7 @@ package:
 - name: pandas
   version: 2.3.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     numpy: '>=1.22.4'
     python: '>=3.10,<3.11.0a0'
@@ -4801,7 +4801,7 @@ package:
 - name: pango
   version: 1.56.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cairo: '>=1.18.4,<2.0a0'
     fontconfig: '>=2.15.0,<3.0a0'
@@ -4826,7 +4826,7 @@ package:
 - name: pcre2
   version: '10.46'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     bzip2: '>=1.0.8,<2.0a0'
     libzlib: '>=1.3.1,<2.0a0'
@@ -4842,7 +4842,7 @@ package:
 - name: pillow
   version: 12.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -4868,7 +4868,7 @@ package:
 - name: pixman
   version: 0.46.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -4882,7 +4882,7 @@ package:
 - name: psutil
   version: 7.1.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -4898,7 +4898,7 @@ package:
 - name: pthread-stubs
   version: '0.4'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libgcc: '>=13'
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
@@ -4912,7 +4912,7 @@ package:
 - name: pugixml
   version: '1.15'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -4926,7 +4926,7 @@ package:
 - name: py-opencv
   version: 4.12.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libopencv 4.12.0 qt6_py310h3c58159_607: '*'
     libprotobuf: '>=6.31.1,<6.31.2.0a0'
@@ -4942,7 +4942,7 @@ package:
 - name: pyarrow
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libarrow-acero 22.0.0.*: '*'
     libarrow-dataset 22.0.0.*: '*'
@@ -4960,7 +4960,7 @@ package:
 - name: pyarrow-core
   version: 22.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libarrow 22.0.0.* *cpu: '*'
     libarrow-compute 22.0.0.* *cpu: '*'
@@ -4979,7 +4979,7 @@ package:
 - name: pyside6
   version: 6.9.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libclang13: '>=21.1.2'
     libvulkan-loader: '>=1.4.313.0,<2.0a0'
@@ -5002,7 +5002,7 @@ package:
 - name: python
   version: 3.10.19
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     bzip2: '>=1.0.8,<2.0a0'
     libexpat: '>=2.7.1,<3.0a0'
@@ -5025,7 +5025,7 @@ package:
 - name: pytorch
   version: 2.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __cuda: '*'
     cuda-cudart: '>=12.8.90,<13.0a0'
@@ -5077,7 +5077,7 @@ package:
 - name: pytorch-gpu
   version: 2.9.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     pytorch 2.9.1 cuda*_mkl*300: '*'
   url: https://conda.anaconda.org/conda-forge/win-64/pytorch-gpu-2.9.1-cuda128_mkl_hc88b545_300.conda
@@ -5089,7 +5089,7 @@ package:
 - name: pywavelets
   version: 1.8.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     numpy: '>=1.23,<3'
     python: '>=3.10,<3.11.0a0'
@@ -5106,7 +5106,7 @@ package:
 - name: pywin32
   version: '311'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -5122,7 +5122,7 @@ package:
 - name: pywinpty
   version: 2.0.15
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -5139,7 +5139,7 @@ package:
 - name: pyyaml
   version: 6.0.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -5156,7 +5156,7 @@ package:
 - name: pyzmq
   version: 27.1.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -5173,7 +5173,7 @@ package:
 - name: qhull
   version: '2020.2'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -5187,7 +5187,7 @@ package:
 - name: qt6-main
   version: 6.9.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     double-conversion: '>=3.3.1,<3.4.0a0'
     harfbuzz: '>=12.1.0'
@@ -5217,7 +5217,7 @@ package:
 - name: rav1e
   version: 0.7.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -5231,7 +5231,7 @@ package:
 - name: re2
   version: 2025.11.05
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libre2-11 2025.11.05 h0eb2380_0: '*'
   url: https://conda.anaconda.org/conda-forge/win-64/re2-2025.11.05-ha104f34_0.conda
@@ -5243,7 +5243,7 @@ package:
 - name: rpds-py
   version: 0.30.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     vc: '>=14.3,<15'
@@ -5259,7 +5259,7 @@ package:
 - name: scikit-image
   version: 0.25.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     imageio: '>=2.33,!=2.35.0'
     lazy-loader: '>=0.4'
@@ -5284,7 +5284,7 @@ package:
 - name: scikit-learn
   version: 1.7.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     joblib: '>=1.2.0'
     numpy: '>=1.22.0'
@@ -5304,7 +5304,7 @@ package:
 - name: scipy
   version: 1.15.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libblas: '>=3.9.0,<4.0a0'
     libcblas: '>=3.9.0,<4.0a0'
@@ -5324,7 +5324,7 @@ package:
 - name: sdl2
   version: 2.32.56
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -5339,7 +5339,7 @@ package:
 - name: sdl3
   version: 3.2.28
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -5355,7 +5355,7 @@ package:
 - name: shaderc
   version: '2025.4'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     glslang: '>=16,<17.0a0'
     spirv-tools: '>=2025,<2026.0a0'
@@ -5371,7 +5371,7 @@ package:
 - name: sleef
   version: 3.9.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -5385,7 +5385,7 @@ package:
 - name: snappy
   version: 1.2.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -5399,7 +5399,7 @@ package:
 - name: spirv-tools
   version: '2025.4'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -5413,7 +5413,7 @@ package:
 - name: svt-av1
   version: 3.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -5427,7 +5427,7 @@ package:
 - name: tbb
   version: 2022.3.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libhwloc: '>=2.12.1,<2.12.2.0a0'
     ucrt: '>=10.0.20348.0'
@@ -5442,7 +5442,7 @@ package:
 - name: tk
   version: 8.6.13
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.2,<15'
@@ -5456,7 +5456,7 @@ package:
 - name: tornado
   version: 6.5.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -5472,7 +5472,7 @@ package:
 - name: ucrt
   version: 10.0.26100.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/win-64/ucrt-10.0.26100.0-h57928b3_0.conda
   hash:
@@ -5483,7 +5483,7 @@ package:
 - name: unicodedata2
   version: 17.0.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi 3.10.* *_cp310: '*'
@@ -5499,7 +5499,7 @@ package:
 - name: vc
   version: '14.3'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc14_runtime: '>=14.42.34433'
   url: https://conda.anaconda.org/conda-forge/win-64/vc-14.3-h2b53caa_33.conda
@@ -5511,7 +5511,7 @@ package:
 - name: vc14_runtime
   version: 14.44.35208
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vcomp14 14.44.35208 h818238b_33: '*'
@@ -5524,7 +5524,7 @@ package:
 - name: vcomp14
   version: 14.44.35208
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
   url: https://conda.anaconda.org/conda-forge/win-64/vcomp14-14.44.35208-h818238b_33.conda
@@ -5536,7 +5536,7 @@ package:
 - name: vs2015_runtime
   version: 14.44.35208
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc14_runtime: '>=14.44.35208'
   url: https://conda.anaconda.org/conda-forge/win-64/vs2015_runtime-14.44.35208-h38c0c73_33.conda
@@ -5548,7 +5548,7 @@ package:
 - name: vs2017_win-64
   version: 19.16.27033
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vswhere: '*'
   url: https://conda.anaconda.org/conda-forge/win-64/vs2017_win-64-19.16.27033-hddac466_20.conda
@@ -5560,7 +5560,7 @@ package:
 - name: winpty
   version: 0.4.3
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/win-64/winpty-0.4.3-4.tar.bz2
   hash:
@@ -5571,7 +5571,7 @@ package:
 - name: x264
   version: 1!164.3095
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.1,<15'
     vs2015_runtime: '>=14.16.27033'
@@ -5584,7 +5584,7 @@ package:
 - name: x265
   version: '3.5'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.1,<15'
     vs2015_runtime: '>=14.16.27033'
@@ -5597,7 +5597,7 @@ package:
 - name: xorg-libxau
   version: 1.0.12
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libgcc: '>=14'
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
@@ -5611,7 +5611,7 @@ package:
 - name: xorg-libxdmcp
   version: 1.1.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     libgcc: '>=14'
     libwinpthread: '>=12.0.0.r4.gg4f2fc60ca'
@@ -5625,7 +5625,7 @@ package:
 - name: yaml
   version: 0.2.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -5639,7 +5639,7 @@ package:
 - name: zeromq
   version: 4.3.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -5655,7 +5655,7 @@ package:
 - name: zfp
   version: 1.0.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -5669,7 +5669,7 @@ package:
 - name: zlib-ng
   version: 2.2.5
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
     vc: '>=14.3,<15'
@@ -5683,7 +5683,7 @@ package:
 - name: zstandard
   version: 0.25.0
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     python: '*'
     cffi: '>=1.11'
@@ -5701,7 +5701,7 @@ package:
 - name: zstd
   version: 1.5.7
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
@@ -5716,7 +5716,7 @@ package:
 - name: cuda
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     cuda-runtime 12.8.1.*: '*'
@@ -5730,7 +5730,7 @@ package:
 - name: cuda-compiler
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     cuda-cuobjdump 12.8.90.*: '*'
@@ -5746,7 +5746,7 @@ package:
 - name: cuda-crt-dev_win-64
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-crt-dev_win-64-12.8.93-0.conda
@@ -5758,7 +5758,7 @@ package:
 - name: cuda-cudart-dev_win-64
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cccl_win-64: '*'
     cuda-cudart-static_win-64: '*'
@@ -5773,7 +5773,7 @@ package:
 - name: cuda-cudart-static_win-64
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-cudart-static_win-64-12.8.90-0.conda
@@ -5785,7 +5785,7 @@ package:
 - name: cuda-cudart_win-64
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-cudart_win-64-12.8.90-0.conda
@@ -5797,7 +5797,7 @@ package:
 - name: cuda-nvcc-dev_win-64
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-crt-dev_win-64 12.8.93 0: '*'
     cuda-nvvm-dev_win-64 12.8.93 0: '*'
@@ -5811,7 +5811,7 @@ package:
 - name: cuda-nvvm-dev_win-64
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-nvvm-dev_win-64-12.8.93-0.conda
@@ -5823,7 +5823,7 @@ package:
 - name: cuda-runtime
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     cuda-libraries 12.8.1.*: '*'
@@ -5836,7 +5836,7 @@ package:
 - name: cuda-toolkit
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     __win: '*'
     cuda-compiler 12.8.1.*: '*'
@@ -5853,7 +5853,7 @@ package:
 - name: cuda-version
   version: '12.8'
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies: {}
   url: https://conda.anaconda.org/nvidia/noarch/cuda-version-12.8-3.conda
   hash:
@@ -5864,7 +5864,7 @@ package:
 - name: cuda-cccl_win-64
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/win-64/cuda-cccl_win-64-12.8.90-0.conda
@@ -5876,7 +5876,7 @@ package:
 - name: cuda-command-line-tools
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cupti-dev 12.8.90.*: '*'
     cuda-nvdisasm 12.8.90.*: '*'
@@ -5891,7 +5891,7 @@ package:
 - name: cuda-crt-tools
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/win-64/cuda-crt-tools-12.8.93-0.conda
@@ -5903,7 +5903,7 @@ package:
 - name: cuda-cudart
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart_win-64 12.8.90 0: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -5918,7 +5918,7 @@ package:
 - name: cuda-cudart-dev
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart 12.8.90 0: '*'
     cuda-cudart-dev_win-64 12.8.90 0: '*'
@@ -5935,7 +5935,7 @@ package:
 - name: cuda-cudart-static
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart-static_win-64 12.8.90 0: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -5950,7 +5950,7 @@ package:
 - name: cuda-cuobjdump
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-nvdisasm: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -5965,7 +5965,7 @@ package:
 - name: cuda-cupti
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -5979,7 +5979,7 @@ package:
 - name: cuda-cupti-dev
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cupti 12.8.90 0: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -5994,7 +5994,7 @@ package:
 - name: cuda-cuxxfilt
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6008,7 +6008,7 @@ package:
 - name: cuda-libraries
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart 12.8.90.*: '*'
     cuda-nvrtc 12.8.93.*: '*'
@@ -6031,7 +6031,7 @@ package:
 - name: cuda-libraries-dev
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cccl_win-64 12.8.90.*: '*'
     cuda-cudart-dev 12.8.90.*: '*'
@@ -6056,7 +6056,7 @@ package:
 - name: cuda-nvcc
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-nvcc_win-64 12.8.93.*: '*'
     vs2017_win-64: '*'
@@ -6069,7 +6069,7 @@ package:
 - name: cuda-nvcc-impl
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart: '>=12.8.57,<13.0a0'
     cuda-cudart-dev: '*'
@@ -6086,7 +6086,7 @@ package:
 - name: cuda-nvcc-tools
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-crt-tools 12.8.93 0: '*'
     cuda-nvvm-tools 12.8.93 0: '*'
@@ -6102,7 +6102,7 @@ package:
 - name: cuda-nvcc_win-64
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart-dev_win-64 12.8.*: '*'
     cuda-nvcc-dev_win-64 12.8.93.*: '*'
@@ -6117,7 +6117,7 @@ package:
 - name: cuda-nvdisasm
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6131,7 +6131,7 @@ package:
 - name: cuda-nvml-dev
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6145,7 +6145,7 @@ package:
 - name: cuda-nvprof
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cupti: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -6160,7 +6160,7 @@ package:
 - name: cuda-nvprune
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6174,7 +6174,7 @@ package:
 - name: cuda-nvrtc
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6188,7 +6188,7 @@ package:
 - name: cuda-nvrtc-dev
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-nvrtc 12.8.93 0: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -6203,7 +6203,7 @@ package:
 - name: cuda-nvvm-impl
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6217,7 +6217,7 @@ package:
 - name: cuda-nvvm-tools
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6231,7 +6231,7 @@ package:
 - name: cuda-nvvp
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-nvdisasm: '*'
     cuda-nvprof: '*'
@@ -6247,7 +6247,7 @@ package:
 - name: cuda-opencl
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     khronos-opencl-icd-loader: '>=2024.5.8'
@@ -6262,7 +6262,7 @@ package:
 - name: cuda-opencl-dev
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-opencl 12.8.90 0: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -6277,7 +6277,7 @@ package:
 - name: cuda-profiler-api
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart-dev: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -6290,7 +6290,7 @@ package:
 - name: cuda-sanitizer-api
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6304,7 +6304,7 @@ package:
 - name: cuda-tools
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-command-line-tools 12.8.1.*: '*'
     cuda-visual-tools 12.8.1.*: '*'
@@ -6317,7 +6317,7 @@ package:
 - name: cuda-visual-tools
   version: 12.8.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-libraries-dev 12.8.1.*: '*'
     cuda-nvml-dev 12.8.90.*: '*'
@@ -6332,7 +6332,7 @@ package:
 - name: cudnn
   version: 9.14.0.64
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12,<13.0a0'
     libcudnn-dev 9.14.0.64 hef0acbb_0: '*'
@@ -6348,7 +6348,7 @@ package:
 - name: libcublas
   version: 12.8.4.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-nvrtc: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -6363,7 +6363,7 @@ package:
 - name: libcublas-dev
   version: 12.8.4.1
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libcublas 12.8.4.1 0: '*'
@@ -6378,7 +6378,7 @@ package:
 - name: libcudnn
   version: 9.14.0.64
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-nvrtc: '*'
     cuda-version: '>=12,<13.0a0'
@@ -6395,7 +6395,7 @@ package:
 - name: libcudnn-dev
   version: 9.14.0.64
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12,<13.0a0'
     libcudnn 9.14.0.64 hef0acbb_0: '*'
@@ -6411,7 +6411,7 @@ package:
 - name: libcudss
   version: 0.7.1.4
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12,<13.0a0'
     libcublas: '*'
@@ -6427,7 +6427,7 @@ package:
 - name: libcufft
   version: 11.3.3.83
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6441,7 +6441,7 @@ package:
 - name: libcufft-dev
   version: 11.3.3.83
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libcufft 11.3.3.83 0: '*'
@@ -6456,7 +6456,7 @@ package:
 - name: libcurand
   version: 10.3.9.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6470,7 +6470,7 @@ package:
 - name: libcurand-dev
   version: 10.3.9.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libcurand 10.3.9.90 0: '*'
@@ -6485,7 +6485,7 @@ package:
 - name: libcusolver
   version: 11.7.3.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libcublas: '*'
@@ -6502,7 +6502,7 @@ package:
 - name: libcusolver-dev
   version: 11.7.3.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libcusolver 11.7.3.90 0: '*'
@@ -6517,7 +6517,7 @@ package:
 - name: libcusparse
   version: 12.5.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libnvjitlink: '*'
@@ -6532,7 +6532,7 @@ package:
 - name: libcusparse-dev
   version: 12.5.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libcusparse 12.5.8.93 0: '*'
@@ -6548,7 +6548,7 @@ package:
 - name: libnpp
   version: 12.3.3.100
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6562,7 +6562,7 @@ package:
 - name: libnpp-dev
   version: 12.3.3.100
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libnpp 12.3.3.100 0: '*'
@@ -6577,7 +6577,7 @@ package:
 - name: libnvfatbin
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6591,7 +6591,7 @@ package:
 - name: libnvfatbin-dev
   version: 12.8.90
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libnvfatbin 12.8.90 0: '*'
@@ -6606,7 +6606,7 @@ package:
 - name: libnvjitlink
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6620,7 +6620,7 @@ package:
 - name: libnvjitlink-dev
   version: 12.8.93
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     libnvjitlink 12.8.93 1: '*'
@@ -6635,7 +6635,7 @@ package:
 - name: libnvjpeg
   version: 12.3.5.92
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     vc: '>=14.1,<15.0a0'
@@ -6649,7 +6649,7 @@ package:
 - name: libnvjpeg-dev
   version: 12.3.5.92
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-cudart-dev: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -6663,7 +6663,7 @@ package:
 - name: nsight-compute
   version: 2025.1.1.2
   manager: conda
-  platform: p2
+  platform: win-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
     expat: '>=2.6.4,<3.0a0'
@@ -6681,7 +6681,7 @@ package:
 - name: _openmp_mutex
   version: '4.5'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     llvm-openmp: '>=9.0.1'
   url: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-7_kmp_llvm.conda
@@ -6693,7 +6693,7 @@ package:
 - name: alsa-lib
   version: 1.2.14
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -6706,7 +6706,7 @@ package:
 - name: aom
   version: 3.9.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
@@ -6719,7 +6719,7 @@ package:
 - name: argon2-cffi-bindings
   version: 25.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cffi: '>=1.0.1'
@@ -6735,7 +6735,7 @@ package:
 - name: aws-c-auth
   version: 0.8.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-cal: '>=0.8.1,<0.8.2.0a0'
@@ -6753,7 +6753,7 @@ package:
 - name: aws-c-cal
   version: 0.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6768,7 +6768,7 @@ package:
 - name: aws-c-common
   version: 0.10.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -6781,7 +6781,7 @@ package:
 - name: aws-c-compression
   version: 0.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6795,7 +6795,7 @@ package:
 - name: aws-c-event-stream
   version: 0.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6812,7 +6812,7 @@ package:
 - name: aws-c-http
   version: 0.9.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-cal: '>=0.8.1,<0.8.2.0a0'
@@ -6829,7 +6829,7 @@ package:
 - name: aws-c-io
   version: 0.15.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-cal: '>=0.8.1,<0.8.2.0a0'
@@ -6845,7 +6845,7 @@ package:
 - name: aws-c-mqtt
   version: 0.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6861,7 +6861,7 @@ package:
 - name: aws-c-s3
   version: 0.7.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-auth: '>=0.8.0,<0.8.1.0a0'
@@ -6881,7 +6881,7 @@ package:
 - name: aws-c-sdkutils
   version: 0.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6895,7 +6895,7 @@ package:
 - name: aws-checksums
   version: 0.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6909,7 +6909,7 @@ package:
 - name: aws-crt-cpp
   version: 0.29.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-auth: '>=0.8.0,<0.8.1.0a0'
@@ -6932,7 +6932,7 @@ package:
 - name: aws-sdk-cpp
   version: 1.11.458
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-c-common: '>=0.10.6,<0.10.7.0a0'
@@ -6953,7 +6953,7 @@ package:
 - name: azure-core-cpp
   version: 1.14.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libcurl: '>=8.10.1,<9.0a0'
@@ -6969,7 +6969,7 @@ package:
 - name: azure-identity-cpp
   version: 1.10.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     azure-core-cpp: '>=1.14.0,<1.14.1.0a0'
@@ -6985,7 +6985,7 @@ package:
 - name: azure-storage-blobs-cpp
   version: 12.13.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     azure-core-cpp: '>=1.14.0,<1.14.1.0a0'
@@ -7001,7 +7001,7 @@ package:
 - name: azure-storage-common-cpp
   version: 12.8.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     azure-core-cpp: '>=1.14.0,<1.14.1.0a0'
@@ -7018,7 +7018,7 @@ package:
 - name: azure-storage-files-datalake-cpp
   version: 12.12.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     azure-core-cpp: '>=1.14.0,<1.14.1.0a0'
@@ -7035,7 +7035,7 @@ package:
 - name: binutils_impl_linux-64
   version: '2.45'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     ld_impl_linux-64 2.45 default_hbd61a6d_104: '*'
     sysroot_linux-64: '*'
@@ -7049,7 +7049,7 @@ package:
 - name: binutils_linux-64
   version: '2.45'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     binutils_impl_linux-64 2.45 default_hfdba357_104: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/binutils_linux-64-2.45-default_h4852527_104.conda
@@ -7061,7 +7061,7 @@ package:
 - name: blosc
   version: 1.21.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7079,7 +7079,7 @@ package:
 - name: brotli
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     brotli-bin 1.1.0 hb03c661_4: '*'
@@ -7095,7 +7095,7 @@ package:
 - name: brotli-bin
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libbrotlidec 1.1.0 hb03c661_4: '*'
@@ -7110,7 +7110,7 @@ package:
 - name: brotli-python
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7126,7 +7126,7 @@ package:
 - name: brunsli
   version: '0.1'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libbrotlicommon: '>=1.1.0,<1.2.0a0'
@@ -7143,7 +7143,7 @@ package:
 - name: bzip2
   version: 1.0.8
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7156,7 +7156,7 @@ package:
 - name: c-ares
   version: 1.34.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7169,7 +7169,7 @@ package:
 - name: c-blosc2
   version: 2.15.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7186,7 +7186,7 @@ package:
 - name: cairo
   version: 1.18.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     fontconfig: '>=2.15.0,<3.0a0'
@@ -7215,7 +7215,7 @@ package:
 - name: cffi
   version: 2.0.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libffi: '>=3.4.6,<3.5.0a0'
@@ -7232,7 +7232,7 @@ package:
 - name: charls
   version: 2.4.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
@@ -7245,7 +7245,7 @@ package:
 - name: contourpy
   version: 1.3.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7262,7 +7262,7 @@ package:
 - name: cyrus-sasl
   version: 2.1.28
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     krb5: '>=1.21.3,<1.22.0a0'
@@ -7280,7 +7280,7 @@ package:
 - name: cytoolz
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7296,7 +7296,7 @@ package:
 - name: dav1d
   version: 1.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/dav1d-1.2.1-hd590300_0.conda
@@ -7308,7 +7308,7 @@ package:
 - name: dbus
   version: 1.16.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libstdcxx: '>=13'
     libgcc: '>=13'
@@ -7325,7 +7325,7 @@ package:
 - name: debugpy
   version: 1.8.20
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     libgcc: '>=14'
@@ -7341,7 +7341,7 @@ package:
 - name: double-conversion
   version: 3.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7355,7 +7355,7 @@ package:
 - name: expat
   version: 2.7.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libexpat 2.7.3 hecca717_0: '*'
@@ -7369,7 +7369,7 @@ package:
 - name: fastremap
   version: 1.17.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7386,7 +7386,7 @@ package:
 - name: ffmpeg
   version: 7.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aom: '>=3.9.1,<3.10.0a0'
@@ -7439,7 +7439,7 @@ package:
 - name: fill-voids
   version: 2.1.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     fastremap: '*'
@@ -7457,7 +7457,7 @@ package:
 - name: fontconfig
   version: 2.15.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     freetype: '>=2.12.1,<3.0a0'
@@ -7474,7 +7474,7 @@ package:
 - name: fonttools
   version: 4.61.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     brotli: '*'
@@ -7492,7 +7492,7 @@ package:
 - name: freeglut
   version: 3.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
@@ -7511,7 +7511,7 @@ package:
 - name: freetype
   version: 2.14.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libfreetype 2.14.3 ha770c72_0: '*'
     libfreetype6 2.14.3 h73754d4_0: '*'
@@ -7524,7 +7524,7 @@ package:
 - name: fribidi
   version: 1.0.16
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7537,7 +7537,7 @@ package:
 - name: gcc_impl_linux-64
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     binutils_impl_linux-64: '>=2.45'
     libgcc: '>=13.4.0'
@@ -7556,7 +7556,7 @@ package:
 - name: gcc_linux-64
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     gcc_impl_linux-64 13.4.0.*: '*'
     binutils_linux-64: '*'
@@ -7570,7 +7570,7 @@ package:
 - name: gdk-pixbuf
   version: 2.42.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7588,7 +7588,7 @@ package:
 - name: gflags
   version: 2.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7602,7 +7602,7 @@ package:
 - name: giflib
   version: 5.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/giflib-5.2.2-hd590300_0.conda
@@ -7614,7 +7614,7 @@ package:
 - name: glog
   version: 0.7.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     gflags: '>=2.2.2,<2.3.0a0'
     libgcc-ng: '>=12'
@@ -7628,7 +7628,7 @@ package:
 - name: gmp
   version: 6.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
@@ -7641,7 +7641,7 @@ package:
 - name: gmpy2
   version: 2.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     gmp: '>=6.3.0,<7.0a0'
@@ -7659,7 +7659,7 @@ package:
 - name: graphite2
   version: 1.3.14
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -7673,7 +7673,7 @@ package:
 - name: gxx_impl_linux-64
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     gcc_impl_linux-64 13.4.0 hf787b08_16: '*'
     libstdcxx-devel_linux-64 13.4.0 h6963c3b_116: '*'
@@ -7688,7 +7688,7 @@ package:
 - name: gxx_linux-64
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     gxx_impl_linux-64 13.4.0.*: '*'
     gcc_linux-64: ==13.4.0 h0a5b801_14
@@ -7703,7 +7703,7 @@ package:
 - name: harfbuzz
   version: 11.4.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cairo: '>=1.18.4,<2.0a0'
@@ -7725,7 +7725,7 @@ package:
 - name: hdf5
   version: 1.14.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libaec: '>=1.1.3,<2.0a0'
@@ -7745,7 +7745,7 @@ package:
 - name: icu
   version: '75.1'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc-ng: '>=12'
@@ -7759,7 +7759,7 @@ package:
 - name: imagecodecs
   version: 2024.12.30
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     blosc: '>=1.21.6,<2.0a0'
@@ -7805,7 +7805,7 @@ package:
 - name: imath
   version: 3.1.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7820,7 +7820,7 @@ package:
 - name: jasper
   version: 4.2.8
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     freeglut: '>=3.2.2,<4.0a0'
@@ -7836,7 +7836,7 @@ package:
 - name: jxrlib
   version: '1.1'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/jxrlib-1.1-hd590300_3.conda
@@ -7848,7 +7848,7 @@ package:
 - name: keyutils
   version: 1.6.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7861,7 +7861,7 @@ package:
 - name: kiwisolver
   version: 1.4.9
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     libstdcxx: '>=14'
@@ -7877,7 +7877,7 @@ package:
 - name: krb5
   version: 1.21.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     keyutils: '>=1.6.1,<2.0a0'
     libedit: '>=3.1.20191231,<4.0a0'
@@ -7893,7 +7893,7 @@ package:
 - name: lame
   version: '3.100'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/lame-3.100-h166bdaf_1003.tar.bz2
@@ -7905,7 +7905,7 @@ package:
 - name: lcms2
   version: '2.17'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7920,7 +7920,7 @@ package:
 - name: ld_impl_linux-64
   version: '2.45'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     zstd: '>=1.5.7,<1.6.0a0'
@@ -7933,7 +7933,7 @@ package:
 - name: lerc
   version: 4.0.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7947,7 +7947,7 @@ package:
 - name: libabseil
   version: '20240722.0'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7961,7 +7961,7 @@ package:
 - name: libaec
   version: 1.1.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -7975,7 +7975,7 @@ package:
 - name: libarrow
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aws-crt-cpp: '>=0.29.7,<0.29.8.0a0'
@@ -8012,7 +8012,7 @@ package:
 - name: libarrow-acero
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libarrow 18.1.0 h44a453e_6_cpu: '*'
@@ -8027,7 +8027,7 @@ package:
 - name: libarrow-dataset
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libarrow 18.1.0 h44a453e_6_cpu: '*'
@@ -8044,7 +8044,7 @@ package:
 - name: libarrow-substrait
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -8064,7 +8064,7 @@ package:
 - name: libasprintf
   version: 0.25.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8078,7 +8078,7 @@ package:
 - name: libass
   version: 0.17.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc: '>=13'
     __glibc: '>=2.17,<3.0.a0'
@@ -8097,7 +8097,7 @@ package:
 - name: libavif16
   version: 1.1.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     aom: '>=3.9.1,<3.10.0a0'
@@ -8114,7 +8114,7 @@ package:
 - name: libblas
   version: 3.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libopenblas: '>=0.3.30,<1.0a0'
   url: https://conda.anaconda.org/conda-forge/linux-64/libblas-3.11.0-4_h4a7cf45_openblas.conda
@@ -8126,7 +8126,7 @@ package:
 - name: libbrotlicommon
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8139,7 +8139,7 @@ package:
 - name: libbrotlidec
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libbrotlicommon 1.1.0 hb03c661_4: '*'
@@ -8153,7 +8153,7 @@ package:
 - name: libbrotlienc
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libbrotlicommon 1.1.0 hb03c661_4: '*'
@@ -8167,7 +8167,7 @@ package:
 - name: libcblas
   version: 3.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libblas 3.11.0 4_h4a7cf45_openblas: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/libcblas-3.11.0-4_h0358290_openblas.conda
@@ -8179,7 +8179,7 @@ package:
 - name: libclang-cpp20.1
   version: 20.1.8
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8194,7 +8194,7 @@ package:
 - name: libclang13
   version: 21.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8209,7 +8209,7 @@ package:
 - name: libcrc32c
   version: 1.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=9.4.0'
     libstdcxx-ng: '>=9.4.0'
@@ -8222,7 +8222,7 @@ package:
 - name: libcups
   version: 2.3.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     krb5: '>=1.21.3,<1.22.0a0'
@@ -8238,7 +8238,7 @@ package:
 - name: libcurl
   version: 8.17.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     krb5: '>=1.21.3,<1.22.0a0'
@@ -8257,7 +8257,7 @@ package:
 - name: libdeflate
   version: '1.23'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8270,7 +8270,7 @@ package:
 - name: libdrm
   version: 2.4.125
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8284,7 +8284,7 @@ package:
 - name: libedit
   version: 3.1.20250104
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     ncurses: '>=6.5,<7.0a0'
     __glibc: '>=2.17,<3.0.a0'
@@ -8298,7 +8298,7 @@ package:
 - name: libegl
   version: 1.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libglvnd 1.7.0 ha4b6fd6_2: '*'
@@ -8311,7 +8311,7 @@ package:
 - name: libev
   version: '4.33'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/libev-4.33-hd590300_2.conda
@@ -8323,7 +8323,7 @@ package:
 - name: libevent
   version: 2.1.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     openssl: '>=3.1.1,<4.0a0'
@@ -8336,7 +8336,7 @@ package:
 - name: libexpat
   version: 2.7.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8349,7 +8349,7 @@ package:
 - name: libffi
   version: 3.4.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8362,7 +8362,7 @@ package:
 - name: libfreetype
   version: 2.14.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libfreetype6: '>=2.14.3'
   url: https://conda.anaconda.org/conda-forge/linux-64/libfreetype-2.14.3-ha770c72_0.conda
@@ -8374,7 +8374,7 @@ package:
 - name: libfreetype6
   version: 2.14.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8389,7 +8389,7 @@ package:
 - name: libgcc
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -8402,7 +8402,7 @@ package:
 - name: libgcc-ng
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc 15.2.0 he0feb66_16: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-15.2.0-h69a702a_16.conda
@@ -8414,7 +8414,7 @@ package:
 - name: libgettextpo
   version: 0.25.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8428,7 +8428,7 @@ package:
 - name: libgfortran
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgfortran5 15.2.0 h68bc16d_16: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/libgfortran-15.2.0-h69a702a_16.conda
@@ -8440,7 +8440,7 @@ package:
 - name: libgfortran5
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=15.2.0'
@@ -8453,7 +8453,7 @@ package:
 - name: libgl
   version: 1.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libglvnd 1.7.0 ha4b6fd6_2: '*'
@@ -8467,7 +8467,7 @@ package:
 - name: libglib
   version: 2.84.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libffi: '>=3.4.6,<3.5.0a0'
@@ -8484,7 +8484,7 @@ package:
 - name: libglu
   version: 9.0.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8499,7 +8499,7 @@ package:
 - name: libglvnd
   version: 1.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
   url: https://conda.anaconda.org/conda-forge/linux-64/libglvnd-1.7.0-ha4b6fd6_2.conda
@@ -8511,7 +8511,7 @@ package:
 - name: libglx
   version: 1.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libglvnd 1.7.0 ha4b6fd6_2: '*'
@@ -8525,7 +8525,7 @@ package:
 - name: libgomp
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
   url: https://conda.anaconda.org/conda-forge/linux-64/libgomp-15.2.0-he0feb66_16.conda
@@ -8537,7 +8537,7 @@ package:
 - name: libgoogle-cloud
   version: 2.32.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -8557,7 +8557,7 @@ package:
 - name: libgoogle-cloud-storage
   version: 2.32.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil: '*'
@@ -8577,7 +8577,7 @@ package:
 - name: libgrpc
   version: 1.67.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     c-ares: '>=1.32.3,<2.0a0'
@@ -8599,7 +8599,7 @@ package:
 - name: libhwloc
   version: 2.12.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8614,7 +8614,7 @@ package:
 - name: libhwy
   version: 1.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8628,7 +8628,7 @@ package:
 - name: libiconv
   version: '1.18'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8641,7 +8641,7 @@ package:
 - name: libjpeg-turbo
   version: 3.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8654,7 +8654,7 @@ package:
 - name: libjxl
   version: 0.11.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libbrotlidec: '>=1.1.0,<1.2.0a0'
@@ -8671,7 +8671,7 @@ package:
 - name: liblapack
   version: 3.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libblas 3.11.0 4_h4a7cf45_openblas: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/liblapack-3.11.0-4_h47877c9_openblas.conda
@@ -8683,7 +8683,7 @@ package:
 - name: liblapacke
   version: 3.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libblas 3.11.0 4_h4a7cf45_openblas: '*'
     libcblas 3.11.0 4_h0358290_openblas: '*'
@@ -8697,7 +8697,7 @@ package:
 - name: libllvm20
   version: 20.1.8
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8714,7 +8714,7 @@ package:
 - name: libllvm21
   version: 21.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8731,7 +8731,7 @@ package:
 - name: liblzma
   version: 5.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8744,7 +8744,7 @@ package:
 - name: libmagma
   version: 2.8.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -8765,7 +8765,7 @@ package:
 - name: libmagma_sparse
   version: 2.8.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -8788,7 +8788,7 @@ package:
 - name: libnghttp2
   version: 1.67.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     c-ares: '>=1.34.5,<2.0a0'
@@ -8806,7 +8806,7 @@ package:
 - name: libnsl
   version: 2.0.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8819,7 +8819,7 @@ package:
 - name: libntlm
   version: '1.8'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8832,7 +8832,7 @@ package:
 - name: libopenblas
   version: 0.3.30
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -8847,7 +8847,7 @@ package:
 - name: libopencv
   version: 4.10.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -8899,7 +8899,7 @@ package:
 - name: libopengl
   version: 1.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libglvnd 1.7.0 ha4b6fd6_2: '*'
@@ -8912,7 +8912,7 @@ package:
 - name: libopenvino
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8928,7 +8928,7 @@ package:
 - name: libopenvino-auto-batch-plugin
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8944,7 +8944,7 @@ package:
 - name: libopenvino-auto-plugin
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8960,7 +8960,7 @@ package:
 - name: libopenvino-hetero-plugin
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8976,7 +8976,7 @@ package:
 - name: libopenvino-intel-cpu-plugin
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -8993,7 +8993,7 @@ package:
 - name: libopenvino-intel-gpu-plugin
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9011,7 +9011,7 @@ package:
 - name: libopenvino-intel-npu-plugin
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9028,7 +9028,7 @@ package:
 - name: libopenvino-ir-frontend
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9044,7 +9044,7 @@ package:
 - name: libopenvino-onnx-frontend
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -9062,7 +9062,7 @@ package:
 - name: libopenvino-paddle-frontend
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -9080,7 +9080,7 @@ package:
 - name: libopenvino-pytorch-frontend
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9095,7 +9095,7 @@ package:
 - name: libopenvino-tensorflow-frontend
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -9114,7 +9114,7 @@ package:
 - name: libopenvino-tensorflow-lite-frontend
   version: 2024.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9129,7 +9129,7 @@ package:
 - name: libopus
   version: 1.5.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc: '>=13'
     __glibc: '>=2.17,<3.0.a0'
@@ -9142,7 +9142,7 @@ package:
 - name: libparquet
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libarrow 18.1.0 h44a453e_6_cpu: '*'
@@ -9159,7 +9159,7 @@ package:
 - name: libpciaccess
   version: '0.18'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9172,7 +9172,7 @@ package:
 - name: libpng
   version: 1.6.58
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9186,7 +9186,7 @@ package:
 - name: libpq
   version: '17.7'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     icu: '>=75.1,<76.0a0'
@@ -9203,7 +9203,7 @@ package:
 - name: libprotobuf
   version: 5.28.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -9220,7 +9220,7 @@ package:
 - name: libre2-11
   version: 2024.07.02
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libabseil * cxx17*: '*'
@@ -9236,7 +9236,7 @@ package:
 - name: librsvg
   version: 2.58.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cairo: '>=1.18.2,<2.0a0'
@@ -9257,7 +9257,7 @@ package:
 - name: libsanitizer
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13.4.0'
@@ -9271,7 +9271,7 @@ package:
 - name: libsodium
   version: 1.0.20
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/libsodium-1.0.20-h4ab18f5_0.conda
@@ -9283,7 +9283,7 @@ package:
 - name: libsqlite
   version: 3.51.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9297,7 +9297,7 @@ package:
 - name: libssh2
   version: 1.11.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9312,7 +9312,7 @@ package:
 - name: libstdcxx
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc 15.2.0 he0feb66_16: '*'
@@ -9325,7 +9325,7 @@ package:
 - name: libstdcxx-ng
   version: 15.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libstdcxx 15.2.0 h934c35e_16: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/libstdcxx-ng-15.2.0-hdf11a46_16.conda
@@ -9337,7 +9337,7 @@ package:
 - name: libthrift
   version: 0.21.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libevent: '>=2.1.12,<2.1.13.0a0'
@@ -9354,7 +9354,7 @@ package:
 - name: libtiff
   version: 4.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     lerc: '>=4.0.0,<5.0a0'
@@ -9375,7 +9375,7 @@ package:
 - name: libtorch
   version: 2.5.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -9411,7 +9411,7 @@ package:
 - name: libutf8proc
   version: 2.9.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9424,7 +9424,7 @@ package:
 - name: libuuid
   version: 2.41.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9437,7 +9437,7 @@ package:
 - name: libuv
   version: 1.51.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9450,7 +9450,7 @@ package:
 - name: libva
   version: 2.22.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libdrm: '>=2.4.124,<2.5.0a0'
@@ -9473,7 +9473,7 @@ package:
 - name: libvpx
   version: 1.14.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
@@ -9486,7 +9486,7 @@ package:
 - name: libwebp-base
   version: 1.6.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9499,7 +9499,7 @@ package:
 - name: libxcb
   version: 1.17.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9515,7 +9515,7 @@ package:
 - name: libxcrypt
   version: 4.4.36
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/libxcrypt-4.4.36-hd590300_1.conda
@@ -9527,7 +9527,7 @@ package:
 - name: libxkbcommon
   version: 1.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9545,7 +9545,7 @@ package:
 - name: libxml2
   version: 2.13.9
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     icu: '>=75.1,<76.0a0'
@@ -9562,7 +9562,7 @@ package:
 - name: libxslt
   version: 1.1.43
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9576,7 +9576,7 @@ package:
 - name: libzlib
   version: 1.3.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
   url: https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.2-h25fd6f3_2.conda
@@ -9588,7 +9588,7 @@ package:
 - name: libzopfli
   version: 1.0.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=9.3.0'
     libstdcxx-ng: '>=9.3.0'
@@ -9601,7 +9601,7 @@ package:
 - name: llvm-openmp
   version: 21.1.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
   url: https://conda.anaconda.org/conda-forge/linux-64/llvm-openmp-21.1.7-h4922eb0_0.conda
@@ -9613,7 +9613,7 @@ package:
 - name: llvmlite
   version: 0.45.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9631,7 +9631,7 @@ package:
 - name: lz4
   version: 4.4.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     lz4-c: '>=1.10.0,<1.11.0a0'
@@ -9647,7 +9647,7 @@ package:
 - name: lz4-c
   version: 1.10.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9661,7 +9661,7 @@ package:
 - name: markupsafe
   version: 3.0.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9676,7 +9676,7 @@ package:
 - name: matplotlib
   version: 3.10.9
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     matplotlib-base: '>=3.10.9,<3.10.10.0a0'
     pyside6: '>=6.7.2'
@@ -9692,7 +9692,7 @@ package:
 - name: matplotlib-base
   version: 3.10.9
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     contourpy: '>=1.0.1'
@@ -9722,7 +9722,7 @@ package:
 - name: mkl
   version: 2024.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     _openmp_mutex * *_llvm: '*'
     _openmp_mutex: '>=4.5'
@@ -9737,7 +9737,7 @@ package:
 - name: mpc
   version: 1.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     gmp: '>=6.3.0,<7.0a0'
@@ -9752,7 +9752,7 @@ package:
 - name: mpfr
   version: 4.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     gmp: '>=6.3.0,<7.0a0'
@@ -9766,7 +9766,7 @@ package:
 - name: msgpack-python
   version: 1.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9782,7 +9782,7 @@ package:
 - name: mysql-common
   version: 9.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9797,7 +9797,7 @@ package:
 - name: mysql-libs
   version: 9.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9815,7 +9815,7 @@ package:
 - name: ncurses
   version: '6.5'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9828,7 +9828,7 @@ package:
 - name: nspr
   version: '4.38'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9842,7 +9842,7 @@ package:
 - name: nss
   version: '3.118'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9859,7 +9859,7 @@ package:
 - name: numba
   version: 0.62.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -9878,7 +9878,7 @@ package:
 - name: numpy
   version: 2.2.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libblas: '>=3.9.0,<4.0a0'
@@ -9897,7 +9897,7 @@ package:
 - name: ocl-icd
   version: 2.3.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9911,7 +9911,7 @@ package:
 - name: opencl-headers
   version: 2025.06.13
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9925,7 +9925,7 @@ package:
 - name: opencv
   version: 4.10.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     hdf5: '>=1.14.4,<1.14.5.0a0'
     libopencv 4.10.0 qt6_py310h0bc352f_613: '*'
@@ -9941,7 +9941,7 @@ package:
 - name: openexr
   version: 3.3.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libstdcxx: '>=13'
     libgcc: '>=13'
@@ -9958,7 +9958,7 @@ package:
 - name: openh264
   version: 2.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -9972,7 +9972,7 @@ package:
 - name: openjpeg
   version: 2.5.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -9989,7 +9989,7 @@ package:
 - name: openldap
   version: 2.6.10
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cyrus-sasl: '>=2.1.27,<3.0a0'
@@ -10006,7 +10006,7 @@ package:
 - name: openssl
   version: 3.6.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     ca-certificates: '*'
@@ -10020,7 +10020,7 @@ package:
 - name: orc
   version: 2.0.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10040,7 +10040,7 @@ package:
 - name: pandas
   version: 2.3.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10060,7 +10060,7 @@ package:
 - name: pango
   version: 1.56.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cairo: '>=1.18.4,<2.0a0'
@@ -10084,7 +10084,7 @@ package:
 - name: pcre2
   version: '10.45'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     bzip2: '>=1.0.8,<2.0a0'
@@ -10099,7 +10099,7 @@ package:
 - name: pillow
   version: 11.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     libgcc: '>=14'
@@ -10124,7 +10124,7 @@ package:
 - name: pixman
   version: 0.46.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc: '>=14'
     libstdcxx: '>=14'
@@ -10138,7 +10138,7 @@ package:
 - name: psutil
   version: 7.1.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     __glibc: '>=2.17,<3.0.a0'
@@ -10153,7 +10153,7 @@ package:
 - name: pthread-stubs
   version: '0.4'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10166,7 +10166,7 @@ package:
 - name: pugixml
   version: '1.14'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libstdcxx-ng: '>=12'
@@ -10179,7 +10179,7 @@ package:
 - name: py-opencv
   version: 4.10.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     hdf5: '>=1.14.4,<1.14.5.0a0'
     libopencv 4.10.0 qt6_py310h0bc352f_613: '*'
@@ -10196,7 +10196,7 @@ package:
 - name: pyarrow
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libarrow-acero 18.1.0.*: '*'
     libarrow-dataset 18.1.0.*: '*'
@@ -10214,7 +10214,7 @@ package:
 - name: pyarrow-core
   version: 18.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libarrow 18.1.0.* *cpu: '*'
@@ -10232,7 +10232,7 @@ package:
 - name: pyside6
   version: 6.8.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libclang13: '>=20.1.1'
@@ -10256,7 +10256,7 @@ package:
 - name: python
   version: 3.10.19
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     bzip2: '>=1.0.8,<2.0a0'
@@ -10284,7 +10284,7 @@ package:
 - name: pytorch
   version: 2.5.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __cuda: '*'
     __glibc: '>=2.17,<3.0.a0'
@@ -10332,7 +10332,7 @@ package:
 - name: pytorch-gpu
   version: 2.5.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     pytorch 2.5.1 cuda*306: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/pytorch-gpu-2.5.1-cuda126ha999a5f_306.conda
@@ -10344,7 +10344,7 @@ package:
 - name: pywavelets
   version: 1.8.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10360,7 +10360,7 @@ package:
 - name: pyyaml
   version: 6.0.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10376,7 +10376,7 @@ package:
 - name: pyzmq
   version: 27.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     libgcc: '>=14'
@@ -10393,7 +10393,7 @@ package:
 - name: qhull
   version: '2020.2'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc-ng: '>=12'
@@ -10407,7 +10407,7 @@ package:
 - name: qt6-main
   version: 6.8.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     alsa-lib: '>=1.2.14,<1.3.0a0'
@@ -10470,7 +10470,7 @@ package:
 - name: rav1e
   version: 0.6.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/rav1e-0.6.6-he8a937b_2.conda
@@ -10482,7 +10482,7 @@ package:
 - name: re2
   version: 2024.07.02
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libre2-11 2024.07.02 hbbce691_2: '*'
   url: https://conda.anaconda.org/conda-forge/linux-64/re2-2024.07.02-h9925aae_2.conda
@@ -10494,7 +10494,7 @@ package:
 - name: readline
   version: '8.2'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc: '>=13'
     ncurses: '>=6.5,<7.0a0'
@@ -10507,7 +10507,7 @@ package:
 - name: rpds-py
   version: 0.30.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     libgcc: '>=14'
@@ -10522,7 +10522,7 @@ package:
 - name: s2n
   version: 1.5.11
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10536,7 +10536,7 @@ package:
 - name: scikit-image
   version: 0.25.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     imageio: '>=2.33,!=2.35.0'
@@ -10561,7 +10561,7 @@ package:
 - name: scikit-learn
   version: 1.7.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -10582,7 +10582,7 @@ package:
 - name: scipy
   version: 1.15.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libblas: '>=3.9.0,<4.0a0'
@@ -10604,7 +10604,7 @@ package:
 - name: sleef
   version: 3.9.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -10619,7 +10619,7 @@ package:
 - name: snappy
   version: 1.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc: '>=14'
     __glibc: '>=2.17,<3.0.a0'
@@ -10633,7 +10633,7 @@ package:
 - name: svt-av1
   version: 2.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10647,7 +10647,7 @@ package:
 - name: tbb
   version: 2021.13.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10662,7 +10662,7 @@ package:
 - name: tk
   version: 8.6.13
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10676,7 +10676,7 @@ package:
 - name: tornado
   version: 6.5.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10691,7 +10691,7 @@ package:
 - name: unicodedata2
   version: 17.0.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10706,7 +10706,7 @@ package:
 - name: wayland
   version: 1.24.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libexpat: '>=2.7.0,<3.0a0'
@@ -10722,7 +10722,7 @@ package:
 - name: x264
   version: 1!164.3095
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
   url: https://conda.anaconda.org/conda-forge/linux-64/x264-1!164.3095-h166bdaf_2.tar.bz2
@@ -10734,7 +10734,7 @@ package:
 - name: x265
   version: '3.5'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=10.3.0'
     libstdcxx-ng: '>=10.3.0'
@@ -10747,7 +10747,7 @@ package:
 - name: xcb-util
   version: 0.4.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10761,7 +10761,7 @@ package:
 - name: xcb-util-cursor
   version: 0.1.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10777,7 +10777,7 @@ package:
 - name: xcb-util-image
   version: 0.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libxcb: '>=1.16,<2.0.0a0'
@@ -10791,7 +10791,7 @@ package:
 - name: xcb-util-keysyms
   version: 0.4.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libxcb: '>=1.16,<2.0.0a0'
@@ -10804,7 +10804,7 @@ package:
 - name: xcb-util-renderutil
   version: 0.3.10
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libxcb: '>=1.16,<2.0.0a0'
@@ -10817,7 +10817,7 @@ package:
 - name: xcb-util-wm
   version: 0.4.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc-ng: '>=12'
     libxcb: '>=1.16,<2.0.0a0'
@@ -10830,7 +10830,7 @@ package:
 - name: xkeyboard-config
   version: '2.46'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10844,7 +10844,7 @@ package:
 - name: xorg-libice
   version: 1.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10857,7 +10857,7 @@ package:
 - name: xorg-libsm
   version: 1.2.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10872,7 +10872,7 @@ package:
 - name: xorg-libx11
   version: 1.8.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10886,7 +10886,7 @@ package:
 - name: xorg-libxau
   version: 1.0.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10899,7 +10899,7 @@ package:
 - name: xorg-libxcomposite
   version: 0.4.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10914,7 +10914,7 @@ package:
 - name: xorg-libxcursor
   version: 1.2.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10930,7 +10930,7 @@ package:
 - name: xorg-libxdamage
   version: 1.1.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10946,7 +10946,7 @@ package:
 - name: xorg-libxdmcp
   version: 1.1.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10959,7 +10959,7 @@ package:
 - name: xorg-libxext
   version: 1.3.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -10973,7 +10973,7 @@ package:
 - name: xorg-libxfixes
   version: 6.0.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -10987,7 +10987,7 @@ package:
 - name: xorg-libxi
   version: 1.8.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -11003,7 +11003,7 @@ package:
 - name: xorg-libxrandr
   version: 1.5.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -11019,7 +11019,7 @@ package:
 - name: xorg-libxrender
   version: 0.9.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -11033,7 +11033,7 @@ package:
 - name: xorg-libxtst
   version: 1.2.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -11049,7 +11049,7 @@ package:
 - name: xorg-libxxf86vm
   version: 1.1.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=13'
@@ -11064,7 +11064,7 @@ package:
 - name: yaml
   version: 0.2.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libgcc: '>=14'
     __glibc: '>=2.17,<3.0.a0'
@@ -11077,7 +11077,7 @@ package:
 - name: zeromq
   version: 4.3.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     libstdcxx: '>=14'
     libgcc: '>=14'
@@ -11093,7 +11093,7 @@ package:
 - name: zfp
   version: 1.0.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     _openmp_mutex: '>=4.5'
@@ -11108,7 +11108,7 @@ package:
 - name: zlib-ng
   version: 2.2.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libgcc: '>=14'
@@ -11122,7 +11122,7 @@ package:
 - name: zstandard
   version: 0.25.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     cffi: '>=1.11'
@@ -11139,7 +11139,7 @@ package:
 - name: zstd
   version: 1.5.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     libzlib: '>=1.3.1,<2.0a0'
@@ -11152,7 +11152,7 @@ package:
 - name: anyio
   version: 4.13.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     exceptiongroup: '>=1.0.2'
     idna: '>=2.8'
@@ -11167,7 +11167,7 @@ package:
 - name: argon2-cffi
   version: 25.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     argon2-cffi-bindings: '*'
     python: '>=3.9'
@@ -11181,7 +11181,7 @@ package:
 - name: arrow
   version: 1.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     python-dateutil: '>=2.7.0'
@@ -11195,7 +11195,7 @@ package:
 - name: asttokens
   version: 3.0.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/asttokens-3.0.1-pyhd8ed1ab_0.conda
@@ -11207,7 +11207,7 @@ package:
 - name: async-lru
   version: 2.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     typing_extensions: '>=4.0.0'
@@ -11220,7 +11220,7 @@ package:
 - name: attrs
   version: 26.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/attrs-26.1.0-pyhcf101f3_0.conda
@@ -11232,7 +11232,7 @@ package:
 - name: babel
   version: 2.18.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/babel-2.18.0-pyhcf101f3_1.conda
@@ -11244,7 +11244,7 @@ package:
 - name: beautifulsoup4
   version: 4.14.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
     soupsieve: '>=1.2'
@@ -11258,7 +11258,7 @@ package:
 - name: bleach
   version: 6.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     webencodings: '*'
@@ -11271,7 +11271,7 @@ package:
 - name: bleach-with-css
   version: 6.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     bleach: ==6.3.0 pyhcf101f3_1
     tinycss2: '*'
@@ -11284,7 +11284,7 @@ package:
 - name: bokeh
   version: 3.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     contourpy: '>=1.2'
     jinja2: '>=2.9'
@@ -11306,7 +11306,7 @@ package:
 - name: ca-certificates
   version: 2025.11.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/ca-certificates-2025.11.12-hbd8a1cb_0.conda
@@ -11318,7 +11318,7 @@ package:
 - name: cached-property
   version: 1.5.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cached_property: '>=1.5.2,<1.5.3.0a0'
   url: https://conda.anaconda.org/conda-forge/noarch/cached-property-1.5.2-hd8ed1ab_1.tar.bz2
@@ -11330,7 +11330,7 @@ package:
 - name: cached_property
   version: 1.5.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.6'
   url: https://conda.anaconda.org/conda-forge/noarch/cached_property-1.5.2-pyha770c72_1.tar.bz2
@@ -11342,7 +11342,7 @@ package:
 - name: cellpose
   version: 3.1.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     dask-core: '*'
     dask-image: '*'
@@ -11376,7 +11376,7 @@ package:
 - name: certifi
   version: 2025.11.12
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/certifi-2025.11.12-pyhd8ed1ab_0.conda
@@ -11388,7 +11388,7 @@ package:
 - name: charset-normalizer
   version: 3.4.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/charset-normalizer-3.4.4-pyhd8ed1ab_0.conda
@@ -11400,7 +11400,7 @@ package:
 - name: click
   version: 8.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     __unix: '*'
@@ -11413,7 +11413,7 @@ package:
 - name: cloudpickle
   version: 3.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/cloudpickle-3.1.2-pyhd8ed1ab_0.conda
@@ -11425,7 +11425,7 @@ package:
 - name: colorama
   version: 0.4.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/colorama-0.4.6-pyhd8ed1ab_1.conda
@@ -11437,7 +11437,7 @@ package:
 - name: comm
   version: 0.2.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/comm-0.2.3-pyhe01879c_0.conda
@@ -11449,7 +11449,7 @@ package:
 - name: cpython
   version: 3.10.19
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10,<3.11.0a0'
     python_abi * *_cp310: '*'
@@ -11462,7 +11462,7 @@ package:
 - name: cycler
   version: 0.12.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/cycler-0.12.1-pyhcf101f3_2.conda
@@ -11474,7 +11474,7 @@ package:
 - name: dask
   version: 2025.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     dask-core: '>=2025.11.0,<2025.11.1.0a0'
@@ -11495,7 +11495,7 @@ package:
 - name: dask-core
   version: 2025.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     click: '>=8.1'
@@ -11515,7 +11515,7 @@ package:
 - name: dask-image
   version: 2025.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     dask: '>=2024.4.1'
     dask-core: '>=2024.4.1'
@@ -11534,7 +11534,7 @@ package:
 - name: decorator
   version: 5.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/decorator-5.3.1-pyhd8ed1ab_0.conda
@@ -11546,7 +11546,7 @@ package:
 - name: defusedxml
   version: 0.7.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.6'
   url: https://conda.anaconda.org/conda-forge/noarch/defusedxml-0.7.1-pyhd8ed1ab_0.tar.bz2
@@ -11558,7 +11558,7 @@ package:
 - name: distributed
   version: 2025.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     click: '>=8.0'
@@ -11586,7 +11586,7 @@ package:
 - name: exceptiongroup
   version: 1.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
     typing_extensions: '>=4.6.0'
@@ -11599,7 +11599,7 @@ package:
 - name: executing
   version: 2.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/executing-2.2.1-pyhd8ed1ab_0.conda
@@ -11611,7 +11611,7 @@ package:
 - name: filelock
   version: 3.20.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/filelock-3.20.0-pyhd8ed1ab_0.conda
@@ -11623,7 +11623,7 @@ package:
 - name: font-ttf-dejavu-sans-mono
   version: '2.37'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-dejavu-sans-mono-2.37-hab24e00_0.tar.bz2
   hash:
@@ -11634,7 +11634,7 @@ package:
 - name: font-ttf-inconsolata
   version: '3.000'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-inconsolata-3.000-h77eed37_0.tar.bz2
   hash:
@@ -11645,7 +11645,7 @@ package:
 - name: font-ttf-source-code-pro
   version: '2.038'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-source-code-pro-2.038-h77eed37_0.tar.bz2
   hash:
@@ -11656,7 +11656,7 @@ package:
 - name: font-ttf-ubuntu
   version: '0.83'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/font-ttf-ubuntu-0.83-h77eed37_3.conda
   hash:
@@ -11667,7 +11667,7 @@ package:
 - name: fonts-conda-ecosystem
   version: '1'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     fonts-conda-forge: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/fonts-conda-ecosystem-1-0.tar.bz2
@@ -11679,7 +11679,7 @@ package:
 - name: fonts-conda-forge
   version: '1'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     font-ttf-ubuntu: '*'
     font-ttf-inconsolata: '*'
@@ -11694,7 +11694,7 @@ package:
 - name: fqdn
   version: 1.5.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cached-property: '>=1.3.0'
     python: '>=3.9,<4'
@@ -11707,7 +11707,7 @@ package:
 - name: fsspec
   version: 2025.12.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/fsspec-2025.12.0-pyhd8ed1ab_0.conda
@@ -11719,7 +11719,7 @@ package:
 - name: h11
   version: 0.16.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     typing_extensions: '*'
@@ -11732,7 +11732,7 @@ package:
 - name: h2
   version: 4.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     hyperframe: '>=6.1,<7'
@@ -11746,7 +11746,7 @@ package:
 - name: hpack
   version: 4.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/hpack-4.1.0-pyhd8ed1ab_0.conda
@@ -11758,7 +11758,7 @@ package:
 - name: httpcore
   version: 1.0.9
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     h11: '>=0.16'
@@ -11775,7 +11775,7 @@ package:
 - name: httpx
   version: 0.28.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     anyio: '*'
     certifi: '*'
@@ -11791,7 +11791,7 @@ package:
 - name: hyperframe
   version: 6.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda
@@ -11803,7 +11803,7 @@ package:
 - name: idna
   version: '3.11'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/idna-3.11-pyhd8ed1ab_0.conda
@@ -11815,7 +11815,7 @@ package:
 - name: imageio
   version: 2.37.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     numpy: '*'
     pillow: '>=8.3.2'
@@ -11829,7 +11829,7 @@ package:
 - name: importlib-metadata
   version: 8.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     zipp: '>=3.20'
@@ -11842,7 +11842,7 @@ package:
 - name: ipykernel
   version: 7.2.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __linux: '*'
     comm: '>=0.1.1'
@@ -11867,7 +11867,7 @@ package:
 - name: ipython
   version: 8.37.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
     pexpect: '>4.3'
@@ -11891,7 +11891,7 @@ package:
 - name: ipywidgets
   version: 8.1.8
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     comm: '>=0.1.3'
     ipython: '>=6.1.0'
@@ -11908,7 +11908,7 @@ package:
 - name: isoduration
   version: 20.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     arrow: '>=0.15.0'
     python: '>=3.9'
@@ -11921,7 +11921,7 @@ package:
 - name: jedi
   version: 0.19.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     parso: '>=0.8.3,<0.9.0'
     python: '>=3.9'
@@ -11934,7 +11934,7 @@ package:
 - name: jinja2
   version: 3.1.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     markupsafe: '>=2.0'
     python: '*'
@@ -11947,7 +11947,7 @@ package:
 - name: joblib
   version: 1.5.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
     setuptools: '*'
@@ -11960,7 +11960,7 @@ package:
 - name: json5
   version: 0.14.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/json5-0.14.0-pyhd8ed1ab_0.conda
@@ -11972,7 +11972,7 @@ package:
 - name: jsonpointer
   version: 3.1.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/jsonpointer-3.1.1-pyhcf101f3_0.conda
@@ -11984,7 +11984,7 @@ package:
 - name: jsonschema
   version: 4.26.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     attrs: '>=22.2.0'
     jsonschema-specifications: '>=2023.3.6'
@@ -12000,7 +12000,7 @@ package:
 - name: jsonschema-specifications
   version: 2025.9.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     referencing: '>=0.31.0'
@@ -12013,7 +12013,7 @@ package:
 - name: jsonschema-with-format-nongpl
   version: 4.26.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     jsonschema: '>=4.26.0,<4.26.1.0a0'
     fqdn: '*'
@@ -12034,7 +12034,7 @@ package:
 - name: jupyter-lsp
   version: 2.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     importlib-metadata: '>=4.8.3'
     jupyter_server: '>=1.1.2'
@@ -12048,7 +12048,7 @@ package:
 - name: jupyter_client
   version: 8.8.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     jupyter_core: '>=5.1'
     python: '*'
@@ -12065,7 +12065,7 @@ package:
 - name: jupyter_core
   version: 5.9.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
     python: '*'
@@ -12080,7 +12080,7 @@ package:
 - name: jupyter_events
   version: 0.12.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     jsonschema-with-format-nongpl: '>=4.18.0'
     packaging: '*'
@@ -12100,7 +12100,7 @@ package:
 - name: jupyter_server
   version: 2.18.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     anyio: '>=3.1.0'
     argon2-cffi: '>=21.1'
@@ -12130,7 +12130,7 @@ package:
 - name: jupyter_server_terminals
   version: 0.5.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     terminado: '>=0.8.3'
@@ -12143,7 +12143,7 @@ package:
 - name: jupyterlab
   version: 4.5.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     async-lru: '>=1.0.0'
     httpx: '>=0.25.0,<1'
@@ -12169,7 +12169,7 @@ package:
 - name: jupyterlab_pygments
   version: 0.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     pygments: '>=2.4.1,<3'
     python: '>=3.9'
@@ -12182,7 +12182,7 @@ package:
 - name: jupyterlab_server
   version: 2.28.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     babel: '>=2.10'
     jinja2: '>=3.0.3'
@@ -12201,7 +12201,7 @@ package:
 - name: jupyterlab_widgets
   version: 3.0.16
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/jupyterlab_widgets-3.0.16-pyhcf101f3_1.conda
@@ -12213,7 +12213,7 @@ package:
 - name: kernel-headers_linux-64
   version: 4.18.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/kernel-headers_linux-64-4.18.0-he073ed8_8.conda
   hash:
@@ -12224,7 +12224,7 @@ package:
 - name: lark
   version: 1.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/lark-1.3.1-pyhd8ed1ab_0.conda
@@ -12236,7 +12236,7 @@ package:
 - name: lazy-loader
   version: '0.4'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     importlib-metadata: '*'
     packaging: '*'
@@ -12250,7 +12250,7 @@ package:
 - name: libgcc-devel_linux-64
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/libgcc-devel_linux-64-13.4.0-hd1d28cc_116.conda
@@ -12262,7 +12262,7 @@ package:
 - name: libstdcxx-devel_linux-64
   version: 13.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/libstdcxx-devel_linux-64-13.4.0-h6963c3b_116.conda
@@ -12274,7 +12274,7 @@ package:
 - name: locket
   version: 1.0.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*'
   url: https://conda.anaconda.org/conda-forge/noarch/locket-1.0.0-pyhd8ed1ab_0.tar.bz2
@@ -12286,7 +12286,7 @@ package:
 - name: matplotlib-inline
   version: 0.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
     traitlets: '*'
@@ -12299,7 +12299,7 @@ package:
 - name: mistune
   version: 3.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     typing_extensions: '*'
@@ -12312,7 +12312,7 @@ package:
 - name: mpmath
   version: 1.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/mpmath-1.3.0-pyhd8ed1ab_1.conda
@@ -12324,7 +12324,7 @@ package:
 - name: munkres
   version: 1.1.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/munkres-1.1.4-pyhd8ed1ab_1.conda
@@ -12336,7 +12336,7 @@ package:
 - name: narwhals
   version: 2.13.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/narwhals-2.13.0-pyhcf101f3_0.conda
@@ -12348,7 +12348,7 @@ package:
 - name: natsort
   version: 8.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/natsort-8.4.0-pyh29332c3_1.conda
@@ -12360,7 +12360,7 @@ package:
 - name: nbclient
   version: 0.10.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     jupyter_client: '>=6.1.12'
     jupyter_core: '>=4.12,!=5.0.*'
@@ -12376,7 +12376,7 @@ package:
 - name: nbconvert-core
   version: 7.17.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     beautifulsoup4: '*'
     bleach-with-css: '!=5.0.0'
@@ -12403,7 +12403,7 @@ package:
 - name: nbformat
   version: 5.10.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     jsonschema: '>=2.6'
     jupyter_core: '>=4.12,!=5.0.*'
@@ -12419,7 +12419,7 @@ package:
 - name: nest-asyncio
   version: 1.6.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda
@@ -12431,7 +12431,7 @@ package:
 - name: networkx
   version: 3.4.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/networkx-3.4.2-pyh267e887_2.conda
@@ -12443,7 +12443,7 @@ package:
 - name: notebook-shim
   version: 0.2.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     jupyter_server: '>=1.8,<3'
     python: '>=3.9'
@@ -12456,7 +12456,7 @@ package:
 - name: overrides
   version: 7.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
     typing_utils: '*'
@@ -12469,7 +12469,7 @@ package:
 - name: packaging
   version: '25.0'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/packaging-25.0-pyh29332c3_1.conda
@@ -12481,7 +12481,7 @@ package:
 - name: pandocfilters
   version: 1.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '!=3.0,!=3.1,!=3.2,!=3.3'
   url: https://conda.anaconda.org/conda-forge/noarch/pandocfilters-1.5.0-pyhd8ed1ab_0.tar.bz2
@@ -12493,7 +12493,7 @@ package:
 - name: parso
   version: 0.8.7
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/parso-0.8.7-pyhcf101f3_0.conda
@@ -12505,7 +12505,7 @@ package:
 - name: partd
   version: 1.4.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     locket: '*'
     python: '>=3.9'
@@ -12519,7 +12519,7 @@ package:
 - name: pexpect
   version: 4.9.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     ptyprocess: '>=0.5'
     python: '>=3.9'
@@ -12532,7 +12532,7 @@ package:
 - name: pickleshare
   version: 0.7.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pickleshare-0.7.5-pyhd8ed1ab_1004.conda
@@ -12544,7 +12544,7 @@ package:
 - name: pims
   version: '0.7'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     imageio: '*'
     jinja2: '*'
@@ -12563,7 +12563,7 @@ package:
 - name: platformdirs
   version: 4.9.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.9.6-pyhcf101f3_0.conda
@@ -12575,7 +12575,7 @@ package:
 - name: prometheus_client
   version: 0.25.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/prometheus_client-0.25.0-pyhd8ed1ab_0.conda
@@ -12587,7 +12587,7 @@ package:
 - name: prompt-toolkit
   version: 3.0.52
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
     wcwidth: '*'
@@ -12600,7 +12600,7 @@ package:
 - name: ptyprocess
   version: 0.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/ptyprocess-0.7.0-pyhd8ed1ab_1.conda
@@ -12612,7 +12612,7 @@ package:
 - name: pure_eval
   version: 0.2.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pure_eval-0.2.3-pyhd8ed1ab_1.conda
@@ -12624,7 +12624,7 @@ package:
 - name: pyconify
   version: 0.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
     requests: '*'
@@ -12637,7 +12637,7 @@ package:
 - name: pycparser
   version: '2.22'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/pycparser-2.22-pyh29332c3_1.conda
@@ -12649,7 +12649,7 @@ package:
 - name: pygments
   version: 2.19.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pygments-2.19.2-pyhd8ed1ab_0.conda
@@ -12661,7 +12661,7 @@ package:
 - name: pyparsing
   version: 3.2.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/pyparsing-3.2.5-pyhcf101f3_0.conda
@@ -12673,7 +12673,7 @@ package:
 - name: pyqtgraph
   version: 0.14.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     colorama: '*'
     numpy: '>=1.25'
@@ -12687,7 +12687,7 @@ package:
 - name: pysocks
   version: 1.7.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
     python: '>=3.9'
@@ -12700,7 +12700,7 @@ package:
 - name: python-dateutil
   version: 2.9.0.post0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     six: '>=1.5'
@@ -12713,7 +12713,7 @@ package:
 - name: python-fastjsonschema
   version: 2.21.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/python-fastjsonschema-2.21.2-pyhe01879c_0.conda
@@ -12725,7 +12725,7 @@ package:
 - name: python-json-logger
   version: 3.2.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
     typing_extensions: '*'
@@ -12738,7 +12738,7 @@ package:
 - name: python-tzdata
   version: '2025.2'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/python-tzdata-2025.2-pyhd8ed1ab_0.conda
@@ -12750,7 +12750,7 @@ package:
 - name: python_abi
   version: '3.10'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/python_abi-3.10-8_cp310.conda
   hash:
@@ -12761,7 +12761,7 @@ package:
 - name: pytz
   version: '2025.2'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/pytz-2025.2-pyhd8ed1ab_0.conda
@@ -12773,7 +12773,7 @@ package:
 - name: qtpy
   version: 2.4.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     packaging: '*'
     python: '>=3.9'
@@ -12786,7 +12786,7 @@ package:
 - name: referencing
   version: 0.37.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     attrs: '>=22.2.0'
     python: '*'
@@ -12801,7 +12801,7 @@ package:
 - name: requests
   version: 2.32.5
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     certifi: '>=2017.4.17'
     charset-normalizer: '>=2,<4'
@@ -12817,7 +12817,7 @@ package:
 - name: rfc3339-validator
   version: 0.1.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
     six: '*'
@@ -12830,7 +12830,7 @@ package:
 - name: rfc3986-validator
   version: 0.1.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/rfc3986-validator-0.1.1-pyh9f0ad1d_0.tar.bz2
@@ -12842,7 +12842,7 @@ package:
 - name: rfc3987-syntax
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
     lark: '>=1.2.2'
@@ -12855,7 +12855,7 @@ package:
 - name: roifile
   version: 2025.5.10
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     numpy: '*'
     python: '>=3.10'
@@ -12868,7 +12868,7 @@ package:
 - name: send2trash
   version: 2.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __linux: '*'
     python: '*'
@@ -12881,7 +12881,7 @@ package:
 - name: setuptools
   version: 80.9.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/setuptools-80.9.0-pyhff2d567_0.conda
@@ -12893,7 +12893,7 @@ package:
 - name: six
   version: 1.17.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/six-1.17.0-pyhe01879c_1.conda
@@ -12905,7 +12905,7 @@ package:
 - name: slicerator
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/slicerator-1.1.0-pyhd8ed1ab_1.conda
@@ -12917,7 +12917,7 @@ package:
 - name: sniffio
   version: 1.3.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/sniffio-1.3.1-pyhd8ed1ab_2.conda
@@ -12929,7 +12929,7 @@ package:
 - name: sortedcontainers
   version: 2.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/sortedcontainers-2.4.0-pyhd8ed1ab_1.conda
@@ -12941,7 +12941,7 @@ package:
 - name: soupsieve
   version: 2.8.4
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/soupsieve-2.8.4-pyhd8ed1ab_0.conda
@@ -12953,7 +12953,7 @@ package:
 - name: stack_data
   version: 0.6.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     asttokens: '*'
     executing: '*'
@@ -12968,7 +12968,7 @@ package:
 - name: superqt
   version: 0.7.6
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     pyconify: '>=0.1.4'
     pygments: '>=2.4.0'
@@ -12984,7 +12984,7 @@ package:
 - name: sympy
   version: 1.14.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
     cpython: '*'
@@ -13000,7 +13000,7 @@ package:
 - name: sysroot_linux-64
   version: '2.28'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.28'
     kernel-headers_linux-64 4.18.0 he073ed8_8: '*'
@@ -13014,7 +13014,7 @@ package:
 - name: tblib
   version: 3.2.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/tblib-3.2.2-pyhcf101f3_0.conda
@@ -13026,7 +13026,7 @@ package:
 - name: terminado
   version: 0.18.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __unix: '*'
     ptyprocess: '*'
@@ -13041,7 +13041,7 @@ package:
 - name: threadpoolctl
   version: 3.6.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/threadpoolctl-3.6.0-pyhecae5ae_0.conda
@@ -13053,7 +13053,7 @@ package:
 - name: tifffile
   version: 2025.5.10
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     imagecodecs: '>=2024.12.30'
     numpy: '>=1.19.2'
@@ -13067,7 +13067,7 @@ package:
 - name: tinycss2
   version: 1.4.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.5'
     webencodings: '>=0.4'
@@ -13080,7 +13080,7 @@ package:
 - name: tomli
   version: 2.4.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/tomli-2.4.1-pyhcf101f3_0.conda
@@ -13092,7 +13092,7 @@ package:
 - name: toolz
   version: 1.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/toolz-1.1.0-pyhd8ed1ab_1.conda
@@ -13104,7 +13104,7 @@ package:
 - name: tqdm
   version: 4.67.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     colorama: '*'
     python: '>=3.9'
@@ -13117,7 +13117,7 @@ package:
 - name: traitlets
   version: 5.15.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/traitlets-5.15.0-pyhcf101f3_0.conda
@@ -13129,7 +13129,7 @@ package:
 - name: typing-extensions
   version: 4.15.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     typing_extensions: ==4.15.0 pyhcf101f3_0
   url: https://conda.anaconda.org/conda-forge/noarch/typing-extensions-4.15.0-h396c80c_0.conda
@@ -13141,7 +13141,7 @@ package:
 - name: typing_extensions
   version: 4.15.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/typing_extensions-4.15.0-pyhcf101f3_0.conda
@@ -13153,7 +13153,7 @@ package:
 - name: typing_utils
   version: 0.1.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/typing_utils-0.1.0-pyhd8ed1ab_1.conda
@@ -13165,7 +13165,7 @@ package:
 - name: tzdata
   version: 2025b
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/tzdata-2025b-h78e105d_0.conda
   hash:
@@ -13176,7 +13176,7 @@ package:
 - name: uri-template
   version: 1.3.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/uri-template-1.3.0-pyhd8ed1ab_1.conda
@@ -13188,7 +13188,7 @@ package:
 - name: urllib3
   version: 2.5.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     brotli-python: '>=1.0.9'
     h2: '>=4,<5'
@@ -13204,7 +13204,7 @@ package:
 - name: wayland-protocols
   version: '1.46'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/conda-forge/noarch/wayland-protocols-1.46-hd8ed1ab_0.conda
   hash:
@@ -13215,7 +13215,7 @@ package:
 - name: wcwidth
   version: 0.7.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/wcwidth-0.7.0-pyhd8ed1ab_0.conda
@@ -13227,7 +13227,7 @@ package:
 - name: webcolors
   version: 25.10.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/webcolors-25.10.0-pyhd8ed1ab_0.conda
@@ -13239,7 +13239,7 @@ package:
 - name: webencodings
   version: 0.5.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/webencodings-0.5.1-pyhd8ed1ab_3.conda
@@ -13251,7 +13251,7 @@ package:
 - name: websocket-client
   version: 1.9.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/websocket-client-1.9.0-pyhd8ed1ab_0.conda
@@ -13263,7 +13263,7 @@ package:
 - name: widgetsnbextension
   version: 4.0.15
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.10'
   url: https://conda.anaconda.org/conda-forge/noarch/widgetsnbextension-4.0.15-pyhd8ed1ab_0.conda
@@ -13275,7 +13275,7 @@ package:
 - name: xyzservices
   version: 2025.11.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.8'
   url: https://conda.anaconda.org/conda-forge/noarch/xyzservices-2025.11.0-pyhd8ed1ab_0.conda
@@ -13287,7 +13287,7 @@ package:
 - name: zict
   version: 3.0.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '>=3.9'
   url: https://conda.anaconda.org/conda-forge/noarch/zict-3.0.0-pyhd8ed1ab_1.conda
@@ -13299,7 +13299,7 @@ package:
 - name: zipp
   version: 3.23.0
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     python: '*'
   url: https://conda.anaconda.org/conda-forge/noarch/zipp-3.23.0-pyhcf101f3_1.conda
@@ -13311,7 +13311,7 @@ package:
 - name: cuda
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __linux: '*'
     cuda-runtime 12.8.1.*: '*'
@@ -13325,7 +13325,7 @@ package:
 - name: cuda-cccl_linux-64
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/linux-64/cuda-cccl_linux-64-12.8.90-0.conda
@@ -13337,7 +13337,7 @@ package:
 - name: cuda-command-line-tools
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cupti-dev 12.8.90.*: '*'
     cuda-gdb 12.8.90.*: '*'
@@ -13354,7 +13354,7 @@ package:
 - name: cuda-compiler
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __linux: '*'
     cuda-cuobjdump 12.8.90.*: '*'
@@ -13370,7 +13370,7 @@ package:
 - name: cuda-crt-tools
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/linux-64/cuda-crt-tools-12.8.93-0.conda
@@ -13382,7 +13382,7 @@ package:
 - name: cuda-cudart
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-cudart_linux-64 12.8.90 0: '*'
@@ -13398,7 +13398,7 @@ package:
 - name: cuda-cudart-dev
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-cudart 12.8.90 0: '*'
@@ -13416,7 +13416,7 @@ package:
 - name: cuda-cudart-static
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-cudart-static_linux-64 12.8.90 0: '*'
@@ -13432,7 +13432,7 @@ package:
 - name: cuda-cuobjdump
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-nvdisasm: '*'
@@ -13448,7 +13448,7 @@ package:
 - name: cuda-cupti
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13463,7 +13463,7 @@ package:
 - name: cuda-cupti-dev
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-cupti 12.8.90 0: '*'
@@ -13479,7 +13479,7 @@ package:
 - name: cuda-cuxxfilt
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13494,7 +13494,7 @@ package:
 - name: cuda-driver-dev
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-driver-dev_linux-64: '*'
@@ -13510,7 +13510,7 @@ package:
 - name: cuda-gdb
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13526,7 +13526,7 @@ package:
 - name: cuda-libraries
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cudart 12.8.90.*: '*'
     cuda-nvrtc 12.8.93.*: '*'
@@ -13550,7 +13550,7 @@ package:
 - name: cuda-libraries-dev
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cccl_linux-64 12.8.90.*: '*'
     cuda-cudart-dev 12.8.90.*: '*'
@@ -13577,7 +13577,7 @@ package:
 - name: cuda-nsight
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/linux-64/cuda-nsight-12.8.90-0.conda
@@ -13589,7 +13589,7 @@ package:
 - name: cuda-nvcc
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-nvcc_linux-64 12.8.93.*: '*'
     gcc_linux-64: '*'
@@ -13603,7 +13603,7 @@ package:
 - name: cuda-nvcc-impl
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cudart: '>=12.8.57,<13.0a0'
     cuda-cudart-dev: '*'
@@ -13620,7 +13620,7 @@ package:
 - name: cuda-nvcc-tools
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-crt-tools 12.8.93 0: '*'
@@ -13637,7 +13637,7 @@ package:
 - name: cuda-nvcc_linux-64
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-cudart-dev_linux-64 12.8.*: '*'
@@ -13655,7 +13655,7 @@ package:
 - name: cuda-nvdisasm
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13670,7 +13670,7 @@ package:
 - name: cuda-nvml-dev
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13685,7 +13685,7 @@ package:
 - name: cuda-nvprof
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-cupti: '*'
@@ -13701,7 +13701,7 @@ package:
 - name: cuda-nvprune
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13716,7 +13716,7 @@ package:
 - name: cuda-nvrtc
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13731,7 +13731,7 @@ package:
 - name: cuda-nvrtc-dev
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-nvrtc 12.8.93 0: '*'
@@ -13747,7 +13747,7 @@ package:
 - name: cuda-nvtx
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13762,7 +13762,7 @@ package:
 - name: cuda-nvvm-impl
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13777,7 +13777,7 @@ package:
 - name: cuda-nvvm-tools
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13792,7 +13792,7 @@ package:
 - name: cuda-nvvp
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-nvdisasm: '*'
@@ -13809,7 +13809,7 @@ package:
 - name: cuda-opencl
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13825,7 +13825,7 @@ package:
 - name: cuda-opencl-dev
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-opencl 12.8.90 0: '*'
@@ -13841,7 +13841,7 @@ package:
 - name: cuda-profiler-api
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cudart-dev: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13854,7 +13854,7 @@ package:
 - name: cuda-runtime
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __linux: '*'
     cuda-libraries 12.8.1.*: '*'
@@ -13867,7 +13867,7 @@ package:
 - name: cuda-sanitizer-api
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13882,7 +13882,7 @@ package:
 - name: cuda-toolkit
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __linux: '*'
     cuda-compiler 12.8.1.*: '*'
@@ -13899,7 +13899,7 @@ package:
 - name: cuda-tools
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-command-line-tools 12.8.1.*: '*'
     cuda-visual-tools 12.8.1.*: '*'
@@ -13913,7 +13913,7 @@ package:
 - name: cuda-visual-tools
   version: 12.8.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-libraries-dev 12.8.1.*: '*'
     cuda-nsight 12.8.90.*: '*'
@@ -13929,7 +13929,7 @@ package:
 - name: cudnn
   version: 9.14.0.64
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.28,<3.0.a0'
     cuda-version: '>=12,<13.0a0'
@@ -13945,7 +13945,7 @@ package:
 - name: gds-tools
   version: 1.13.1.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13961,7 +13961,7 @@ package:
 - name: libcublas
   version: 12.8.4.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-nvrtc: '*'
@@ -13977,7 +13977,7 @@ package:
 - name: libcublas-dev
   version: 12.8.4.1
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -13993,7 +13993,7 @@ package:
 - name: libcudnn
   version: 9.14.0.64
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.28,<3.0.a0'
     cuda-nvrtc: '*'
@@ -14011,7 +14011,7 @@ package:
 - name: libcudnn-dev
   version: 9.14.0.64
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.28,<3.0.a0'
     cuda-version: '>=12,<13.0a0'
@@ -14027,7 +14027,7 @@ package:
 - name: libcufft
   version: 11.3.3.83
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14042,7 +14042,7 @@ package:
 - name: libcufft-dev
   version: 11.3.3.83
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14058,7 +14058,7 @@ package:
 - name: libcufile
   version: 1.13.1.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14073,7 +14073,7 @@ package:
 - name: libcufile-dev
   version: 1.13.1.3
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14089,7 +14089,7 @@ package:
 - name: libcurand
   version: 10.3.9.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14104,7 +14104,7 @@ package:
 - name: libcurand-dev
   version: 10.3.9.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14120,7 +14120,7 @@ package:
 - name: libcusolver
   version: 11.7.3.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14138,7 +14138,7 @@ package:
 - name: libcusolver-dev
   version: 11.7.3.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14154,7 +14154,7 @@ package:
 - name: libcusparse
   version: 12.5.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14170,7 +14170,7 @@ package:
 - name: libcusparse-dev
   version: 12.5.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14187,7 +14187,7 @@ package:
 - name: libnpp
   version: 12.3.3.100
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14202,7 +14202,7 @@ package:
 - name: libnpp-dev
   version: 12.3.3.100
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14218,7 +14218,7 @@ package:
 - name: libnvfatbin
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14233,7 +14233,7 @@ package:
 - name: libnvfatbin-dev
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14249,7 +14249,7 @@ package:
 - name: libnvjitlink
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12,<12.9.0a0'
@@ -14264,7 +14264,7 @@ package:
 - name: libnvjitlink-dev
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14280,7 +14280,7 @@ package:
 - name: libnvjpeg
   version: 12.3.5.92
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14295,7 +14295,7 @@ package:
 - name: libnvjpeg-dev
   version: 12.3.5.92
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cudart-dev: '*'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14309,7 +14309,7 @@ package:
 - name: nccl
   version: 2.28.9
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.28,<3.0.a0'
     cuda-version: '>=12,<13.0a0'
@@ -14326,7 +14326,7 @@ package:
 - name: nsight-compute
   version: 2025.1.1.2
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
     cuda-version: '>=12.8,<12.9.0a0'
@@ -14349,7 +14349,7 @@ package:
 - name: cuda-crt-dev_linux-64
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-crt-dev_linux-64-12.8.93-0.conda
@@ -14361,7 +14361,7 @@ package:
 - name: cuda-cudart-dev_linux-64
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-cccl_linux-64: '*'
     cuda-cudart-static_linux-64: '*'
@@ -14376,7 +14376,7 @@ package:
 - name: cuda-cudart-static_linux-64
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-cudart-static_linux-64-12.8.90-0.conda
@@ -14388,7 +14388,7 @@ package:
 - name: cuda-cudart_linux-64
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-cudart_linux-64-12.8.90-0.conda
@@ -14400,7 +14400,7 @@ package:
 - name: cuda-driver-dev_linux-64
   version: 12.8.90
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-driver-dev_linux-64-12.8.90-0.conda
@@ -14412,7 +14412,7 @@ package:
 - name: cuda-nvcc-dev_linux-64
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-crt-dev_linux-64 12.8.93 0: '*'
     cuda-nvvm-dev_linux-64 12.8.93 0: '*'
@@ -14427,7 +14427,7 @@ package:
 - name: cuda-nvvm-dev_linux-64
   version: 12.8.93
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies:
     cuda-version: '>=12.8,<12.9.0a0'
   url: https://conda.anaconda.org/nvidia/noarch/cuda-nvvm-dev_linux-64-12.8.93-0.conda
@@ -14439,7 +14439,7 @@ package:
 - name: cuda-version
   version: '12.8'
   manager: conda
-  platform: p1
+  platform: linux-64
   dependencies: {}
   url: https://conda.anaconda.org/nvidia/noarch/cuda-version-12.8-3.conda
   hash:
