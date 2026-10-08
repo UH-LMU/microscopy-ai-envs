@@ -47,6 +47,12 @@ micro_sam = ">=1.8.14,<1.9"
 pydantic = ">=2.12"
 npe2 = ">=0.9"
 
+# PyOpenGL >=3.1.10 dlopens the unversioned "libGLX.so" first. Without an
+# env-local one it picks up the system copy (from libglx-dev) while Qt links
+# the env's libGLX.so.0 -> "Could not initialize GLX" and napari aborts.
+[feature.micro-sam.target.linux-64.dependencies]
+libglx-devel = "*"
+
 [feature.cuda11]
 channels = ["conda-forge"]
 platforms = ["linux-64", "win-64"]
