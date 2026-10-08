@@ -42,6 +42,10 @@ cellpose = ">=4.0"
 [feature.micro-sam.dependencies]
 python = "3.12.*"
 micro_sam = ">=1.8.14,<1.9"
+# npe2 (napari plugin manifests) breaks on pydantic 2.11.* -- "PluginManifest is
+# not fully defined; you should define Draft06JsonSchema". npe2 >=0.9 excludes it.
+pydantic = ">=2.12"
+npe2 = ">=0.9"
 
 [feature.cuda11]
 channels = ["conda-forge"]
