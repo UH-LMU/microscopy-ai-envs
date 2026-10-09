@@ -1,6 +1,9 @@
 [workspace]
 name = "microscopy-ai-envs"
 channels = ["conda-forge"]
+# Named platform entries below need a recent pixi (0.57 can't parse them).
+# Keep docker/Dockerfile.* `FROM ghcr.io/prefix-dev/pixi:<ver>` in step.
+requires-pixi = ">=0.81"
 # The CUDA-12 envs solve against the named platforms (virtual package
 # __cuda=12, so cuda builds of pytorch are selectable); everything else uses
 # the bare subdirs.
