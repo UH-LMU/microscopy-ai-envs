@@ -81,7 +81,8 @@ workflow runs `pixi-to-conda-lock --output conda-locks pixi.lock` (omitting
 `stefanzweifel/git-auto-commit-action@v5`.
 
 The normalize step is needed because `pixi-to-conda-lock` (<= 0.4.5) copies
-pixi.lock v7 platform aliases (`p1`, `p2` for the CUDA-12 envs) into the
+pixi.lock v7 platform names (`linux-64-cuda12`, `win-64-cuda12`, formerly
+`p1`/`p2`, for the CUDA-12 envs) into the
 output instead of `linux-64`/`win-64`, and writes packages in no fixed order.
 Without it, conda-lock consumers find no packages for the CUDA envs, and every
 run churns thousands of lines.

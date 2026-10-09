@@ -28,6 +28,27 @@ def pixi_envs():
     return [e["name"] for e in json.loads(out)["environments_info"] if e["name"] != "default"]
 
 
+def clean_env():
+    """os.environ minus the outer pixi activation, if this runs inside an env.
+
+    Otherwise the outer env's PATH entries (Windows also searches PATH for
+    DLLs) and vars like SSL_CERT_DIR leak into the env under test.
+    """
+    prefix = os.environ.get("CONDA_PREFIX")
+    norm = lambda p: os.path.normcase(os.path.abspath(p))
+    inside = lambda p: prefix and (norm(p) + os.sep).startswith(norm(prefix) + os.sep)
+    env = {}
+    for k, v in os.environ.items():
+        if k.startswith(("PIXI_", "CONDA_")):
+            continue
+        if k.upper() == "PATH":
+            v = os.pathsep.join(p for p in v.split(os.pathsep) if p and not inside(p))
+        elif prefix and inside(v):
+            continue  # e.g. SSL_CERT_DIR, XLA_FLAGS-style paths into the outer env
+        env[k] = v
+    return env
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("envs", nargs="*", help="envs to test (default: all)")
@@ -40,8 +61,7 @@ def main():
     if unknown:
         sys.exit(f"unknown env(s): {', '.join(unknown)} (available: {', '.join(available)})")
 
-    # Don't leak the outer pixi activation into the per-env runs.
-    child_env = {k: v for k, v in os.environ.items() if not k.startswith(("PIXI_", "CONDA_"))}
+    child_env = clean_env()
 
     results = []
     for env in envs:

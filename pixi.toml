@@ -1,7 +1,15 @@
 [workspace]
 name = "microscopy-ai-envs"
 channels = ["conda-forge"]
-platforms = ["win-64", "linux-64"]
+# The CUDA-12 envs solve against the named platforms (virtual package
+# __cuda=12, so cuda builds of pytorch are selectable); everything else uses
+# the bare subdirs.
+platforms = [
+  "win-64",
+  "linux-64",
+  { name = "win-64-cuda12", platform = "win-64", cuda = "12" },
+  { name = "linux-64-cuda12", platform = "linux-64", cuda = "12" },
+]
 
 # ---- Tasks ----
 [tasks]
@@ -9,7 +17,9 @@ platforms = ["win-64", "linux-64"]
 list = "python -c \"print('envs: cellpose3, cellpose4, micro-sam')\""
 
 # Smoke-test envs incl. CUDA. `pixi run test [env ...]` tests all/selected envs
-# (runner uses the system python); `pixi run -e <env> check-env` tests one.
+# (runner uses the system python; without one, e.g. on Windows, use
+# `pixi run -e cellpose4 python scripts/test_envs.py`); `pixi run -e <env>
+# check-env` tests one.
 # CHECK_GPU=auto|require|skip controls the CUDA checks.
 test = "python scripts/test_envs.py"
 check-env = "python scripts/check_env.py"
@@ -26,15 +36,12 @@ cudnn = "*"
 pytorch-gpu = "*"
 cuda-version = "12.8.*"
 
-[feature.cuda.system-requirements]
-cuda = "12"
-
 [feature.cuda.tasks]
 warmup = "python warmup.py"
 
 [feature.cuda]
 channels = ["nvidia"]
-platforms = ["linux-64", "win-64"]
+platforms = ["linux-64-cuda12", "win-64-cuda12"]
 
 
 [feature.cellpose3.dependencies]
@@ -58,6 +65,14 @@ npe2 = ">=0.9"
 # the env's libGLX.so.0 -> "Could not initialize GLX" and napari aborts.
 [feature.micro-sam.target.linux-64.dependencies]
 libglx-devel = "*"
+
+# trackastra -> motile/ilpy -> pyscipopt -> scip/ipopt/mumps-seq. Older win-64
+# builds of these depend on libflang 5 -> openmp 5.0.0 (2018), which installs
+# its own Library/bin/libiomp5md.dll over intel-openmp's; torch then fails with
+# "DLL load failed while importing _C: The specified procedure could not be
+# found". Constraining libflang (not adding it) steers the solver to newer builds.
+[feature.micro-sam.target.win-64.constraints]
+libflang = ">=6"
 
 [feature.cuda11]
 channels = ["conda-forge"]
@@ -88,6 +103,12 @@ platforms = ["linux-64", "win-64"]
 
 [feature.stardist.pypi-dependencies]
 stardist = "*"
+
+# imagecodecs has no py310 win-64 build newer than 2025.3.30, and that one
+# needs libdeflate 1.24.*. Without this the solver lands on libdeflate 1.25 and
+# the lock is inconsistent, so every `pixi run` tries to rewrite pixi.lock.
+[feature.stardist.target.win-64.constraints]
+libdeflate = "1.24.*"
 
 # Interactive/workstation extras: kernel + common analysis packages on top of any base env.
 [feature.jupyter.dependencies]

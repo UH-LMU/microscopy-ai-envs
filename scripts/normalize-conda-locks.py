@@ -7,11 +7,11 @@ Usage:
 Two fixes:
 
 1. Platform aliases. pixi.lock format v7 gives platforms with extra virtual
-   packages (e.g. envs with `[feature.cuda.system-requirements] cuda = "12"`)
-   alias names like `p1`, with the real platform in `subdir`.
+   packages (the named `workspace.platforms` entries, e.g. `linux-64-cuda12`;
+   older pixi used `p1`, `p2`) their own name, with the real platform in `subdir`.
    pixi-to-conda-lock (<= 0.4.5) copies the alias into its output, so
    conda-lock consumers asking for `linux-64` find nothing. This rewrites
-   `p1` -> `linux-64` etc.
+   `linux-64-cuda12` -> `linux-64` etc.
 
 2. Ordering. pixi-to-conda-lock writes the `package:` list and the metadata
    platform lists in no fixed order, so every regeneration churns thousands of
