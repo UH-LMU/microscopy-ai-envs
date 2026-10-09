@@ -8,6 +8,12 @@ platforms = ["win-64", "linux-64"]
 # Display available envs
 list = "python -c \"print('envs: cellpose3, cellpose4, micro-sam')\""
 
+# Smoke-test envs incl. CUDA. `pixi run test [env ...]` tests all/selected envs
+# (runner uses the system python); `pixi run -e <env> check-env` tests one.
+# CHECK_GPU=auto|require|skip controls the CUDA checks.
+test = "python scripts/test_envs.py"
+check-env = "python scripts/check_env.py"
+
 # Build docker images (examples; adjust registry)
 "docker:build:cp3" = "sudo docker build -f docker/Dockerfile.cellpose3 -t ghcr.io/uh-lmu/cellpose3:latest ."
 "docker:build:cp4" = "sudo docker build -f docker/Dockerfile.cellpose4 -t ghcr.io/uh-lmu/cellpose4:latest ."
