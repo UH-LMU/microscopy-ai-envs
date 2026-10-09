@@ -3002,17 +3002,17 @@ package:
   category: main
   optional: false
 - name: libdeflate
-  version: '1.25'
+  version: '1.24'
   manager: conda
   platform: win-64
   dependencies:
     ucrt: '>=10.0.20348.0'
-    vc: '>=14.3,<15'
-    vc14_runtime: '>=14.44.35208'
-  url: https://conda.anaconda.org/conda-forge/win-64/libdeflate-1.25-h51727cc_0.conda
+    vc: '>=14.2,<15'
+    vc14_runtime: '>=14.29.30139'
+  url: https://conda.anaconda.org/conda-forge/win-64/libdeflate-1.24-h76ddb4d_0.conda
   hash:
-    md5: e77030e67343e28b084fabd7db0ce43e
-    sha256: 834e4881a18b690d5ec36f44852facd38e13afe599e369be62d29bd675f107ee
+    md5: 08d988e266c6ae77e03d164b83786dc4
+    sha256: 65347475c0009078887ede77efe60db679ea06f2b56f7853b9310787fe5ad035
   category: main
   optional: false
 - name: libexpat
@@ -3233,7 +3233,7 @@ package:
   platform: win-64
   dependencies:
     lerc: '>=4.0.0,<5.0a0'
-    libdeflate: '>=1.25,<1.26.0a0'
+    libdeflate: '>=1.24,<1.25.0a0'
     libjpeg-turbo: '>=3.1.0,<4.0a0'
     liblzma: '>=5.8.1,<6.0a0'
     libzlib: '>=1.3.1,<2.0a0'
@@ -3241,10 +3241,10 @@ package:
     vc: '>=14.3,<15'
     vc14_runtime: '>=14.44.35208'
     zstd: '>=1.5.7,<1.6.0a0'
-  url: https://conda.anaconda.org/conda-forge/win-64/libtiff-4.7.1-h8f73337_1.conda
+  url: https://conda.anaconda.org/conda-forge/win-64/libtiff-4.7.1-h550210a_0.conda
   hash:
-    md5: 549845d5133100142452812feb9ba2e8
-    sha256: f1b8cccaaeea38a28b9cd496694b2e3d372bb5be0e9377c9e3d14b330d1cba8a
+    md5: e23f29747d9d2aa2a39b594c114fac67
+    sha256: d6cac6596ded0d5bbbc4198d7eb4db88da8c00236ebf5e2c8ad333ccde8965e2
   category: main
   optional: false
 - name: libwebp-base
