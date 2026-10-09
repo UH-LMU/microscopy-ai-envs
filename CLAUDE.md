@@ -12,7 +12,7 @@ Every tool ships **two** environments:
 | name             | use                                            | extras                                                      |
 | ---------------- | ---------------------------------------------- | ----------------------------------------------------------- |
 | `<tool>`         | minimal — built into docker/apptainer images   | tool + CUDA only                                            |
-| `<tool>-full`    | workstation, interactive use (Jupyter, VSCode) | adds `[feature.jupyter]`: ipykernel, jupyterlab, ipywidgets, matplotlib, pandas, scikit-image, scikit-learn |
+| `<tool>-full`    | workstation, interactive use (Jupyter, VSCode) | adds `[feature.jupyter]`: ipykernel, jupyterlab, ipywidgets, matplotlib-base, pandas, scikit-image, scikit-learn |
 
 Each `<tool>` and `<tool>-full` pair **shares a `solve-group`** so they get
 identical pins for everything they have in common. This is deliberate: a bug

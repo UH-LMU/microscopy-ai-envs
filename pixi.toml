@@ -73,6 +73,13 @@ libglx-devel = "*"
 # found". Constraining libflang (not adding it) steers the solver to newer builds.
 [feature.micro-sam.target.win-64.constraints]
 libflang = ">=6"
+# Solving around the above (newer flang builds need llvm-openmp, so pytorch
+# >=2.8) the solver backtracked to numpy 1.26 / dask 2023.3 / matplotlib 3.9.
+# Old dask hands napari read-only label chunks, and PartSegCore then fails
+# with "buffer source array is read-only". Keep these in line with linux-64.
+numpy = ">=2"
+dask-core = ">=2025"
+matplotlib-base = ">=3.10"
 
 [feature.cuda11]
 channels = ["conda-forge"]
@@ -115,7 +122,10 @@ libdeflate = "1.24.*"
 ipykernel = "*"
 jupyterlab = "*"
 ipywidgets = "*"
-matplotlib = "*"
+# matplotlib-base, not the `matplotlib` metapackage: the latter pulls in a Qt
+# binding (PySide6, or PyQt5 for old versions), which on win-64 fought with
+# napari's PyQt6 in micro-sam-full. Inline/Tk backends need no Qt.
+matplotlib-base = "*"
 pandas = "*"
 scikit-image = "*"
 scikit-learn = "*"
