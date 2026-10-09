@@ -3009,22 +3009,6 @@ package:
     sha256: b3894b37cab530d1adab5b9ce39a1b9f28040403cc0042b77e04a2f227a447de
   category: main
   optional: false
-- name: matplotlib
-  version: 3.10.9
-  manager: conda
-  platform: linux-64
-  dependencies:
-    matplotlib-base: '>=3.10.9,<3.10.10.0a0'
-    pyside6: '>=6.7.2'
-    python: '>=3.10,<3.11.0a0'
-    python_abi 3.10.* *_cp310: '*'
-    tornado: '>=5'
-  url: https://conda.anaconda.org/conda-forge/linux-64/matplotlib-3.10.9-py310hff52083_0.conda
-  hash:
-    md5: 6284b8d4fc87791b75566f0bd11a359b
-    sha256: 360ba3fb839b22f05ae9a9e9b2e268fa2adcaf179b2cd0c4d1a3cf7db4f3b01e
-  category: main
-  optional: false
 - name: matplotlib-base
   version: 3.10.9
   manager: conda
@@ -12286,22 +12270,6 @@ package:
   hash:
     md5: 1fdd2255424eaf0d5e707c205ace2c30
     sha256: 87203ea8bbe265ebabb16673c9442d2097e1b405dc70df49d6920730e7be6e74
-  category: main
-  optional: false
-- name: matplotlib
-  version: 3.10.9
-  manager: conda
-  platform: win-64
-  dependencies:
-    matplotlib-base: '>=3.10.9,<3.10.10.0a0'
-    pyside6: '>=6.7.2'
-    python: '>=3.10,<3.11.0a0'
-    python_abi 3.10.* *_cp310: '*'
-    tornado: '>=5'
-  url: https://conda.anaconda.org/conda-forge/win-64/matplotlib-3.10.9-py310h5588dad_0.conda
-  hash:
-    md5: 68eee27bd98ee313502647629b1cfa71
-    sha256: 174bce9bafa84c89ac5969d022a36316403143dcc1d8b2244d807d7d154b0eaa
   category: main
   optional: false
 - name: matplotlib-base
