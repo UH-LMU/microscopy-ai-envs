@@ -1,0 +1,35 @@
+Bootstrap: docker-archive
+From: {{ ARCHIVE }}
+
+# Apptainer wrapper around one of the x86 pixi images (docker/Dockerfile.*).
+# Not meant to be built by hand -- use scripts/build-sif.sh (or
+# `pixi run sif:build <env>`), which builds the docker image, saves it to a tar
+# and passes that in as ARCHIVE.
+#
+# The OCI ENTRYPOINT/CMD become the runscript, so `apptainer run` activates the
+# pixi env (via /app/entrypoint.sh); plain `apptainer exec` does not.
+
+%arguments
+    ENV=
+    VERSION=dev
+    COMMIT=unknown
+
+%files
+    scripts/check_env.py /app/check_env.py
+
+%test
+    # Imports only by default, so the build passes without a GPU. Re-run on a
+    # GPU host with: CHECK_GPU=require apptainer test --nv <sif>
+    CHECK_GPU="${CHECK_GPU:-skip}" /app/entrypoint.sh python /app/check_env.py {{ ENV }}
+
+%labels
+    Maintainer uh-lmu
+    Source https://github.com/UH-LMU/microscopy-ai-envs
+    PixiEnv {{ ENV }}
+    Version {{ VERSION }}
+    Commit {{ COMMIT }}
+
+%help
+    pixi env '{{ ENV }}' from microscopy-ai-envs {{ VERSION }} ({{ COMMIT }}).
+    Run:  apptainer run --nv <sif> [command ...]   (no command: the tool's CLI)
+    Test: CHECK_GPU=require apptainer test --nv <sif>

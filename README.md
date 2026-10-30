@@ -32,31 +32,22 @@ Dockerfiles under `docker/` show how to build images that embed these envs. Publ
 - `ghcr.io/uh-lmu/cellpose4:<date>`
 - `ghcr.io/uh-lmu/microsam:<date>`
 
-## Manually building Apptainer .sif images
-The images produced by the Dockerfiles in this repository are quite large, and it is not possible to build them with Github Actions. Here's the manual process.
+## Building Apptainer .sif images
+The images produced by the Dockerfiles are too large to build on GitHub Actions,
+so .sif files are built locally:
 
-``` bash
-# add git tag
-git tag v0.1
-
-# build Docker image to local index
-sudo docker build -f docker/Dockerfile-cellpose4 -t uh-lmu/cellpose4:lmuv1.0 .
-sudo docker images
-
-# export image as a .tar archive
-sudo docker save 5a7333709fb1 -o /DISKS/2TB/hajaalin/tmp/uh-lmu_cellpose4_lmuv1.0.tar
-
-# build apptainer image from .tar
-TMPDIR=/DISKS/2TB/hajaalin/tmp/apptainer apptainer build /DISKS/2TB/hajaalin/apptainer/uh-lmu_cellpose4_lmuv1.0.sif docker-archive:///DISKS/2TB/hajaalin/tmp/uh-lmu_cellpose4_lmuv1.0.tar
-
-# test .sif (with --nv flag to enable CUDA)
-apptainer run --nv /DISKS/2TB/hajaalin/apptainer/uh-lmu_cellpose4_lmuv1.0.sif cellpose
-
+```bash
+git tag v1.2                          # optional; names the .sif (else `git describe`)
+pixi run sif:build cellpose4          # or sif:build:cp3 / sif:build:cp4 / sif:build:microsam
+# -> sif/uh-lmu_cellpose4_v1.2.sif
 ```
 
-`
-add git tag, e.g. v0.1
-- 
+`scripts/build-sif.sh` does `sudo docker build` -> `docker save` -> `apptainer
+build` with `docker/pixi-env.def` (labels, help, and a `%test` that runs
+`scripts/check_env.py`). The docker tar and apptainer scratch need several GB:
+set `TMPDIR` / `APPTAINER_TMPDIR` to a big disk if needed, `SIF_DIR` to change
+the output dir. Test on a GPU host with
+`CHECK_GPU=require apptainer test --nv sif/<name>.sif`.
 
 ## Helper scripts
 - `scripts/run_in_env.ps1` / `scripts/run_in_env.sh` run a command in a selected env for a **project path**.

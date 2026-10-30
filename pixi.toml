@@ -32,6 +32,13 @@ check-env = "python scripts/check_env.py"
 "docker:build:cp4" = "sudo docker build -f docker/Dockerfile.cellpose4 -t ghcr.io/uh-lmu/cellpose4:latest ."
 "docker:build:microsam" = "sudo docker build -f docker/Dockerfile.microsam -t ghcr.io/uh-lmu/micro-sam:latest ."
 
+# Build Apptainer .sif images (docker build -> save -> apptainer build with
+# docker/pixi-env.def). `pixi run sif:build <env> [version]`; output in ./sif/.
+"sif:build" = "bash scripts/build-sif.sh"
+"sif:build:cp3" = "bash scripts/build-sif.sh cellpose3"
+"sif:build:cp4" = "bash scripts/build-sif.sh cellpose4"
+"sif:build:microsam" = "bash scripts/build-sif.sh micro-sam"
+
 # ---- CUDA feature ----
 [feature.cuda.dependencies]
 cuda = ">=12"
