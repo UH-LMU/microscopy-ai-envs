@@ -11,6 +11,8 @@
 # The docker tar goes to $TMPDIR and apptainer's scratch to $APPTAINER_TMPDIR
 # (or $TMPDIR); both need several GB, so point them at a big disk if /tmp is
 # small. DOCKER overrides the docker command (default: "sudo docker").
+# An existing image with the same tag is reused unless the version is -dirty
+# or REBUILD=1.
 set -euo pipefail
 
 usage() { echo "usage: $0 <cellpose3|cellpose4|micro-sam> [version]" >&2; exit 2; }
@@ -31,12 +33,34 @@ sif=$sif_dir/uh-lmu_${env}_${version}.sif
 image=uh-lmu/$env:$version
 read -r -a docker <<< "${DOCKER:-sudo docker}"
 
-"${docker[@]}" build -f "$dockerfile" -t "$image" .
+# The sudo timestamp can expire during a long build; say why we're prompting.
+sudo_reason() {
+  if [[ ${docker[0]} == sudo ]] && ! sudo -n true 2>/dev/null; then
+    echo ">>> sudo needed for: $*" >&2
+  fi
+}
+
+# Reuse an existing image unless the version is -dirty (its tag doesn't pin
+# the content) or REBUILD=1.
+sudo_reason "docker image inspect $image"
+if [[ $version != *-dirty && ${REBUILD:-0} != 1 ]] &&
+   "${docker[@]}" image inspect "$image" > /dev/null 2>&1; then
+  echo "image $image exists, skipping docker build (REBUILD=1 to force)"
+else
+  sudo_reason "docker build $image"
+  "${docker[@]}" build -f "$dockerfile" -t "$image" .
+fi
 
 tar=$(mktemp --tmpdir "uh-lmu_${env}_XXXXXX.tar")
 trap 'rm -f "$tar"' EXIT
 # Redirect (not -o) so the tar is owned by us, not root.
+sudo_reason "docker save $image > $tar"
 "${docker[@]}" save "$image" > "$tar"
+
+scratch=${APPTAINER_TMPDIR:-${TMPDIR:-/tmp}}
+echo "tar $(du -h "$tar" | cut -f1) in $(dirname "$tar"); apptainer scratch" \
+  "$scratch has $(df -h --output=avail "$scratch" | tail -1 | tr -d ' ') free" \
+  "(needs ~2x the tar)"
 
 mkdir -p "$sif_dir"
 # --notest + separate `apptainer test`: an unprivileged build runs %test under
