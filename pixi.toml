@@ -76,6 +76,13 @@ npe2 = ">=0.9"
 [feature.micro-sam.target.linux-64.dependencies]
 libglx-devel = "*"
 
+# vispy finds libGL via ctypes.util.find_library("GL"), which only looks in the
+# ldconfig cache / via gcc or ld. In the docker/sif images (no system libGL, no
+# toolchain) that finds nothing -> "GL ES 2.0 library not found" on importing
+# micro_sam. Point it at the env's own libglvnd libGL, the one Qt uses anyway.
+[feature.micro-sam.target.linux-64.activation.env]
+VISPY_GL_LIB = "$CONDA_PREFIX/lib/libGL.so.1"
+
 # trackastra -> motile/ilpy -> pyscipopt -> scip/ipopt/mumps-seq. Older win-64
 # builds of these depend on libflang 5 -> openmp 5.0.0 (2018), which installs
 # its own Library/bin/libiomp5md.dll over intel-openmp's; torch then fails with
