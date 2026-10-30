@@ -6,13 +6,13 @@
 #   pixi run sif:build <env> [version]
 #
 # <env> is cellpose3, cellpose4 or micro-sam. [version] defaults to
-# `git describe --tags --always --dirty`; tag the repo first for a clean name.
+# <YYYYMMDD>_<commit>[-dirty] (build date, short HEAD, uncommitted changes).
 # Output: $SIF_DIR/uh-lmu_<env>_<version>.sif (SIF_DIR defaults to ./sif).
 # The docker tar goes to $TMPDIR and apptainer's scratch to $APPTAINER_TMPDIR
 # (or $TMPDIR); both need several GB, so point them at a big disk if /tmp is
 # small. DOCKER overrides the docker command (default: "sudo docker").
-# An existing image with the same tag is reused unless the version is -dirty
-# or REBUILD=1.
+# The docker image is tagged uh-lmu/<env>:<commit>[-dirty]; an existing one is
+# reused (also on a later day) unless it is -dirty or REBUILD=1.
 set -euo pipefail
 
 usage() { echo "usage: $0 <cellpose3|cellpose4|micro-sam> [version]" >&2; exit 2; }
@@ -26,11 +26,12 @@ case $env in
 esac
 
 cd "$(dirname "$0")/.."
-version=${2:-$(git describe --tags --always --dirty)}
 commit=$(git rev-parse --short HEAD)
+git diff --quiet HEAD || commit+=-dirty
+version=${2:-$(date +%Y%m%d)_$commit}
 sif_dir=${SIF_DIR:-sif}
 sif=$sif_dir/uh-lmu_${env}_${version}.sif
-image=uh-lmu/$env:$version
+image=uh-lmu/$env:$commit
 read -r -a docker <<< "${DOCKER:-sudo docker}"
 
 # The sudo timestamp can expire during a long build; say why we're prompting.
@@ -40,10 +41,10 @@ sudo_reason() {
   fi
 }
 
-# Reuse an existing image unless the version is -dirty (its tag doesn't pin
+# Reuse an existing image unless the commit is -dirty (its tag doesn't pin
 # the content) or REBUILD=1.
 sudo_reason "docker image inspect $image"
-if [[ $version != *-dirty && ${REBUILD:-0} != 1 ]] &&
+if [[ $commit != *-dirty && ${REBUILD:-0} != 1 ]] &&
    "${docker[@]}" image inspect "$image" > /dev/null 2>&1; then
   echo "image $image exists, skipping docker build (REBUILD=1 to force)"
 else

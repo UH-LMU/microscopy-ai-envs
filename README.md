@@ -37,9 +37,8 @@ The images produced by the Dockerfiles are too large to build on GitHub Actions,
 so .sif files are built locally:
 
 ```bash
-git tag v1.2                          # optional; names the .sif (else `git describe`)
 pixi run sif:build cellpose4          # or sif:build:cp3 / sif:build:cp4 / sif:build:microsam
-# -> sif/uh-lmu_cellpose4_v1.2.sif
+# -> sif/uh-lmu_cellpose4_<YYYYMMDD>_<commit>.sif (-dirty if uncommitted changes)
 ```
 
 `scripts/build-sif.sh` does `sudo docker build` -> `docker save` -> `apptainer
