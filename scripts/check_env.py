@@ -192,6 +192,11 @@ def check_io():
         from bioio import BioImage
         from bioio.writers import OMEZarrWriter, OmeTiffWriter
 
+        # BioImage tries bioio-ome-tiff on plain.tif first and logs a warning
+        # before falling back to bioio-tifffile; the fallback is what we test.
+        import logging
+        logging.getLogger("bioio").setLevel(logging.ERROR)
+
         data = np.arange(2 * 32 * 32, dtype=np.uint16).reshape(2, 32, 32)
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
