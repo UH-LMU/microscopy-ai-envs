@@ -2,9 +2,15 @@
 # Microscopy AI Environments (Pixi)
 
 This repo hosts **reusable, pre-solved environments** for heavy tools:
-- **cellpose3** (Cellpose < 4.0; Python 3.10)
-- **cellpose4** (Cellpose ≥ 4.0 with SAM; Python 3.11)
-- **microsam** (micro-SAM + napari; Python 3.11)
+- **cellpose3** (Cellpose < 4.0; Python 3.12)
+- **cellpose4** (Cellpose ≥ 4.0 with SAM; Python 3.12)
+- **micro-sam** (micro-SAM + napari; Python 3.12)
+- **stardist** (StarDist + TensorFlow 2.10; Python 3.10)
+
+Each also comes as `<tool>-full` with Jupyter and analysis extras. All but
+stardist include [bioio](https://github.com/bioio-devs/bioio) readers for CZI,
+LIF, OME-TIFF, OME-Zarr and plain TIFF, e.g.
+`BioImage("img.czi").get_image_dask_data("ZYX")`.
 
 ## Usage (local workstation)
 
@@ -14,7 +20,7 @@ This repo hosts **reusable, pre-solved environments** for heavy tools:
 
 pixi install -e cellpose3    # solve once
 pixi install -e cellpose4
-pixi install -e microsam
+pixi install -e micro-sam
 
 # optional: create/update a consolidated lock file after solving
 # (pixi writes/updates pixi.lock automatically during install)

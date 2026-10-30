@@ -173,6 +173,39 @@ def check_stardist():
         return f"{len(gpus)} GPU(s), CUDA {info.get('cuda_version')}, cuDNN {info.get('cudnn_version')}"
 
 
+def check_io():
+    @check("bioio readers")
+    def _():
+        import importlib
+        mods = ["bioio", "bioio_czi", "bioio_lif", "bioio_ome_tiff", "bioio_ome_zarr", "bioio_tifffile"]
+        for m in mods:
+            importlib.import_module(m)
+        from importlib.metadata import version
+        return ", ".join(f"{m} {version(m.replace('_', '-'))}" for m in mods)
+
+    @check("bioio round trip (tiff, ome-tiff, ome-zarr)")
+    def _():
+        import tempfile
+        from pathlib import Path
+        import numpy as np
+        import tifffile
+        from bioio import BioImage
+        from bioio.writers import OMEZarrWriter, OmeTiffWriter
+
+        data = np.arange(2 * 32 * 32, dtype=np.uint16).reshape(2, 32, 32)
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            tifffile.imwrite(d / "plain.tif", data)
+            OmeTiffWriter.save(data, d / "img.ome.tiff", dim_order="ZYX")
+            OMEZarrWriter(d / "img.ome.zarr", level_shapes=[data.shape], dtype=data.dtype,
+                          axes_names=["z", "y", "x"]).write_full_volume(data)
+            for f in ["plain.tif", "img.ome.tiff", "img.ome.zarr"]:
+                img = BioImage(d / f)
+                got = np.asarray(img.get_image_dask_data("ZYX").compute())
+                if not np.array_equal(got, data):
+                    raise RuntimeError(f"{f}: read back {got.shape} {got.dtype}, data differs")
+
+
 def check_jupyter():
     @check("jupyter extras")
     def _():
@@ -195,6 +228,9 @@ TOOLS = {
     "stardist": check_stardist,
 }
 
+# Tools whose envs include the `io` feature (bioio needs python >=3.11).
+IO_TOOLS = {"cellpose3", "cellpose4", "micro-sam"}
+
 
 def main():
     env = sys.argv[1] if len(sys.argv) > 1 else os.environ.get("PIXI_ENVIRONMENT_NAME", "")
@@ -206,6 +242,8 @@ def main():
 
     print(f"== {env}: python {sys.version.split()[0]} at {sys.executable}")
     TOOLS[tool]()
+    if tool in IO_TOOLS:
+        check_io()
     if full:
         check_jupyter()
 

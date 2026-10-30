@@ -21,6 +21,11 @@ container env. The cost is that the minimal env's lock churns whenever its
 `-full` sibling's solve set changes — that's the explicit price of the
 consistency guarantee.
 
+Image readers live in `[feature.io]` (bioio + lif/ome-tiff/ome-zarr/tifffile
+from conda-forge, `bioio-czi` from PyPI, hence `pip`). It goes in **both**
+`<tool>` and `<tool>-full`, since container batch jobs need to read images.
+bioio needs Python >= 3.11, so stardist (3.10) doesn't get it.
+
 When adding a new tool, follow the same pattern. Put interactive-only
 packages in `[feature.jupyter]`, not in the tool's own feature, or the
 minimal env will silently grow.

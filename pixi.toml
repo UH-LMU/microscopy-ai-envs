@@ -60,11 +60,11 @@ platforms = ["linux-64-cuda12", "win-64-cuda12"]
 
 
 [feature.cellpose3.dependencies]
-python = "3.10.*"
+python = "3.12.*"
 cellpose = "<4"
 
 [feature.cellpose4.dependencies]
-python = "3.10.*"
+python = "3.12.*"
 cellpose = ">=4.0"
 
 [feature.micro-sam.dependencies]
@@ -139,6 +139,22 @@ stardist = "*"
 [feature.stardist.target.win-64.constraints]
 libdeflate = "1.24.*"
 
+# Image readers (bioio + plugins), in both minimal and -full envs since batch
+# jobs in containers need them too. bioio needs python >=3.11, so not stardist.
+[feature.io.dependencies]
+bioio = "*"
+bioio-lif = "*"
+bioio-ome-tiff = "*"
+bioio-ome-zarr = "*"
+bioio-tifffile = "*"
+pip = "*"  # pixi-to-conda-lock needs it when pypi-dependencies are present
+
+# bioio-czi and its aicspylibczi >=4 are not on conda-forge. The pixi warning
+# "bioio-czi overwrites conda package bioio-lif: .../site-packages/scripts/
+# benchmark.py" is harmless: the bioio plugins all ship that stray file.
+[feature.io.pypi-dependencies]
+bioio-czi = "*"
+
 # Interactive/workstation extras: kernel + common analysis packages on top of any base env.
 [feature.jupyter.dependencies]
 ipykernel = "*"
@@ -153,11 +169,11 @@ scikit-image = "*"
 scikit-learn = "*"
 
 [environments]
-cellpose3 = {features = ["cuda", "cellpose3"], solve-group = "cellpose3"}
-cellpose4 = {features = ["cuda", "cellpose4"], solve-group = "cellpose4"}
-micro-sam = {features = ["cuda", "micro-sam"], solve-group = "micro-sam"}
+cellpose3 = {features = ["cuda", "cellpose3", "io"], solve-group = "cellpose3"}
+cellpose4 = {features = ["cuda", "cellpose4", "io"], solve-group = "cellpose4"}
+micro-sam = {features = ["cuda", "micro-sam", "io"], solve-group = "micro-sam"}
 stardist = {features = ["cuda11", "tensorflow", "stardist"], solve-group = "stardist"}
-cellpose3-full = {features = ["cuda", "cellpose3", "jupyter"], solve-group = "cellpose3"}
-cellpose4-full = {features = ["cuda", "cellpose4", "jupyter"], solve-group = "cellpose4"}
-micro-sam-full = {features = ["cuda", "micro-sam", "jupyter"], solve-group = "micro-sam"}
+cellpose3-full = {features = ["cuda", "cellpose3", "io", "jupyter"], solve-group = "cellpose3"}
+cellpose4-full = {features = ["cuda", "cellpose4", "io", "jupyter"], solve-group = "cellpose4"}
+micro-sam-full = {features = ["cuda", "micro-sam", "io", "jupyter"], solve-group = "micro-sam"}
 stardist-full = {features = ["cuda11", "tensorflow", "stardist", "jupyter"], solve-group = "stardist"}
