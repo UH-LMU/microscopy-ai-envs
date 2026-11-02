@@ -7,9 +7,10 @@ This repo hosts **reusable, pre-solved environments** for heavy tools:
 - **micro-sam** (micro-SAM + napari; Python 3.12)
 - **stardist** (StarDist + TensorFlow 2.10; Python 3.10)
 
-Each also comes as `<tool>-full` with Jupyter and analysis extras. All but
-stardist include [bioio](https://github.com/bioio-devs/bioio) readers for CZI,
-LIF, OME-TIFF, OME-Zarr and plain TIFF, e.g.
+Each also comes as `<tool>-full` with Jupyter and analysis extras. All
+include [bioio](https://github.com/bioio-devs/bioio) readers for CZI,
+LIF, OME-TIFF, OME-Zarr and plain TIFF (stardist: older reader versions, no
+bioio writers), e.g.
 `BioImage("img.czi").get_image_dask_data("ZYX")`.
 
 ## Usage (local workstation)

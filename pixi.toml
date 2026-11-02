@@ -155,6 +155,24 @@ pip = "*"  # pixi-to-conda-lock needs it when pypi-dependencies are present
 [feature.io.pypi-dependencies]
 bioio-czi = "*"
 
+# Same readers for stardist (python 3.10, TF 2.10). conda-forge's bioio needs
+# python >=3.11, but on PyPI bioio, ome-tiff, tifffile and czi allow 3.10;
+# ome-zarr and lif fall back to older releases. numpy/scipy stay pinned on
+# the conda side by [feature.tensorflow].
+[feature.io-stardist]
+platforms = ["linux-64", "win-64"]
+
+[feature.io-stardist.dependencies]
+pip = "*"
+
+[feature.io-stardist.pypi-dependencies]
+bioio = "*"
+bioio-czi = "*"
+bioio-lif = "*"
+bioio-ome-tiff = "*"
+bioio-ome-zarr = "*"
+bioio-tifffile = "*"
+
 # Interactive/workstation extras: kernel + common analysis packages on top of any base env.
 [feature.jupyter.dependencies]
 ipykernel = "*"
@@ -172,8 +190,8 @@ scikit-learn = "*"
 cellpose3 = {features = ["cuda", "cellpose3", "io"], solve-group = "cellpose3"}
 cellpose4 = {features = ["cuda", "cellpose4", "io"], solve-group = "cellpose4"}
 micro-sam = {features = ["cuda", "micro-sam", "io"], solve-group = "micro-sam"}
-stardist = {features = ["cuda11", "tensorflow", "stardist"], solve-group = "stardist"}
+stardist = {features = ["cuda11", "tensorflow", "stardist", "io-stardist"], solve-group = "stardist"}
 cellpose3-full = {features = ["cuda", "cellpose3", "io", "jupyter"], solve-group = "cellpose3"}
 cellpose4-full = {features = ["cuda", "cellpose4", "io", "jupyter"], solve-group = "cellpose4"}
 micro-sam-full = {features = ["cuda", "micro-sam", "io", "jupyter"], solve-group = "micro-sam"}
-stardist-full = {features = ["cuda11", "tensorflow", "stardist", "jupyter"], solve-group = "stardist"}
+stardist-full = {features = ["cuda11", "tensorflow", "stardist", "io-stardist", "jupyter"], solve-group = "stardist"}

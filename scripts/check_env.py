@@ -190,7 +190,6 @@ def check_io():
         import numpy as np
         import tifffile
         from bioio import BioImage
-        from bioio.writers import OMEZarrWriter, OmeTiffWriter
 
         # BioImage tries bioio-ome-tiff on plain.tif first and logs a warning
         # before falling back to bioio-tifffile; the fallback is what we test.
@@ -201,14 +200,26 @@ def check_io():
         with tempfile.TemporaryDirectory() as d:
             d = Path(d)
             tifffile.imwrite(d / "plain.tif", data)
-            OmeTiffWriter.save(data, d / "img.ome.tiff", dim_order="ZYX")
-            OMEZarrWriter(d / "img.ome.zarr", level_shapes=[data.shape], dtype=data.dtype,
-                          axes_names=["z", "y", "x"]).write_full_volume(data)
+            tifffile.imwrite(d / "img.ome.tiff", data, ome=True, metadata={"axes": "ZYX"})
+            write_ome_zarr(d / "img.ome.zarr", data)
             for f in ["plain.tif", "img.ome.tiff", "img.ome.zarr"]:
                 img = BioImage(d / f)
                 got = np.asarray(img.get_image_dask_data("ZYX").compute())
                 if not np.array_equal(got, data):
                     raise RuntimeError(f"{f}: read back {got.shape} {got.dtype}, data differs")
+
+
+def write_ome_zarr(path, data):
+    try:
+        from bioio.writers import OMEZarrWriter
+    except ImportError:
+        # stardist's py3.10 bioio-ome-zarr 1.x has no writer; use ome-zarr-py.
+        import zarr
+        from ome_zarr.writer import write_image
+        write_image(data, zarr.open_group(str(path), mode="w"), axes="zyx")
+        return
+    OMEZarrWriter(path, level_shapes=[data.shape], dtype=data.dtype,
+                  axes_names=["z", "y", "x"]).write_full_volume(data)
 
 
 def check_jupyter():
@@ -233,8 +244,8 @@ TOOLS = {
     "stardist": check_stardist,
 }
 
-# Tools whose envs include the `io` feature (bioio needs python >=3.11).
-IO_TOOLS = {"cellpose3", "cellpose4", "micro-sam"}
+# Tools whose envs include the `io` (or `io-stardist`) feature.
+IO_TOOLS = {"cellpose3", "cellpose4", "micro-sam", "stardist"}
 
 
 def main():
