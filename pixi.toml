@@ -39,6 +39,11 @@ check-env = "python scripts/check_env.py"
 "sif:build:cp4" = "bash scripts/build-sif.sh cellpose4"
 "sif:build:microsam" = "bash scripts/build-sif.sh micro-sam"
 
+# Windows: make env files inherit the env folder's permissions, so other users
+# can run them. Re-run after installs. `pixi run fix-perms [env ...]`.
+[target.win-64.tasks]
+fix-perms = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env-permissions.ps1"
+
 # ---- CUDA feature ----
 [feature.cuda.dependencies]
 cuda = ">=12"

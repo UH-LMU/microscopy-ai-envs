@@ -50,3 +50,4 @@ the output dir. Test on a GPU host with
 
 ## Helper scripts
 - `scripts/run_in_env.ps1` / `scripts/run_in_env.sh` run a command in a selected env for a **project path**.
+- `scripts/fix-env-permissions.ps1` (`pixi run fix-perms [env ...]`, Windows): after installing, makes every file in the envs inherit the env folder's permissions, so users other than the installer can run them. Same as Explorer's "Replace all child object permission entries…". Re-run after each install/update.
