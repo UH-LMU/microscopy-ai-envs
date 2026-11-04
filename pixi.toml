@@ -43,6 +43,8 @@ check-env = "python scripts/check_env.py"
 # can run them. Re-run after installs. `pixi run fix-perms [env ...]`.
 [target.win-64.tasks]
 fix-perms = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env-permissions.ps1"
+# Stricter: Users get read + execute only on .pixi\envs (see the script header).
+fix-perms-ro = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env-permissions-ro.ps1"
 
 # ---- CUDA feature ----
 [feature.cuda.dependencies]
