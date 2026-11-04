@@ -46,6 +46,11 @@ fix-perms = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env
 # Stricter: Users get read + execute only on .pixi\envs (see the script header).
 fix-perms-ro = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env-permissions-ro.ps1"
 
+# Windows, all envs: per-user NUMBA_CACHE_DIR, so numba doesn't hang on the
+# read-only site-packages left by fix-perms-ro (see the script).
+[target.win-64.activation]
+scripts = ["scripts/activate-win.bat"]
+
 # ---- CUDA feature ----
 [feature.cuda.dependencies]
 cuda = ">=12"
