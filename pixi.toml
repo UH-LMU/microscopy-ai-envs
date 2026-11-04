@@ -39,15 +39,14 @@ check-env = "python scripts/check_env.py"
 "sif:build:cp4" = "bash scripts/build-sif.sh cellpose4"
 "sif:build:microsam" = "bash scripts/build-sif.sh micro-sam"
 
-# Windows: make env files inherit the env folder's permissions, so other users
-# can run them. Re-run after installs. `pixi run fix-perms [env ...]`.
+# Windows: give regular users read + execute (only) on the envs, so users other
+# than the installer can run them. Run from an elevated shell, after every
+# install/update. `pixi run fix-perms [env ...]`.
 [target.win-64.tasks]
 fix-perms = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env-permissions.ps1"
-# Stricter: Users get read + execute only on .pixi\envs (see the script header).
-fix-perms-ro = "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/fix-env-permissions-ro.ps1"
 
 # Windows, all envs: per-user NUMBA_CACHE_DIR, so numba doesn't hang on the
-# read-only site-packages left by fix-perms-ro (see the script).
+# read-only site-packages left by fix-perms (see the script).
 [target.win-64.activation]
 scripts = ["scripts/activate-win.bat"]
 
