@@ -237,6 +237,23 @@ def check_jupyter():
         return ", ".join(mods)
 
 
+def check_napari():
+    @check("napari (single Qt binding)")
+    def _():
+        # Import only, no viewer: works headless (CI, containers). Two Qt
+        # bindings in one env (e.g. PyQt6 + PySide6) is what broke win-64
+        # before, so insist on exactly one.
+        from importlib.util import find_spec
+        bindings = [b for b in ("PyQt5", "PyQt6", "PySide2", "PySide6") if find_spec(b)]
+        if len(bindings) != 1:
+            raise RuntimeError(f"expected one Qt binding, found {bindings or 'none'}")
+        import napari
+        import qtpy
+        from npe2 import PluginManager
+        PluginManager.instance().discover()
+        return f"napari {napari.__version__}, qtpy -> {qtpy.API_NAME}"
+
+
 TOOLS = {
     "cellpose3": lambda: check_cellpose(3),
     "cellpose4": lambda: check_cellpose(4),
@@ -246,6 +263,9 @@ TOOLS = {
 
 # Tools whose envs include the `io` (or `io-stardist`) feature.
 IO_TOOLS = {"cellpose3", "cellpose4", "micro-sam", "stardist"}
+
+# Envs with napari (micro-sam has it in both minimal and -full).
+NAPARI_ENVS = {"cellpose3-full", "cellpose4-full", "micro-sam", "micro-sam-full"}
 
 
 def main():
@@ -262,6 +282,8 @@ def main():
         check_io()
     if full:
         check_jupyter()
+    if env in NAPARI_ENVS:
+        check_napari()
 
     print()
     for status, name, detail in RESULTS:

@@ -81,19 +81,6 @@ micro_sam = ">=1.8.14,<1.9"
 pydantic = ">=2.12"
 npe2 = ">=0.9"
 
-# PyOpenGL >=3.1.10 dlopens the unversioned "libGLX.so" first. Without an
-# env-local one it picks up the system copy (from libglx-dev) while Qt links
-# the env's libGLX.so.0 -> "Could not initialize GLX" and napari aborts.
-[feature.micro-sam.target.linux-64.dependencies]
-libglx-devel = "*"
-
-# vispy finds libGL via ctypes.util.find_library("GL"), which only looks in the
-# ldconfig cache / via gcc or ld. In the docker/sif images (no system libGL, no
-# toolchain) that finds nothing -> "GL ES 2.0 library not found" on importing
-# micro_sam. Point it at the env's own libglvnd libGL, the one Qt uses anyway.
-[feature.micro-sam.target.linux-64.activation.env]
-VISPY_GL_LIB = "$CONDA_PREFIX/lib/libGL.so.1"
-
 # trackastra -> motile/ilpy -> pyscipopt -> scip/ipopt/mumps-seq. Older win-64
 # builds of these depend on libflang 5 -> openmp 5.0.0 (2018), which installs
 # its own Library/bin/libiomp5md.dll over intel-openmp's; torch then fails with
@@ -108,6 +95,27 @@ libflang = ">=6"
 numpy = ">=2"
 dask-core = ">=2025"
 matplotlib-base = ">=3.10"
+
+# napari for viewing results in the -full envs (micro-sam already brings its
+# own napari + PyQt6). napari-base has no Qt binding: in cellpose envs it uses
+# the PySide6 that cellpose's GUI already pulls in. The `napari` metapackage
+# would add PyQt6 alongside -> two Qt bindings in one env.
+[feature.napari.dependencies]
+napari-base = "*"
+
+# OpenGL fixes for anything using vispy/Qt (napari) on linux-64.
+# PyOpenGL >=3.1.10 dlopens the unversioned "libGLX.so" first. Without an
+# env-local one it picks up the system copy (from libglx-dev) while Qt links
+# the env's libGLX.so.0 -> "Could not initialize GLX" and napari aborts.
+[feature.opengl.target.linux-64.dependencies]
+libglx-devel = "*"
+
+# vispy finds libGL via ctypes.util.find_library("GL"), which only looks in the
+# ldconfig cache / via gcc or ld. In the docker/sif images (no system libGL, no
+# toolchain) that finds nothing -> "GL ES 2.0 library not found" on importing
+# micro_sam / napari. Point it at the env's own libglvnd libGL, the one Qt uses anyway.
+[feature.opengl.target.linux-64.activation.env]
+VISPY_GL_LIB = "$CONDA_PREFIX/lib/libGL.so.1"
 
 [feature.cuda11]
 channels = ["conda-forge"]
@@ -195,9 +203,9 @@ scikit-learn = "*"
 [environments]
 cellpose3 = {features = ["cuda", "cellpose3", "io"], solve-group = "cellpose3"}
 cellpose4 = {features = ["cuda", "cellpose4", "io"], solve-group = "cellpose4"}
-micro-sam = {features = ["cuda", "micro-sam", "io"], solve-group = "micro-sam"}
+micro-sam = {features = ["cuda", "micro-sam", "opengl", "io"], solve-group = "micro-sam"}
 stardist = {features = ["cuda11", "tensorflow", "stardist", "io-stardist"], solve-group = "stardist"}
-cellpose3-full = {features = ["cuda", "cellpose3", "io", "jupyter"], solve-group = "cellpose3"}
-cellpose4-full = {features = ["cuda", "cellpose4", "io", "jupyter"], solve-group = "cellpose4"}
-micro-sam-full = {features = ["cuda", "micro-sam", "io", "jupyter"], solve-group = "micro-sam"}
+cellpose3-full = {features = ["cuda", "cellpose3", "io", "jupyter", "napari", "opengl"], solve-group = "cellpose3"}
+cellpose4-full = {features = ["cuda", "cellpose4", "io", "jupyter", "napari", "opengl"], solve-group = "cellpose4"}
+micro-sam-full = {features = ["cuda", "micro-sam", "opengl", "io", "jupyter"], solve-group = "micro-sam"}
 stardist-full = {features = ["cuda11", "tensorflow", "stardist", "io-stardist", "jupyter"], solve-group = "stardist"}

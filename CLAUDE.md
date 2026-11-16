@@ -28,6 +28,12 @@ conda-forge's bioio needs Python >= 3.11, so stardist (3.10) uses
 `[feature.io-stardist]` instead: the same readers, all from PyPI, with
 ome-zarr/lif/ome-tiff on older releases (zarr 2) and no bioio writers.
 
+The cellpose `-full` envs also get `[feature.napari]` (`napari-base`, no
+Qt binding of its own, so it uses the PySide6 cellpose's GUI already
+pulls in; one Qt binding per env, which `check_env.py` enforces). micro-sam
+brings its own napari + PyQt6 in both envs. Linux GL fixes for napari/vispy
+live in `[feature.opengl]`.
+
 When adding a new tool, follow the same pattern. Put interactive-only
 packages in `[feature.jupyter]`, not in the tool's own feature, or the
 minimal env will silently grow.
