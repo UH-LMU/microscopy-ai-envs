@@ -783,20 +783,21 @@ package:
   category: main
   optional: false
 - name: fontconfig
-  version: 2.15.0
+  version: 2.18.3
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    freetype: '>=2.12.1,<3.0a0'
-    libexpat: '>=2.6.3,<3.0a0'
-    libgcc: '>=13'
-    libuuid: '>=2.38.1,<3.0a0'
-    libzlib: '>=1.3.1,<2.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.15.0-h7e30c49_1.conda
+    libexpat: '>=2.9.0,<3.0a0'
+    libfreetype: '>=2.14.3'
+    libfreetype6: '>=2.14.3'
+    libgcc: '>=15'
+    libuuid: '>=2.42.4,<3.0a0'
+    libzlib: '>=1.3.2,<2.0a0'
+  url: https://conda.anaconda.org/conda-forge/linux-64/fontconfig-2.18.3-h4db4eae_2.conda
   hash:
-    md5: 8f5b0b297b59e1ac160ad4beec99dbee
-    sha256: 7093aa19d6df5ccb6ca50329ef8510c6acb6b0d8001191909397368b65b02113
+    md5: 2385ef6446d1a75b26a681449a6e32a7
+    sha256: 49d5b86a00d441d23e6351a6371429fea311538e2aa8b855e61c4d3dbe3e8762
   category: main
   optional: false
 - name: fonttools
@@ -1781,11 +1782,11 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libglvnd 1.7.0 ha4b6fd6_2: '*'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libegl-1.7.0-ha4b6fd6_2.conda
+    libglvnd 1.7.0 ha4b6fd6_5: '*'
+  url: https://conda.anaconda.org/conda-forge/linux-64/libegl-1.7.0-ha4b6fd6_5.conda
   hash:
-    md5: c151d5eb730e9b7480e6d48c0fc44048
-    sha256: 7fd5408d359d05a969133e47af580183fbf38e2235b562193d427bb9dad79723
+    md5: 3a1b41c4591a0a1734382af3e2b8bc08
+    sha256: 13d3fde9c1dcf254968cc70652222a43f25d04e69555ccf855553110e753288e
   category: main
   optional: false
 - name: libev
@@ -1952,12 +1953,12 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libglvnd 1.7.0 ha4b6fd6_2: '*'
-    libglx 1.7.0 ha4b6fd6_2: '*'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libgl-1.7.0-ha4b6fd6_2.conda
+    libglvnd 1.7.0 ha4b6fd6_5: '*'
+    libglx 1.7.0 ha4b6fd6_5: '*'
+  url: https://conda.anaconda.org/conda-forge/linux-64/libgl-1.7.0-ha4b6fd6_5.conda
   hash:
-    md5: 928b8be80851f5d8ffb016f9c81dae7a
-    sha256: dc2752241fa3d9e40ce552c1942d0a4b5eeb93740c9723873f6fcf8d39ef8d2d
+    md5: 81141db127a106eb5a91df69a29c9918
+    sha256: 7b2e7e31e8a4f5a01c45ecadcd8aa68c8f733b035240bc7ba9881835ef4bf7b4
   category: main
   optional: false
 - name: libglib
@@ -1998,10 +1999,10 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libglvnd-1.7.0-ha4b6fd6_2.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/libglvnd-1.7.0-ha4b6fd6_5.conda
   hash:
-    md5: 434ca7e50e40f4918ab701e3facd59a0
-    sha256: 1175f8a7a0c68b7f81962699751bb6574e6f07db4c9f72825f978e3016f46850
+    md5: cfcf11edcfd4acf0094771a9c3b8587f
+    sha256: 6eb77601a44b78c4631d886d54ef54f321c2bdc69fdefc4065a1e0491f030c76
   category: main
   optional: false
 - name: libglx
@@ -2010,12 +2011,12 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libglvnd 1.7.0 ha4b6fd6_2: '*'
-    xorg-libx11: '>=1.8.10,<2.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libglx-1.7.0-ha4b6fd6_2.conda
+    libglvnd 1.7.0 ha4b6fd6_5: '*'
+    xorg-libx11: '>=1.8.13,<2.0a0'
+  url: https://conda.anaconda.org/conda-forge/linux-64/libglx-1.7.0-ha4b6fd6_5.conda
   hash:
-    md5: c8013e438185f33b13814c5c488acd5c
-    sha256: 2d35a679624a93ce5b3e9dd301fff92343db609b79f0363e6d0ceb3a6478bfa7
+    md5: 614e10aae180f87b84f0d1ca8ceb7d9e
+    sha256: d1f0d51aea6bcc5d915969cbed32e72a8ed6a95931b87357ef8d0866573688c4
   category: main
   optional: false
 - name: libgomp
@@ -2411,11 +2412,11 @@ package:
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libglvnd 1.7.0 ha4b6fd6_2: '*'
-  url: https://conda.anaconda.org/conda-forge/linux-64/libopengl-1.7.0-ha4b6fd6_2.conda
+    libglvnd 1.7.0 ha4b6fd6_5: '*'
+  url: https://conda.anaconda.org/conda-forge/linux-64/libopengl-1.7.0-ha4b6fd6_5.conda
   hash:
-    md5: 7df50d44d4a14d6c31a2c54f2cd92157
-    sha256: 215086c108d80349e96051ad14131b751d17af3ed2cb5a34edd62fa89bfe8ead
+    md5: d207a2e9bae9da476bc0a603215d5167
+    sha256: 7bdca717c840e17d7dd050f925dd964da61086c2612b8579a4ff4147105f291f
   category: main
   optional: false
 - name: libopenvino
@@ -4555,17 +4556,17 @@ package:
   category: main
   optional: false
 - name: xorg-libx11
-  version: 1.8.12
+  version: 1.8.14
   manager: conda
   platform: linux-64
   dependencies:
     __glibc: '>=2.17,<3.0.a0'
-    libgcc: '>=13'
+    libgcc: '>=15'
     libxcb: '>=1.17.0,<2.0a0'
-  url: https://conda.anaconda.org/conda-forge/linux-64/xorg-libx11-1.8.12-h4f16b4b_0.conda
+  url: https://conda.anaconda.org/conda-forge/linux-64/xorg-libx11-1.8.14-hb83e432_0.conda
   hash:
-    md5: db038ce880f100acc74dba10302b5630
-    sha256: 51909270b1a6c5474ed3978628b341b4d4472cd22610e5f22b506855a5e20f67
+    md5: e7752792cb214013a34e265cc0838352
+    sha256: 1815dc9900bf3a4678caeb343bccbbc74cd5e5a5ff3f6e0a2c01c5e19cd9d30b
   category: main
   optional: false
 - name: xorg-libxau
@@ -6072,19 +6073,19 @@ package:
   category: main
   optional: false
 - name: superqt
-  version: 0.7.6
+  version: 0.9.2
   manager: conda
   platform: linux-64
   dependencies:
     pyconify: '>=0.1.4'
     pygments: '>=2.4.0'
-    python: '>=3.9'
-    qtpy: '>=1.1.0'
-    typing_extensions: '>=3.7.4.3'
-  url: https://conda.anaconda.org/conda-forge/noarch/superqt-0.7.6-pyhb6d5dde_0.conda
+    python: '>=3.11'
+    qtpy: '>=2.4.0'
+    typing_extensions: '>=4.5.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/superqt-0.9.2-pyh9208f05_0.conda
   hash:
-    md5: 87a1246b0781d42191f5f9373fd143f7
-    sha256: c8f6fc8e4a7f3c266ee88d6c437ff1fcdf863ee3f45f64f54b0342188c3864e6
+    md5: 8a494a668e83b426d0d1b66ebd630d0a
+    sha256: 50751d5a167a999cfe905339102d1922b9e20ee66e54d460bfc5b9d7aedfcba2
   category: main
   optional: false
 - name: sympy
@@ -8807,19 +8808,19 @@ package:
   category: main
   optional: false
 - name: superqt
-  version: 0.7.6
+  version: 0.9.2
   manager: conda
   platform: win-64
   dependencies:
     pyconify: '>=0.1.4'
     pygments: '>=2.4.0'
-    python: '>=3.9'
-    qtpy: '>=1.1.0'
-    typing_extensions: '>=3.7.4.3'
-  url: https://conda.anaconda.org/conda-forge/noarch/superqt-0.7.6-pyhb6d5dde_0.conda
+    python: '>=3.11'
+    qtpy: '>=2.4.0'
+    typing_extensions: '>=4.5.0'
+  url: https://conda.anaconda.org/conda-forge/noarch/superqt-0.9.2-pyh9208f05_0.conda
   hash:
-    md5: 87a1246b0781d42191f5f9373fd143f7
-    sha256: c8f6fc8e4a7f3c266ee88d6c437ff1fcdf863ee3f45f64f54b0342188c3864e6
+    md5: 8a494a668e83b426d0d1b66ebd630d0a
+    sha256: 50751d5a167a999cfe905339102d1922b9e20ee66e54d460bfc5b9d7aedfcba2
   category: main
   optional: false
 - name: sympy
